@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dvdvltew5eoh1"]
+
+[ext_resource type="PackedScene" uid="uid://dovm1xooe1pxp" path="res://Assets/3D Assets/basicroom-col.glb" id="1_ieny0"]
+[ext_resource type="Material" uid="uid://wepsj7vnbgoi" path="res://Assets/Materials/checkerboard.tres" id="2_3uad0"]
+
+[node name="basicroom-col" unique_id=1636015329 instance=ExtResource("1_ieny0")]
+
+[node name="Cube" parent="." index="0" unique_id=416700647]
+surface_material_override/0 = ExtResource("2_3uad0")

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://tod1oycd6w8k"]
+
+[ext_resource type="PackedScene" uid="uid://dvdvltew5eoh1" path="res://Scenes/basicroom_col.tscn" id="1_lis1l"]
+[ext_resource type="Script" uid="uid://d2sr3rw7t0xn2" path="res://Scripts/character_movement.gd" id="2_uk64b"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
+
+[node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
+
+[node name="basicroom-col" parent="." unique_id=1636015329 instance=ExtResource("1_lis1l")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=145125222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7481351, 0)
+script = ExtResource("2_uk64b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=878742394]
+shape = SubResource("CapsuleShape3D_vek3k")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=639704612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1160542673]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 0, 0)
