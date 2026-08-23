@@ -2,8 +2,16 @@
 
 [ext_resource type="PackedScene" uid="uid://dvdvltew5eoh1" path="res://Scenes/basicroom_col.tscn" id="1_lis1l"]
 [ext_resource type="Script" uid="uid://d2sr3rw7t0xn2" path="res://Scripts/character_movement.gd" id="2_uk64b"]
+[ext_resource type="Script" uid="uid://ct5d485g3n5j6" path="res://Scenes/opponent.gd" id="3_uk64b"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vek3k"]
+size = Vector3(1, 1, 2)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vek3k"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a8j4q"]
 
 [node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
 
@@ -19,5 +27,28 @@ shape = SubResource("CapsuleShape3D_vek3k")
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=639704612]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
+[node name="DetectionArea" type="Area3D" parent="CharacterBody3D/Camera3D" unique_id=654951314]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/Camera3D/DetectionArea" unique_id=1585111403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+shape = SubResource("BoxShape3D_vek3k")
+debug_color = Color(0, 0.70980394, 0.8235294, 1)
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1160542673]
 transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 0, 0)
+
+[node name="TestOpponent" type="Node3D" parent="." unique_id=326860594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 35)
+script = ExtResource("3_uk64b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TestOpponent" unique_id=1155369476]
+mesh = SubResource("CapsuleMesh_vek3k")
+
+[node name="Area3D" type="Area3D" parent="TestOpponent" unique_id=1426721245]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestOpponent/Area3D" unique_id=939141195]
+shape = SubResource("CapsuleShape3D_a8j4q")
+
+[connection signal="area_entered" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
+[connection signal="area_exited" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
