@@ -14,10 +14,24 @@ config/name="Brackey's Game Jam 2026.2"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+EventBus="*uid://wx1cpqdh6skv"
+PhaseTracker="*uid://dk55uuspe0qf8"
+PhaseTimer="*uid://cdqvnnpgosdu5"
+
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "green",
+"res://Scenes/": "teal",
+"res://Scripts/": "red"
+}
 
 [physics]
 
