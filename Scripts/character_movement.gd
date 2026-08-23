@@ -26,7 +26,7 @@ func _input(event):
 		$Camera3D.rotation.x = clampf($Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 	# interact button
 	if event.is_action_pressed("interact") and current_opponent != 0:
-		EventBus.opponent_interacted.emit()
+		EventBus.opponent_interacted.emit(current_opponent)
 
 
 func _on_detection_area_entered(area: Area3D) -> void:

@@ -2,7 +2,7 @@ do MouseManager.switch_mouse_mode()
 test_character: This is test text
 test_character: This is also test text
 - Choice 1
-	You Picked Choice 1
+	test_character: You Picked Choice 1
 - Choice 2
 	test_character: You Picked Choice 2
 do MouseManager.switch_mouse_mode()

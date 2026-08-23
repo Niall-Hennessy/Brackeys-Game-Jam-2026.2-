@@ -10,5 +10,11 @@ func _ready() -> void:
 		
 	EventBus.connect("opponent_interacted", interaction)
 
-func interaction():
+func interaction(opponent_number):
+	if opponent_number != number:
+		return
+	
+	if Dialogic.current_timeline != null:
+		return
+		
 	Dialogic.start(dialogues[0]) #Magic number alert
