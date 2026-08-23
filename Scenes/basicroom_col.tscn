@@ -5,5 +5,5 @@
 
 [node name="basicroom-col" unique_id=1636015329 instance=ExtResource("1_ieny0")]
 
-[node name="Cube" parent="." index="0" unique_id=416700647]
+[node name="Cube" parent="." index="0" unique_id=1417087488]
 surface_material_override/0 = ExtResource("2_3uad0")

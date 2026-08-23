@@ -8,10 +8,6 @@ var look_sensitivity = 0.005
 var current_opponent = 0
 
 
-func _ready():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
-
 func _physics_process(delta: float) -> void:
 	velocity.y += gravity * delta
 	var input = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
