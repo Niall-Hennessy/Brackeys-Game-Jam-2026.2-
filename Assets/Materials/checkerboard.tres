@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://wepsj7vnbgoi"]
+
+[ext_resource type="Texture2D" uid="uid://ben2fd2eegue1" path="res://Assets/Materials/checkerboard_albedo.png" id="1"]
+
+[resource]
+albedo_texture = ExtResource("1")
