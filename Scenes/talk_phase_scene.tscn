@@ -56,6 +56,7 @@ transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, 
 [node name="TestOpponent" type="Node3D" parent="." unique_id=326860594]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 35)
 script = ExtResource("3_uk64b")
+dialogues = ["test_timeline"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="TestOpponent" unique_id=1155369476]
 mesh = SubResource("CapsuleMesh_vek3k")

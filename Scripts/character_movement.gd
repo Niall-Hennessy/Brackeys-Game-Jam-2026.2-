@@ -8,10 +8,6 @@ var look_sensitivity = 0.005
 var current_opponent = 0
 
 
-func _ready():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
-
 func _physics_process(delta: float) -> void:
 	velocity.y += gravity * delta
 	var input = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
@@ -30,7 +26,7 @@ func _input(event):
 		$Camera3D.rotation.x = clampf($Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 	# interact button
 	if event.is_action_pressed("interact") and current_opponent != 0:
-		EventBus.opponent_interacted.emit(current_opponent)
+		EventBus.opponent_interacted.emit()
 
 
 func _on_detection_area_entered(area: Area3D) -> void:

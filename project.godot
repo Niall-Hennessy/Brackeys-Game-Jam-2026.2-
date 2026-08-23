@@ -21,11 +21,16 @@ EventBus="*uid://wx1cpqdh6skv"
 PhaseTracker="*uid://dk55uuspe0qf8"
 PhaseTimer="*uid://cdqvnnpgosdu5"
 Dialogic="*uid://ds2q0uclmolvu"
+MouseManager="*uid://c0eiiu8smk4fu"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"test_character": "res://Dialogic Resources/Characters/test_character.dch"
+}
+directories/dtl_directory={
+"test_timeline": "res://Dialogic Resources/Timelines/test_timeline.dtl"
+}
 layout/style_directory={}
 
 [display]
