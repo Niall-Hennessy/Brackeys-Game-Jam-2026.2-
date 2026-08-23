@@ -34,6 +34,9 @@ func _input(event):
 
 
 func _on_detection_area_entered(area: Area3D) -> void:
+	# display the text
+	get_node("Camera3D/InteractLabel").visible = true
+	# get opponent number
 	var parent = area.get_parent()
 	if parent == null:
 		pass
@@ -42,4 +45,5 @@ func _on_detection_area_entered(area: Area3D) -> void:
 
 
 func _on_detection_area_area_exited(area: Area3D) -> void:
+	get_node("Camera3D/InteractLabel").visible = false
 	current_opponent = 0
