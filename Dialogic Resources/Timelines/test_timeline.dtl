@@ -6,3 +6,4 @@ test_character: This is also test text
 - Choice 2
 	test_character: You Picked Choice 2
 do MouseManager.switch_mouse_mode()
+do InteractPhaseManager.interaction_finished()

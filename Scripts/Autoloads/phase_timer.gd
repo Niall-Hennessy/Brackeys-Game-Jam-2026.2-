@@ -1,6 +1,6 @@
 extends Node
 
-var number_of_timer_units: int = 3
+var number_of_timer_units: int = 2
 var current_timer_unit: int = 0
 
 func _ready() -> void:

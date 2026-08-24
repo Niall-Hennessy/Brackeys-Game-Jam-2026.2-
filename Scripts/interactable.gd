@@ -7,12 +7,10 @@ func interaction(interactable:Node3D) -> void:
 
 	if interactable == null:
 		return
-	
-	EventBus.emit_signal("progress_phase_timer")
 		
 	if interactable.has_node("InteractableComponent"):
 		# do interactable-specific things
-		pass
+		InteractPhaseManager.interaction_finished()
 	if interactable.has_node("OpponentComponent"):
 		var opponent = interactable.get_node("OpponentComponent")
 		opponent.start_dialogue(1) #TODO magic number

@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://dvdvltew5eoh1" path="res://Scenes/basicroom_col.tscn" id="1_lis1l"]
 [ext_resource type="Script" uid="uid://d2sr3rw7t0xn2" path="res://Scripts/character_movement.gd" id="2_uk64b"]
-[ext_resource type="Texture2D" uid="uid://bfgjqvsqp4mkl" path="res://Assets/2D Assets/Temp Turn Timer Empty.png" id="3_1q4yl"]
 [ext_resource type="Script" uid="uid://ct5d485g3n5j6" path="res://Scripts/opponent.gd" id="3_uk64b"]
 [ext_resource type="Script" uid="uid://b72d6pbjof4n2" path="res://Scripts/interactable.gd" id="4_1q4yl"]
 [ext_resource type="Script" uid="uid://bngiph7v5qtnt" path="res://Scripts/player_phase_timer.gd" id="4_tt5lj"]
@@ -66,9 +65,9 @@ offset_left = 947.0
 offset_top = 35.0
 offset_right = 1113.0
 offset_bottom = 192.0
-texture = ExtResource("3_1q4yl")
+texture = ExtResource("5_q2qrx")
 script = ExtResource("4_tt5lj")
-phase_texture_array = Array[Texture]([ExtResource("3_1q4yl"), ExtResource("5_q2qrx"), ExtResource("6_873g7"), ExtResource("7_shicq")])
+phase_texture_array = Array[Texture]([ExtResource("5_q2qrx"), ExtResource("6_873g7"), ExtResource("7_shicq")])
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1160542673]
 transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 0, 0)
