@@ -7,10 +7,8 @@ class_name Opponent extends Node
 func _ready() -> void:
 	if not number:
 		number = 1
-		
-	EventBus.connect("opponent_interacted", interaction)
 
-func interaction(opponent_number) -> void:
+func start_dialogue(opponent_number) -> void:
 	if opponent_number != number:
 		return
 	

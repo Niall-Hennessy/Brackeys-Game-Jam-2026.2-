@@ -29,11 +29,7 @@ func _input(event):
 		$Camera3D.rotation.x = clampf($Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 	# interact button
 	if event.is_action_pressed("interact") and current_interactable != null:
-		if current_interactable.get_node_or_null("OpponentComponent") != null:
-			var opponent_number = current_interactable.get_node("OpponentComponent").number
-			EventBus.opponent_interacted.emit(opponent_number)
-		elif current_interactable.get_node_or_null("InteractableComponent") != null:
-			EventBus.object_interacted.emit()
+		EventBus.object_interacted.emit(current_interactable.get_parent()) # TODO this might be going off twice? test with prints
 
 
 
@@ -51,7 +47,6 @@ func _on_detection_area_entered(area: Area3D) -> void:
 	get_node("Camera3D/InteractLabel").visible = true
 
 
-@warning_ignore("unused_parameter")
 func _on_detection_area_area_exited(area: Area3D) -> void:
 	get_node("Camera3D/InteractLabel").visible = false
 	current_interactable = null
