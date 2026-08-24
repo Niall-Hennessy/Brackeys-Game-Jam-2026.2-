@@ -7,10 +7,12 @@ func interaction(interactable:Node3D) -> void:
 
 	if interactable == null:
 		return
-	if interactable.has_node("InteractableComponent"):
-		# do interactable-specific things
-		pass
+		
 	if interactable.has_node("OpponentComponent"):
 		var opponent = interactable.get_node("OpponentComponent")
 		opponent.start_dialogue(1) #TODO magic number
+	elif interactable.has_node("InteractableComponent"):
+		# do interactable-specific things
+		InteractPhaseManager.interaction_finished()
+	
 	return

@@ -22,6 +22,10 @@ PhaseTracker="*uid://dk55uuspe0qf8"
 PhaseTimer="*uid://cdqvnnpgosdu5"
 Dialogic="*uid://ds2q0uclmolvu"
 MouseManager="*uid://c0eiiu8smk4fu"
+GameStarter="*uid://ddho6m84ufydg"
+CutsceneManager="*uid://taw5vieymkt"
+GameplayerManager="*uid://xx30n7xqxwye"
+InteractPhaseManager="*uid://bi5knxilgoirg"
 
 [dialogic]
 
@@ -29,12 +33,14 @@ directories/dch_directory={
 "test_character": "res://Dialogic Resources/Characters/test_character.dch"
 }
 directories/dtl_directory={
+"gameplay_phase_1": "res://Dialogic Resources/Timelines/gameplay_phase_1.dtl",
+"prototype_intro_cutscene": "res://Dialogic Resources/Timelines/prototype_intro_cutscene.dtl",
+"round_two_cutscene": "res://Dialogic Resources/Timelines/round_two_cutscene.dtl",
 "test_timeline": "res://Dialogic Resources/Timelines/test_timeline.dtl"
 }
 layout/style_directory={}
 variables={}
 glossary/default_case_sensitive=true
-<<<<<<<HEADvariables={}
 
 [display]
 
@@ -101,6 +107,7 @@ dialogic_default_action={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
