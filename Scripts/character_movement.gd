@@ -25,7 +25,7 @@ func _input(event):
 		$Camera3D.rotate_x(-event.relative.y * look_sensitivity)
 		$Camera3D.rotation.x = clampf($Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 	# interact button
-	if event.is_action_pressed("interact") and current_opponent != 0:
+	if event.is_action_pressed("interact") and current_opponent != 0 and PhaseTracker.current_phase == PhaseTracker.phases.INTERACT:
 		EventBus.opponent_interacted.emit(current_opponent)
 
 

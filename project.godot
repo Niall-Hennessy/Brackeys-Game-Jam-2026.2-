@@ -23,6 +23,7 @@ PhaseTimer="*uid://cdqvnnpgosdu5"
 Dialogic="*uid://ds2q0uclmolvu"
 MouseManager="*uid://c0eiiu8smk4fu"
 GameStarter="*uid://ddho6m84ufydg"
+CutsceneManager="*uid://taw5vieymkt"
 
 [dialogic]
 
@@ -31,6 +32,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "prototype_intro_cutscene": "res://Dialogic Resources/Timelines/prototype_intro_cutscene.dtl",
+"round_two_cutscene": "res://Dialogic Resources/Timelines/round_two_cutscene.dtl",
 "test_timeline": "res://Dialogic Resources/Timelines/test_timeline.dtl"
 }
 layout/style_directory={}
