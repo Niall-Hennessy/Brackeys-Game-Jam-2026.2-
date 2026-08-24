@@ -8,7 +8,7 @@ func _ready() -> void:
 
 func progress_phase_timer():
 	current_timer_unit += 1
-	if current_timer_unit >= number_of_timer_units:
+	if current_timer_unit > number_of_timer_units:
 		current_timer_unit = 0
 		EventBus.emit_signal("progress_to_next_phase")
-	EventBus.emit_signal("phase_timer_updated")
+	EventBus.emit_signal("phase_timer_updated", current_timer_unit)
