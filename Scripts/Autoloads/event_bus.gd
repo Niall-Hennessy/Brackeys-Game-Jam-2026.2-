@@ -11,3 +11,4 @@ signal opponent_interacted(current_opponent: int)
 signal entered_cutscene_phase
 signal entered_interact_phase
 signal entered_gameplay_phase
+#signal object_interacted(interactable:Node3D)
