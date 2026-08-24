@@ -1,3 +1,6 @@
+do MouseManager.switch_mouse_mode()
 Hello
 And welcome to the GAME
 You will have to compete with 5 other contestants in order to survive
+do MouseManager.switch_mouse_mode()
+do PhaseTracker.progress_current_phase()

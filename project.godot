@@ -22,6 +22,7 @@ PhaseTracker="*uid://dk55uuspe0qf8"
 PhaseTimer="*uid://cdqvnnpgosdu5"
 Dialogic="*uid://ds2q0uclmolvu"
 MouseManager="*uid://c0eiiu8smk4fu"
+GameStarter="*uid://ddho6m84ufydg"
 
 [dialogic]
 

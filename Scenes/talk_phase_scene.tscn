@@ -56,6 +56,7 @@ grow_vertical = 2
 text = "Press E to Interact!"
 
 [node name="PlayerPhaseTimer" type="TextureRect" parent="CharacterBody3D" unique_id=1681504760]
+visible = false
 offset_left = 947.0
 offset_top = 35.0
 offset_right = 1113.0
