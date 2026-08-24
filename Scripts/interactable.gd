@@ -8,7 +8,8 @@ func interaction(interactable:Node3D) -> void:
 	if interactable == null:
 		return
 	if interactable.has_node("InteractableComponent"):
-		print("beep")
+		# do interactable-specific things
+		pass
 	if interactable.has_node("OpponentComponent"):
 		var opponent = interactable.get_node("OpponentComponent")
 		opponent.start_dialogue(1) #TODO magic number
