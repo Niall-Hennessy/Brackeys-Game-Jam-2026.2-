@@ -7,3 +7,4 @@ signal phase_timer_updated
 signal phase_updated
 
 signal opponent_interacted(current_opponent: int)
+signal object_interacted(_interaction_id:int)

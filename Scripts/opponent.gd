@@ -1,4 +1,4 @@
-class_name Opponent extends Node3D
+class_name Opponent extends Interactable
 
 @export var number:int # 1 to 5, 0 for none
 @export var dialogues = [] #Could be improved but notion is to idividualize different opponents dialogues
@@ -10,7 +10,7 @@ func _ready() -> void:
 		
 	EventBus.connect("opponent_interacted", interaction)
 
-func interaction(opponent_number):
+func interaction(opponent_number) -> void:
 	if opponent_number != number:
 		return
 	

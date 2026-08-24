@@ -2,7 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dvdvltew5eoh1" path="res://Scenes/basicroom_col.tscn" id="1_lis1l"]
 [ext_resource type="Script" uid="uid://d2sr3rw7t0xn2" path="res://Scripts/character_movement.gd" id="2_uk64b"]
-[ext_resource type="Script" uid="uid://ct5d485g3n5j6" path="res://Scenes/opponent.gd" id="3_uk64b"]
+[ext_resource type="Script" uid="uid://ct5d485g3n5j6" path="res://Scripts/opponent.gd" id="3_uk64b"]
+[ext_resource type="Script" uid="uid://b72d6pbjof4n2" path="res://Scripts/interactable.gd" id="4_1q4yl"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -12,6 +13,10 @@ size = Vector3(1, 1, 2)
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_vek3k"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a8j4q"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mf5ox"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
 
 [node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
 
@@ -65,6 +70,18 @@ mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TestOpponent/Area3D" unique_id=939141195]
 shape = SubResource("CapsuleShape3D_a8j4q")
+
+[node name="TestInteractable" type="Node3D" parent="." unique_id=1063957902]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 35)
+script = ExtResource("4_1q4yl")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TestInteractable" unique_id=564004207]
+mesh = SubResource("BoxMesh_mf5ox")
+
+[node name="Area3D" type="Area3D" parent="TestInteractable" unique_id=126438074]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TestInteractable/Area3D" unique_id=1542643730]
+shape = SubResource("BoxShape3D_opp37")
 
 [connection signal="area_entered" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
