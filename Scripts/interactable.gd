@@ -7,6 +7,9 @@ func interaction(interactable:Node3D) -> void:
 
 	if interactable == null:
 		return
+	
+	EventBus.emit_signal("progress_phase_timer")
+		
 	if interactable.has_node("InteractableComponent"):
 		# do interactable-specific things
 		pass

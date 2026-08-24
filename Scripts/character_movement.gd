@@ -10,7 +10,7 @@ var current_interactable:Node3D
 
 
 func _physics_process(delta: float) -> void:
-	if not PhaseTracker.current_phase == PhaseTracker.phases.INTERACT:
+	if not PhaseTracker.current_phase == PhaseTracker.phases.INTERACT or Dialogic.current_timeline:
 		return
 		
 	var speed = sprint_speed if Input.is_action_pressed("sprint") else move_speed
@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _input(event):
-	if not PhaseTracker.current_phase == PhaseTracker.phases.INTERACT:
+	if not PhaseTracker.current_phase == PhaseTracker.phases.INTERACT or Dialogic.current_timeline:
 		return
 	
 	# camera control with the mouse

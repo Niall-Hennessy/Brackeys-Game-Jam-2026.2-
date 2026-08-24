@@ -11,8 +11,5 @@ func _ready() -> void:
 func start_dialogue(opponent_number) -> void:
 	if opponent_number != number:
 		return
-	
-	if Dialogic.current_timeline != null:
-		return
 		
 	Dialogic.start(dialogues[0]) #Magic number alert
