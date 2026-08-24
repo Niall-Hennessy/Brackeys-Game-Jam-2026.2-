@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Brackey's Game Jam 2026.2"
-run/main_scene="uid://tod1oycd6w8k"
+run/main_scene="uid://c4oibj8m8164p"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -22,7 +22,6 @@ PhaseTracker="*uid://dk55uuspe0qf8"
 PhaseTimer="*uid://cdqvnnpgosdu5"
 Dialogic="*uid://ds2q0uclmolvu"
 MouseManager="*uid://c0eiiu8smk4fu"
-GameStarter="*uid://ddho6m84ufydg"
 CutsceneManager="*uid://taw5vieymkt"
 GameplayerManager="*uid://xx30n7xqxwye"
 InteractPhaseManager="*uid://bi5knxilgoirg"
