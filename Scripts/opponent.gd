@@ -1,7 +1,7 @@
-class_name Opponent extends Interactable
+class_name Opponent extends Node
 
 @export var number:int # 1 to 5, 0 for none
-@export var dialogues = [] #Could be improved but notion is to idividualize different opponents dialogues
+@export var dialogues = ["test_timeline"] #Could be improved but notion is to idividualize different opponents dialogues
 
  # dialogue/decision making logic can live here
 func _ready() -> void:

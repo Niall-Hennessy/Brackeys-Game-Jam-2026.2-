@@ -32,6 +32,8 @@ directories/dtl_directory={
 "test_timeline": "res://Dialogic Resources/Timelines/test_timeline.dtl"
 }
 layout/style_directory={}
+variables={}
+glossary/default_case_sensitive=true
 
 [display]
 

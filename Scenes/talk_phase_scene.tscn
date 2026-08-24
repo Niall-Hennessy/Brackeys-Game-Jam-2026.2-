@@ -60,8 +60,9 @@ transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, 
 
 [node name="TestOpponent" type="Node3D" parent="." unique_id=326860594]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 35)
+
+[node name="OpponentComponent" type="Node3D" parent="TestOpponent" unique_id=792263922]
 script = ExtResource("3_uk64b")
-dialogues = ["test_timeline"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="TestOpponent" unique_id=1155369476]
 mesh = SubResource("CapsuleMesh_vek3k")
@@ -73,6 +74,8 @@ shape = SubResource("CapsuleShape3D_a8j4q")
 
 [node name="TestInteractable" type="Node3D" parent="." unique_id=1063957902]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 35)
+
+[node name="InteractableComponent" type="Node3D" parent="TestInteractable" unique_id=1610960539]
 script = ExtResource("4_1q4yl")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="TestInteractable" unique_id=564004207]
