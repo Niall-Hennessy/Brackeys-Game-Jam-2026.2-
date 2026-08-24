@@ -9,6 +9,9 @@ var current_opponent = 0
 
 
 func _physics_process(delta: float) -> void:
+	if not PhaseTracker.current_phase == PhaseTracker.phases.INTERACT:
+		return
+		
 	velocity.y += gravity * delta
 	var input = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
 	var dir = transform.basis * Vector3(input.x, 0, input.y)
@@ -19,6 +22,9 @@ func _physics_process(delta: float) -> void:
 
 
 func _input(event):
+	if not PhaseTracker.current_phase == PhaseTracker.phases.INTERACT:
+		return
+	
 	# camera control with the mouse
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(-event.relative.x * look_sensitivity)

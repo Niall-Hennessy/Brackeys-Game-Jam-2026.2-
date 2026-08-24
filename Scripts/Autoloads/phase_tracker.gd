@@ -17,11 +17,14 @@ func progress_current_phase():
 		
 	if current_phase == phases.CUTSCENE:
 		EventBus.emit_signal("entered_cutscene_phase")
+		print("entered_cutscene_phase")
 		
 	if current_phase == phases.INTERACT:
 		EventBus.emit_signal("entered_interact_phase")
+		print("entered_interact_phase")
 		
 	if current_phase == phases.GAMEPLAY:
 		EventBus.emit_signal("entered_gameplay_phase")
+		print("entered_gameplay_phase")
 		
 	EventBus.emit_signal("phase_updated")
