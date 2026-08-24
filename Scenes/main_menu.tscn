@@ -28,6 +28,3 @@ offset_right = 702.0
 offset_bottom = 473.0
 text = "Quit Game"
 script = ExtResource("2_48xlc")
-
-[connection signal="pressed" from="StartGameButton" to="StartGameButton" method="_on_pressed"]
-[connection signal="pressed" from="QuitGameButton" to="QuitGameButton" method="_on_pressed"]
