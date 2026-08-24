@@ -6,7 +6,6 @@ var move_speed = 8
 var sprint_speed = 18
 var look_sensitivity = 0.005
 
-var current_opponent = 0
 var current_interactable:Node3D
 
 
@@ -29,20 +28,19 @@ func _input(event):
 		$Camera3D.rotation.x = clampf($Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 	# interact button
 	if event.is_action_pressed("interact") and current_interactable != null:
-		EventBus.object_interacted.emit(current_interactable.get_parent()) # TODO this might be going off twice? test with prints
-
-
-
+		print(current_interactable.name)
+		current_interactable.interaction(current_interactable.get_parent())
+		# passing the parent allows you to run all the possible interactions in one function
 
 
 func _on_detection_area_entered(area: Area3D) -> void:
-	# get opponent number
-	var parent = area.get_parent()
-	if parent == null:
+	# get whatever's in the interaction range
+	var component = area.get_parent()
+	if component == null:
 		pass
 	
-	current_interactable = parent
-		
+	current_interactable = component
+	
 	# display the text once you know what you're looking at
 	get_node("Camera3D/InteractLabel").visible = true
 

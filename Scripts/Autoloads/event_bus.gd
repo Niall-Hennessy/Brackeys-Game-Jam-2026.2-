@@ -6,4 +6,4 @@ signal progress_to_next_phase
 signal phase_timer_updated
 signal phase_updated
 
-signal object_interacted(interactable:Node3D)
+#signal object_interacted(interactable:Node3D)
