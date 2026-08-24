@@ -28,3 +28,6 @@ func progress_current_phase():
 		print("entered_gameplay_phase")
 		
 	EventBus.emit_signal("phase_updated")
+
+func reset_phase():
+	current_phase = first_phase
