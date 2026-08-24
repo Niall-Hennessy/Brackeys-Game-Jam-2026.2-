@@ -2,7 +2,8 @@ extends CharacterBody3D
 
 
 var gravity = -9.8
-var move_speed = 5
+var move_speed = 8
+var sprint_speed = 18
 var look_sensitivity = 0.005
 
 var current_opponent = 0
@@ -10,11 +11,12 @@ var current_interactable:Node3D
 
 
 func _physics_process(delta: float) -> void:
+	var speed = sprint_speed if Input.is_action_pressed("sprint") else move_speed
 	velocity.y += gravity * delta
 	var input = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
-	var dir = transform.basis * Vector3(input.x, 0, input.y)
-	velocity.x = dir.x * move_speed
-	velocity.z = dir.z * move_speed
+	var dir = transform.basis * Vector3(input.x, 0, input.y).normalized()
+	velocity.x = dir.x * speed
+	velocity.z = dir.z * speed
 	
 	move_and_slide()
 
@@ -32,6 +34,9 @@ func _input(event):
 			EventBus.opponent_interacted.emit(opponent_number)
 		elif current_interactable.get_node_or_null("InteractableComponent") != null:
 			EventBus.object_interacted.emit()
+
+
+
 
 
 func _on_detection_area_entered(area: Area3D) -> void:
