@@ -34,6 +34,7 @@ directories/dtl_directory={
 layout/style_directory={}
 variables={}
 glossary/default_case_sensitive=true
+<<<<<<<HEADvariables={}
 
 [display]
 
