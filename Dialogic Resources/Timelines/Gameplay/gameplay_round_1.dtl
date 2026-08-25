@@ -1,4 +1,4 @@
-do MouseManager.switch_mouse_mode()
+do MouseManager.set_mouse_mode_visible()
 This is a difficult game
 Do you really think you can beat it?
 It truly is not for the faint of heart

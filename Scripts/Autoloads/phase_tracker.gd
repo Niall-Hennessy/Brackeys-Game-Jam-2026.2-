@@ -18,7 +18,7 @@ func progress_current_phase():
 		current_phase = first_phase
 		current_round += 1
 		if current_round > last_round_number:
-			get_tree().quit() #TODO replace this with an actual transition to the ending/credits (whichever makes more sense)
+			get_tree().change_scene_to_file("res://Scenes/victory_menu.tscn")
 		
 	if current_phase == phases.CUTSCENE:
 		EventBus.emit_signal("entered_cutscene_phase")
@@ -36,3 +36,13 @@ func progress_current_phase():
 
 func reset_phase():
 	current_phase = first_phase
+
+func rollback_to_gameplay_phase():
+	current_phase = phases.GAMEPLAY
+	EventBus.emit_signal("entered_gameplay_phase")
+	print("entered_gameplay_phase")
+
+func rollback_to_interact_phase():
+	current_phase = phases.INTERACT
+	EventBus.emit_signal("entered_interact_phase")
+	print("entered_interact_phase")

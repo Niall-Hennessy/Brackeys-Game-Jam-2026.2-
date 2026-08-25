@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://jwsv7flj5ywn"]
+
+[ext_resource type="Script" uid="uid://cegy4mbn80tf7" path="res://Scripts/return_to_interact_phase_button.gd" id="1_1qypo"]
+[ext_resource type="Script" uid="uid://c0oakjt0r6824" path="res://Scripts/quit_to_menu_button.gd" id="1_i367p"]
+[ext_resource type="Script" uid="uid://cepdy4q50ws88" path="res://Scripts/return_to_gameplay_phase_button.gd" id="2_s242x"]
+
+[node name="LossMenu" type="Control" unique_id=581501601]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LossText" type="Label" parent="." unique_id=374473330]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 98.0
+offset_right = 702.0
+offset_bottom = 182.0
+text = "You Won!! Hell yeah that'll teach
+em to trust people"
+horizontal_alignment = 1
+
+[node name="ReturnToInteractPhaseButton" type="Button" parent="." unique_id=1927780963]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 293.0
+offset_right = 702.0
+offset_bottom = 377.0
+text = "Return to the last conversation"
+script = ExtResource("1_1qypo")
+
+[node name="ReturnToGameplayPhaseButton" type="Button" parent="." unique_id=787410015]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 389.0
+offset_right = 702.0
+offset_bottom = 473.0
+text = "Return to the last game"
+script = ExtResource("2_s242x")
+
+[node name="ReturnToMenuButton" type="Button" parent="." unique_id=1425188700]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 481.0
+offset_right = 702.0
+offset_bottom = 565.0
+text = "Return to Main Menu"
+script = ExtResource("1_i367p")
+
+[connection signal="button_down" from="ReturnToGameplayPhaseButton" to="ReturnToGameplayPhaseButton" method="_on_button_down"]
+[connection signal="button_down" from="ReturnToMenuButton" to="ReturnToMenuButton" method="_on_button_down"]

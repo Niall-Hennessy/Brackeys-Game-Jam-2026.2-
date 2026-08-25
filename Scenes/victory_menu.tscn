@@ -10,7 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="StartGameButton" type="Label" parent="." unique_id=374473330]
+[node name="VictoryText" type="Label" parent="." unique_id=374473330]
 layout_mode = 0
 offset_left = 440.0
 offset_top = 232.0
