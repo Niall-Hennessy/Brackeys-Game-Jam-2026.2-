@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://qkilosej3irh"]
+
+[ext_resource type="PackedScene" uid="uid://baly77dauyf21" path="res://Assets/3D Assets/bridgesection-col.glb" id="1_wgpaf"]
+
+[node name="bridgesection-col" unique_id=430197900 instance=ExtResource("1_wgpaf")]
