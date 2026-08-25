@@ -19,6 +19,7 @@ func progress_current_phase():
 		current_round += 1
 		if current_round > last_round_number:
 			get_tree().change_scene_to_file("res://Scenes/victory_menu.tscn")
+			MouseManager.set_mouse_mode_visible()
 		
 	if current_phase == phases.CUTSCENE:
 		EventBus.emit_signal("entered_cutscene_phase")

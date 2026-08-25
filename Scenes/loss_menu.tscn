@@ -18,8 +18,7 @@ offset_left = 440.0
 offset_top = 98.0
 offset_right = 702.0
 offset_bottom = 182.0
-text = "You Won!! Hell yeah that'll teach
-em to trust people"
+text = "You suck!! wanna try again"
 horizontal_alignment = 1
 
 [node name="ReturnToInteractPhaseButton" type="Button" parent="." unique_id=1927780963]
