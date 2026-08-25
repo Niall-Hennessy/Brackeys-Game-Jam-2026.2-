@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://tod1oycd6w8k"]
+[gd_scene format=4 uid="uid://tod1oycd6w8k"]
 
 [ext_resource type="PackedScene" uid="uid://dvdvltew5eoh1" path="res://Scenes/basicroom_col.tscn" id="1_lis1l"]
 [ext_resource type="Script" uid="uid://d2sr3rw7t0xn2" path="res://Scripts/character_movement.gd" id="2_uk64b"]
@@ -11,8 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://cxy6jv1fgw6ex" path="res://Assets/2D Assets/Temp Turn Timer One Unit.png" id="5_q2qrx"]
 [ext_resource type="Texture2D" uid="uid://cgsl17vrhgdrq" path="res://Assets/2D Assets/Temp Turn Timer Two Units.png" id="6_873g7"]
 [ext_resource type="Texture2D" uid="uid://f743qks5hmay" path="res://Assets/2D Assets/Temp Turn Timer Three Units.png" id="7_shicq"]
-[ext_resource type="PackedScene" uid="uid://bwevrqv6y067d" path="res://Assets/3D Assets/basicgorge-col.glb" id="12_xuycp"]
-[ext_resource type="PackedScene" uid="uid://baly77dauyf21" path="res://Assets/3D Assets/bridgesection-col.glb" id="13_527rn"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -26,6 +24,78 @@ size = Vector3(1, 1, 2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_mf5ox"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w404e"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sc8ev"]
+_surfaces = [{
+"aabb": AABB(-11.225917, -0.72540474, -3.4709072, 22.451834, 5.8419037, 6.9418144),
+"format": 34359742465,
+"index_count": 144,
+"index_data": PackedByteArray("CAAQABEABwAIABEAEQAGAAcAEQAEAAYAEAAEABEABQAGAAQABwAGAAUABQAEAAMAEAADAAQAAQAFAAMAAQADABAABwAFAAEACAACABAAAAAQAAIAAAABABAAAgAIAAoAAgAKAAAAEgAHAAEAAAASAAEAEgATAAcAEwAIAAcAFAATABIAEgAAABQAFAAVABMAFQAIABMAFgAVABQAFAAAABYAFwAIABUAFgAXABUACAAYAAoAAAAKABgAFgAAAAwADAAXABYACAAXAAkADAAJABcACAAJABgADAAAABkAAAAYABkAGQANAAwACQALABgAGAAPABkAGQAPAA0AGAALAA8ADAANAA4ADAAOAAkADwAOAA0ACQAOAAsADwALAA4A"),
+"lods": [0.004635235, PackedByteArray("AAABAAIAAQADAAIAAgADAAQABQAEAAMAAQAFAAMABQAGAAQABwAFAAEABwAGAAUACAAEAAYACAAGAAcAAgAEAAgAAQAJAAcACQAIAAcAAgAIAAoACAAJAAoAAgAKAAAACQALAAoAAQAAAAwADAAJAAEAAAANAAwADAAOAAkACQAOAAsADAANAA4ACgALAA8ACgAPAAAADwALAA4AAAAPAA0ADwAOAA0A")],
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 26,
+"vertex_data": PackedByteArray("W50zQSC0Ob9YI17AeXzvwCC0OT9YI17AW50zwSC0Ob9YI17AW50zwVy6o0BYI17AW50zwVy6o0BYI15AeXzvwFy6o0BYI17AenzvwFy6o0BYI15AenzvwCC0OT9YI15AW50zwSC0Ob9YI15AeXzvQCC0OT9YI15AW50zQSC0Ob9YI15AW50zQVy6o0BYI15AenzvQCC0OT9YI17AenzvQFy6o0BYI17AeXzvQFy6o0BYI15AW50zQVy6o0BYI17AW50zwSC0OT9YI17AW50zwSC0OT9YI15AeHxvwCC0OT9YI17Ae3xvwCC0OT9YI15AAACANCC0OT9YI17AAACAtCC0OT9YI15Ae3xvQCC0OT9YI17AeHxvQCC0OT9YI15AW50zQSC0OT9YI15AW50zQSC0OT9YI17A")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_idt0p"]
+resource_name = "basicgorge-col_Cube_001"
+_surfaces = [{
+"aabb": AABB(-11.225917, -0.72540474, -3.4709072, 22.451834, 5.8419037, 6.9418144),
+"attribute_data": PackedByteArray("AADAPgAAAD8AACA/VlU1PwAAwD4AAEA/AAAgPwAAQD8AACA/VlU1PwAAID+rqgo/AAAgP6uqCj8AACA/AAAAPwAAwD4AAAAAAAAgP1RVVT4AAMA+AACAPgAAID8AAIA+AAAgP1RVVT4AACA/sKoqPQAAID+wqio9AAAgPwAAAAAAAAA+AAAAPwAAwD4AAIA+AADAPgAAAD8AAAA+AACAPqqqKj8AAAA/qqoqPwAAgD6qqio/AACAPqqqKj8AAAA/AADAPgAAQD8AACA/AACAPwAAwD4AAIA/AAAgPwAAQD+qqio/AAAAP6qqKj8AAIA+VVVVPwAAAD9VVVU/AACAPlVVVT8AAAA/AABgPwAAgD4AAGA/AAAAP1VVVT8AAIA+AAAgPwAAAD+qqio/AACAPqqqKj8AAAA/AAAgPwAAgD4AAMA+AACAPgAAID8AAAA/AADAPgAAAD8AACA/AACAPlVVVT8AAIA+VVVVPwAAAD9VVVU/AAAAP1VVVT8AAIA+AAAgPwAAQD8AACA/AACAPwAAID8AAEA/AAAgP6qqKj8AACA/AAAgPwAAID9WVRU/AAAgPwAAAD8AACA/AACAPgAAID8AAAA/AAAgPwAAgD4AACA/qKoqPgAAID8AAAA+AAAgP7Cqqj0AACA/AAAAAFVVNT8AAIA+VVU1PwAAAD8AAEA/AACAPgAAQD8AAAA/qqpKPwAAgD6rqko/AAAAPw=="),
+"format": 34359742487,
+"index_count": 144,
+"index_data": PackedByteArray("GgAwADEAGgAYADAAMAAZADEAMAAbABkAAAAyAAIAAAABADIAAQADADIAAQAEAAMAAAAzAAEAMwAAADQANAAAADUANQAAAAUABQAAADYANgAGAAUANgAHAAYAKgA3ADgAKgAoADcANwApADgANwArACkACAA5AAoACAAJADkACQALADkACQAMAAsACAA6AAkAOgAIADsAOwAIADwAPAAIAA0ADQAIAD0APQAOAA0APQAPAA4AEAARABIAEAATABEAFAAVABYAFAAXABUAHAA+AD8AHAAdAD4APwA+AEAAPwBAAEEAQQBAAEIAQQBCAEMAQwBCAB8AQwAfAB4AIAAhACIAIAAjACEAJAAlACYAJAAnACUALAAtAC4ALAAvAC0A"),
+"lods": [0.004635235, PackedByteArray("AAABAAIAAQADAAIAAQAEAAMAAQAAAAUAAAAGAAUAAAAHAAYACAAJAAoACQALAAoACQAMAAsACQAIAA0ACAAOAA0ACAAPAA4AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHgAdAB8AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A")],
+"material": SubResource("StandardMaterial3D_w404e"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 68,
+"vertex_data": PackedByteArray("W50zQSC0Ob9YI17AeXzvwCC0OT9YI17AW50zwSC0Ob9YI17AW50zwVy6o0BYI17AeXzvwFy6o0BYI17AenzvQCC0OT9YI17AenzvQFy6o0BYI17AW50zQVy6o0BYI17AW50zwSC0Ob9YI15AeXzvQCC0OT9YI15AW50zQSC0Ob9YI15AW50zQVy6o0BYI15AeXzvQFy6o0BYI15AenzvwCC0OT9YI15AenzvwFy6o0BYI15AW50zwVy6o0BYI15AW50zwSC0Ob9YI17AW50zQSC0Ob9YI15AW50zQSC0Ob9YI17AW50zwSC0Ob9YI15AenzvQCC0OT9YI17AeXzvQFy6o0BYI15AeXzvQCC0OT9YI15AenzvQFy6o0BYI17AW50zwSC0Ob9YI17AW50zwVy6o0BYI15AW50zwSC0Ob9YI15AW50zwVy6o0BYI17AenzvQCC0OT9YI17AeXzvQCC0OT9YI15AeXzvwCC0OT9YI17AenzvwCC0OT9YI15AeXzvwFy6o0BYI17AW50zwVy6o0BYI15AW50zwVy6o0BYI17AenzvwFy6o0BYI15AW50zQVy6o0BYI17AeXzvQFy6o0BYI15AenzvQFy6o0BYI17AW50zQVy6o0BYI15AW50zQSC0Ob9YI15AW50zQVy6o0BYI17AW50zQSC0Ob9YI17AW50zQVy6o0BYI15AenzvwCC0OT9YI15AeXzvwFy6o0BYI17AeXzvwCC0OT9YI17AenzvwFy6o0BYI15AW50zwSC0OT9YI17AW50zwSC0OT9YI15AW50zwSC0OT9YI17AeHxvwCC0OT9YI17AAACANCC0OT9YI17Ae3xvQCC0OT9YI17AW50zQSC0OT9YI17AW50zQSC0OT9YI15AW50zQSC0OT9YI17AW50zQSC0OT9YI15AeHxvQCC0OT9YI15AAACAtCC0OT9YI15Ae3xvwCC0OT9YI15AW50zwSC0OT9YI15AeHxvQCC0OT9YI15Ae3xvQCC0OT9YI17AAACAtCC0OT9YI15AAACANCC0OT9YI17Ae3xvwCC0OT9YI15AeHxvwCC0OT9YI17A//////9//v///////3/+////////f////////////7//////////v///////f/7//////////7//////////v/9//3//f/7//3//f/9//v//f/9//3////9//3////8//3//f////z//f/9//3/+//9//3////8//3//f////z//fwAA////v/9/AAD///+//38AAP///7//fwAA////vwAA/3////+/AAD/f////78AAP9/////vwAA/3////+/AAD/f/9///8AAP9/////vwAA/3//f///AAD/f////7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7////9//3///////3////+/////f/9///////9/////v////3////+/////f////7////9/////v////3////+/AAD/f/9///8AAP9//3//////////f/7///////5//v///////3/+////////f/7///////9///////9//3///////3//f////3//f/9//v//f/9//3/+//9//3//f/7//3//f/9//v//f/9//3////9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_sc8ev")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_kkepk"]
+data = PackedVector3Array(-11.225917, -0.72540474, 3.4709072, -11.225917, 0.72540474, -3.4709072, -11.225917, 0.72540474, 3.4709072, -11.225917, -0.72540474, 3.4709072, -11.225917, -0.72540474, -3.4709072, -11.225917, 0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, -11.225917, 0.72540474, -3.4709072, -11.225917, -0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, -7.4839444, 0.72540474, -3.4709072, -11.225917, 0.72540474, -3.4709072, 7.483945, 0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, 11.225917, 0.72540474, -3.4709072, 3.7419727, 0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, 7.483945, 0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, -3.741972, 0.72540474, -3.4709072, -7.4839444, 0.72540474, -3.4709072, 2.3841858e-07, 0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, 3.7419727, 0.72540474, -3.4709072, -3.741972, 0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, 2.3841858e-07, 0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, 11.225917, 0.72540474, 3.4709072, 11.225917, 0.72540474, -3.4709072, 11.225917, -0.72540474, -3.4709072, 11.225917, -0.72540474, 3.4709072, 11.225917, 0.72540474, 3.4709072, -11.225917, -0.72540474, 3.4709072, 11.225917, 0.72540474, 3.4709072, 11.225917, -0.72540474, 3.4709072, -11.225917, -0.72540474, 3.4709072, 7.4839444, 0.72540474, 3.4709072, 11.225917, 0.72540474, 3.4709072, -7.483945, 0.72540474, 3.4709072, -11.225917, -0.72540474, 3.4709072, -11.225917, 0.72540474, 3.4709072, -3.7419727, 0.72540474, 3.4709072, -11.225917, -0.72540474, 3.4709072, -7.483945, 0.72540474, 3.4709072, -11.225917, -0.72540474, 3.4709072, 3.741972, 0.72540474, 3.4709072, 7.4839444, 0.72540474, 3.4709072, -2.3841858e-07, 0.72540474, 3.4709072, -11.225917, -0.72540474, 3.4709072, -3.7419727, 0.72540474, 3.4709072, 3.741972, 0.72540474, 3.4709072, -11.225917, -0.72540474, 3.4709072, -2.3841858e-07, 0.72540474, 3.4709072, -11.225917, -0.72540474, -3.4709072, 11.225917, -0.72540474, 3.4709072, 11.225917, -0.72540474, -3.4709072, -11.225917, -0.72540474, -3.4709072, -11.225917, -0.72540474, 3.4709072, 11.225917, -0.72540474, 3.4709072, 7.483945, 0.72540474, -3.4709072, 7.4839444, 5.116499, 3.4709072, 7.4839444, 0.72540474, 3.4709072, 7.483945, 0.72540474, -3.4709072, 7.483945, 5.116499, -3.4709072, 7.4839444, 5.116499, 3.4709072, -11.225917, 0.72540474, -3.4709072, -11.225917, 5.116499, 3.4709072, -11.225917, 0.72540474, 3.4709072, -11.225917, 0.72540474, -3.4709072, -11.225917, 5.116499, -3.4709072, -11.225917, 5.116499, 3.4709072, 7.483945, 0.72540474, -3.4709072, 3.741972, 0.72540474, 3.4709072, 3.7419727, 0.72540474, -3.4709072, 7.483945, 0.72540474, -3.4709072, 7.4839444, 0.72540474, 3.4709072, 3.741972, 0.72540474, 3.4709072, 3.7419727, 0.72540474, -3.4709072, -2.3841858e-07, 0.72540474, 3.4709072, 2.3841858e-07, 0.72540474, -3.4709072, 3.7419727, 0.72540474, -3.4709072, 3.741972, 0.72540474, 3.4709072, -2.3841858e-07, 0.72540474, 3.4709072, 2.3841858e-07, 0.72540474, -3.4709072, -3.7419727, 0.72540474, 3.4709072, -3.741972, 0.72540474, -3.4709072, 2.3841858e-07, 0.72540474, -3.4709072, -2.3841858e-07, 0.72540474, 3.4709072, -3.7419727, 0.72540474, 3.4709072, -3.741972, 0.72540474, -3.4709072, -7.483945, 0.72540474, 3.4709072, -7.4839444, 0.72540474, -3.4709072, -3.741972, 0.72540474, -3.4709072, -3.7419727, 0.72540474, 3.4709072, -7.483945, 0.72540474, 3.4709072, -7.4839444, 5.116499, -3.4709072, -11.225917, 5.116499, 3.4709072, -11.225917, 5.116499, -3.4709072, -7.4839444, 5.116499, -3.4709072, -7.483945, 5.116499, 3.4709072, -11.225917, 5.116499, 3.4709072, 11.225917, 5.116499, -3.4709072, 7.4839444, 5.116499, 3.4709072, 7.483945, 5.116499, -3.4709072, 11.225917, 5.116499, -3.4709072, 11.225917, 5.116499, 3.4709072, 7.4839444, 5.116499, 3.4709072, -11.225917, 0.72540474, 3.4709072, -7.483945, 5.116499, 3.4709072, -7.483945, 0.72540474, 3.4709072, -11.225917, 0.72540474, 3.4709072, -11.225917, 5.116499, 3.4709072, -7.483945, 5.116499, 3.4709072, 11.225917, 0.72540474, -3.4709072, 7.483945, 5.116499, -3.4709072, 7.483945, 0.72540474, -3.4709072, 11.225917, 0.72540474, -3.4709072, 11.225917, 5.116499, -3.4709072, 7.483945, 5.116499, -3.4709072, -7.4839444, 0.72540474, -3.4709072, -11.225917, 5.116499, -3.4709072, -11.225917, 0.72540474, -3.4709072, -7.4839444, 0.72540474, -3.4709072, -7.4839444, 5.116499, -3.4709072, -11.225917, 5.116499, -3.4709072, 11.225917, 0.72540474, 3.4709072, 11.225917, 5.116499, -3.4709072, 11.225917, 0.72540474, -3.4709072, 11.225917, 0.72540474, 3.4709072, 11.225917, 5.116499, 3.4709072, 11.225917, 5.116499, -3.4709072, 7.4839444, 0.72540474, 3.4709072, 11.225917, 5.116499, 3.4709072, 11.225917, 0.72540474, 3.4709072, 7.4839444, 0.72540474, 3.4709072, 7.4839444, 5.116499, 3.4709072, 11.225917, 5.116499, 3.4709072, -7.483945, 0.72540474, 3.4709072, -7.4839444, 5.116499, -3.4709072, -7.4839444, 0.72540474, -3.4709072, -7.483945, 0.72540474, 3.4709072, -7.483945, 5.116499, 3.4709072, -7.4839444, 5.116499, -3.4709072)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aacye"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_thetp"]
+_surfaces = [{
+"aabb": AABB(-3.2437763, -0.32097054, -3.2437763, 6.4875526, 0.6419411, 6.4875526),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD/////AAAAAP//AAD//wAA////////AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bwu72"]
+resource_name = "bridgesection-col_Cube_001"
+_surfaces = [{
+"aabb": AABB(-3.2437763, -0.32097054, -3.2437763, 6.4875526, 0.6419411, 6.4875526),
+"attribute_data": PackedByteArray("/1////+f/7//n////1//v/9f/7//n/9//5//v/9f/3//X/9//5//P/+f/3//X/8//1//P/+fAAD/n/8//18AAP8f/3//X/8//1//f/8f/z//n/9//9//P//f/3//n/8/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_aacye"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//VNUAAP//AABU1QAA/////1TVAAAAAAAAVNUAAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAFTV////////VNX/////AABU1f//AAD//1TV//8AAP///78AAP//////v/////////+/AAAAAP///78AAAAAAAD/v///AAD///+///8AAAAA/78AAAAA////v/////8AAP//AAD///////8AAP//AAD/////////////VNVU1VTVVNVU1VTVVNVU1f+//7//v/+//7//v/+//7+qKqoqqiqqKqoqqiqqKqoq/////////////////////wAA/38AAP9/AAD/fwAA/3//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_thetp")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_rtowg"]
+data = PackedVector3Array(-3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, -0.32097054, 3.2437763, -3.2437763, -0.32097054, -3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, -3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, -0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, -3.2437763, -0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, 0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, 0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763)
 
 [node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
 
@@ -227,134 +297,430 @@ mesh = SubResource("BoxMesh_mf5ox")
 [node name="GameplayPhaseObjects" type="Node3D" parent="." unique_id=344445609]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -123.378265, 0, -66.03337)
 
-[node name="GorgeModel" parent="GameplayPhaseObjects" unique_id=1249886154 instance=ExtResource("12_xuycp")]
+[node name="GorgeModel" type="Node3D" parent="GameplayPhaseObjects" unique_id=1249886154]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 10, 0, -10.592804, 0)
+
+[node name="Cube" type="MeshInstance3D" parent="GameplayPhaseObjects/GorgeModel" unique_id=1783728464]
+mesh = SubResource("ArrayMesh_idt0p")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/GorgeModel/Cube" unique_id=720370222]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/GorgeModel/Cube/StaticBody3D" unique_id=720984072]
+shape = SubResource("ConcavePolygonShape3D_kkepk")
 
 [node name="ArtsyBridge" type="Node3D" parent="GameplayPhaseObjects" unique_id=1779402876]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 29.17)
 
-[node name="Section1" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=430197900 instance=ExtResource("13_527rn")]
+[node name="Section1" type="Node3D" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=430197900]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.28, 12.743, 0)
 
-[node name="Section2" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=504833671 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/ArtsyBridge/Section1" unique_id=1940491270]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/ArtsyBridge/Section1/bridge-section" unique_id=768324378]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/ArtsyBridge/Section1/bridge-section/StaticBody3D" unique_id=1891979169]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section2" type="Node3D" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=504833671]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.57, 12.743, 0)
 
-[node name="Section3" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=212122448 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/ArtsyBridge/Section2" unique_id=287929787]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/ArtsyBridge/Section2/bridge-section" unique_id=757789585]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/ArtsyBridge/Section2/bridge-section/StaticBody3D" unique_id=1763033933]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section3" type="Node3D" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=212122448]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.86, 12.743, 0)
 
-[node name="Section4" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=1077059428 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/ArtsyBridge/Section3" unique_id=239972560]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/ArtsyBridge/Section3/bridge-section" unique_id=1081611475]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/ArtsyBridge/Section3/bridge-section/StaticBody3D" unique_id=1217116018]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section4" type="Node3D" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=1077059428]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.86, 12.743, 0)
 
-[node name="Section5" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=978543493 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/ArtsyBridge/Section4" unique_id=1417374007]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/ArtsyBridge/Section4/bridge-section" unique_id=199263523]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/ArtsyBridge/Section4/bridge-section/StaticBody3D" unique_id=538806184]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section5" type="Node3D" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=978543493]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.57, 12.743, 0)
 
-[node name="Section6" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=65437943 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/ArtsyBridge/Section5" unique_id=1317714975]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/ArtsyBridge/Section5/bridge-section" unique_id=1523478752]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/ArtsyBridge/Section5/bridge-section/StaticBody3D" unique_id=1826162136]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section6" type="Node3D" parent="GameplayPhaseObjects/ArtsyBridge" unique_id=65437943]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.28, 12.743, 0)
+
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/ArtsyBridge/Section6" unique_id=1757099598]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/ArtsyBridge/Section6/bridge-section" unique_id=1700536778]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/ArtsyBridge/Section6/bridge-section/StaticBody3D" unique_id=1421288840]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
 
 [node name="JockBridge" type="Node3D" parent="GameplayPhaseObjects" unique_id=527037486]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 17.5)
 
-[node name="Section1" parent="GameplayPhaseObjects/JockBridge" unique_id=526391212 instance=ExtResource("13_527rn")]
+[node name="Section1" type="Node3D" parent="GameplayPhaseObjects/JockBridge" unique_id=526391212]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.28, 12.743, 0)
 
-[node name="Section2" parent="GameplayPhaseObjects/JockBridge" unique_id=1158487828 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/JockBridge/Section1" unique_id=125916275]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/JockBridge/Section1/bridge-section" unique_id=842541853]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/JockBridge/Section1/bridge-section/StaticBody3D" unique_id=302025345]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section2" type="Node3D" parent="GameplayPhaseObjects/JockBridge" unique_id=1158487828]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.57, 12.743, 0)
 
-[node name="Section3" parent="GameplayPhaseObjects/JockBridge" unique_id=1456746145 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/JockBridge/Section2" unique_id=868507921]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/JockBridge/Section2/bridge-section" unique_id=891878655]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/JockBridge/Section2/bridge-section/StaticBody3D" unique_id=2044102579]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section3" type="Node3D" parent="GameplayPhaseObjects/JockBridge" unique_id=1456746145]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.86, 12.743, 0)
 
-[node name="Section4" parent="GameplayPhaseObjects/JockBridge" unique_id=1061945987 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/JockBridge/Section3" unique_id=617939597]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/JockBridge/Section3/bridge-section" unique_id=1785687033]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/JockBridge/Section3/bridge-section/StaticBody3D" unique_id=2088300347]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section4" type="Node3D" parent="GameplayPhaseObjects/JockBridge" unique_id=1061945987]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.86, 12.743, 0)
 
-[node name="Section5" parent="GameplayPhaseObjects/JockBridge" unique_id=1173833076 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/JockBridge/Section4" unique_id=691067941]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/JockBridge/Section4/bridge-section" unique_id=562436485]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/JockBridge/Section4/bridge-section/StaticBody3D" unique_id=630303636]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section5" type="Node3D" parent="GameplayPhaseObjects/JockBridge" unique_id=1173833076]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.57, 12.743, 0)
 
-[node name="Section6" parent="GameplayPhaseObjects/JockBridge" unique_id=1042451107 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/JockBridge/Section5" unique_id=1926159529]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/JockBridge/Section5/bridge-section" unique_id=1174749410]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/JockBridge/Section5/bridge-section/StaticBody3D" unique_id=1424968434]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section6" type="Node3D" parent="GameplayPhaseObjects/JockBridge" unique_id=1042451107]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.28, 12.743, 0)
+
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/JockBridge/Section6" unique_id=1345804898]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/JockBridge/Section6/bridge-section" unique_id=653565174]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/JockBridge/Section6/bridge-section/StaticBody3D" unique_id=475821051]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
 
 [node name="MeanBridge" type="Node3D" parent="GameplayPhaseObjects" unique_id=1931120069]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.83)
 
-[node name="Section1" parent="GameplayPhaseObjects/MeanBridge" unique_id=1714494875 instance=ExtResource("13_527rn")]
+[node name="Section1" type="Node3D" parent="GameplayPhaseObjects/MeanBridge" unique_id=1714494875]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.28, 12.743, 0)
 
-[node name="Section2" parent="GameplayPhaseObjects/MeanBridge" unique_id=823306294 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/MeanBridge/Section1" unique_id=1580188394]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/MeanBridge/Section1/bridge-section" unique_id=1903763951]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/MeanBridge/Section1/bridge-section/StaticBody3D" unique_id=635587318]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section2" type="Node3D" parent="GameplayPhaseObjects/MeanBridge" unique_id=823306294]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.57, 12.743, 0)
 
-[node name="Section3" parent="GameplayPhaseObjects/MeanBridge" unique_id=940972838 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/MeanBridge/Section2" unique_id=567310288]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/MeanBridge/Section2/bridge-section" unique_id=962721837]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/MeanBridge/Section2/bridge-section/StaticBody3D" unique_id=1268359132]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section3" type="Node3D" parent="GameplayPhaseObjects/MeanBridge" unique_id=940972838]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.86, 12.743, 0)
 
-[node name="Section4" parent="GameplayPhaseObjects/MeanBridge" unique_id=872211646 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/MeanBridge/Section3" unique_id=2132726001]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/MeanBridge/Section3/bridge-section" unique_id=1301033755]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/MeanBridge/Section3/bridge-section/StaticBody3D" unique_id=1124334825]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section4" type="Node3D" parent="GameplayPhaseObjects/MeanBridge" unique_id=872211646]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.86, 12.743, 0)
 
-[node name="Section5" parent="GameplayPhaseObjects/MeanBridge" unique_id=1084251888 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/MeanBridge/Section4" unique_id=1227935705]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/MeanBridge/Section4/bridge-section" unique_id=1950650426]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/MeanBridge/Section4/bridge-section/StaticBody3D" unique_id=1149377265]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section5" type="Node3D" parent="GameplayPhaseObjects/MeanBridge" unique_id=1084251888]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.57, 12.743, 0)
 
-[node name="Section6" parent="GameplayPhaseObjects/MeanBridge" unique_id=1601215875 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/MeanBridge/Section5" unique_id=371567268]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/MeanBridge/Section5/bridge-section" unique_id=345646658]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/MeanBridge/Section5/bridge-section/StaticBody3D" unique_id=498471315]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section6" type="Node3D" parent="GameplayPhaseObjects/MeanBridge" unique_id=1601215875]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.28, 12.743, 0)
+
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/MeanBridge/Section6" unique_id=937112084]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/MeanBridge/Section6/bridge-section" unique_id=817886612]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/MeanBridge/Section6/bridge-section/StaticBody3D" unique_id=738396536]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
 
 [node name="NerdBridge" type="Node3D" parent="GameplayPhaseObjects" unique_id=1310970089]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.83)
 
-[node name="Section1" parent="GameplayPhaseObjects/NerdBridge" unique_id=1846987792 instance=ExtResource("13_527rn")]
+[node name="Section1" type="Node3D" parent="GameplayPhaseObjects/NerdBridge" unique_id=1846987792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.28, 12.743, 0)
 
-[node name="Section2" parent="GameplayPhaseObjects/NerdBridge" unique_id=1986035370 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NerdBridge/Section1" unique_id=1556367940]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NerdBridge/Section1/bridge-section" unique_id=1987835541]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NerdBridge/Section1/bridge-section/StaticBody3D" unique_id=1378587291]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section2" type="Node3D" parent="GameplayPhaseObjects/NerdBridge" unique_id=1986035370]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.57, 12.743, 0)
 
-[node name="Section3" parent="GameplayPhaseObjects/NerdBridge" unique_id=1994598147 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NerdBridge/Section2" unique_id=1789669050]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NerdBridge/Section2/bridge-section" unique_id=1774270463]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NerdBridge/Section2/bridge-section/StaticBody3D" unique_id=16497274]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section3" type="Node3D" parent="GameplayPhaseObjects/NerdBridge" unique_id=1994598147]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.86, 12.743, 0)
 
-[node name="Section4" parent="GameplayPhaseObjects/NerdBridge" unique_id=273542298 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NerdBridge/Section3" unique_id=1477172952]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NerdBridge/Section3/bridge-section" unique_id=1304054441]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NerdBridge/Section3/bridge-section/StaticBody3D" unique_id=195340404]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section4" type="Node3D" parent="GameplayPhaseObjects/NerdBridge" unique_id=273542298]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.86, 12.743, 0)
 
-[node name="Section5" parent="GameplayPhaseObjects/NerdBridge" unique_id=700036582 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NerdBridge/Section4" unique_id=1227110033]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NerdBridge/Section4/bridge-section" unique_id=1848148883]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NerdBridge/Section4/bridge-section/StaticBody3D" unique_id=1988449368]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section5" type="Node3D" parent="GameplayPhaseObjects/NerdBridge" unique_id=700036582]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.57, 12.743, 0)
 
-[node name="Section6" parent="GameplayPhaseObjects/NerdBridge" unique_id=202261821 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NerdBridge/Section5" unique_id=1551682760]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NerdBridge/Section5/bridge-section" unique_id=1054735413]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NerdBridge/Section5/bridge-section/StaticBody3D" unique_id=804239198]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section6" type="Node3D" parent="GameplayPhaseObjects/NerdBridge" unique_id=202261821]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.28, 12.743, 0)
+
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NerdBridge/Section6" unique_id=2118366383]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NerdBridge/Section6/bridge-section" unique_id=1174347850]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NerdBridge/Section6/bridge-section/StaticBody3D" unique_id=386791380]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
 
 [node name="NiceBridge" type="Node3D" parent="GameplayPhaseObjects" unique_id=1988001779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -17.5)
 
-[node name="Section1" parent="GameplayPhaseObjects/NiceBridge" unique_id=1550086564 instance=ExtResource("13_527rn")]
+[node name="Section1" type="Node3D" parent="GameplayPhaseObjects/NiceBridge" unique_id=1550086564]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.28, 12.743, 0)
 
-[node name="Section2" parent="GameplayPhaseObjects/NiceBridge" unique_id=1773630455 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NiceBridge/Section1" unique_id=600498304]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NiceBridge/Section1/bridge-section" unique_id=9551923]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NiceBridge/Section1/bridge-section/StaticBody3D" unique_id=1224589138]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section2" type="Node3D" parent="GameplayPhaseObjects/NiceBridge" unique_id=1773630455]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.57, 12.743, 0)
 
-[node name="Section3" parent="GameplayPhaseObjects/NiceBridge" unique_id=227302517 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NiceBridge/Section2" unique_id=900560852]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NiceBridge/Section2/bridge-section" unique_id=2141929180]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NiceBridge/Section2/bridge-section/StaticBody3D" unique_id=1063501275]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section3" type="Node3D" parent="GameplayPhaseObjects/NiceBridge" unique_id=227302517]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.86, 12.743, 0)
 
-[node name="Section4" parent="GameplayPhaseObjects/NiceBridge" unique_id=1776683990 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NiceBridge/Section3" unique_id=524073545]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NiceBridge/Section3/bridge-section" unique_id=578773315]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NiceBridge/Section3/bridge-section/StaticBody3D" unique_id=215913504]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section4" type="Node3D" parent="GameplayPhaseObjects/NiceBridge" unique_id=1776683990]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.86, 12.743, 0)
 
-[node name="Section5" parent="GameplayPhaseObjects/NiceBridge" unique_id=1135426856 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NiceBridge/Section4" unique_id=1674386244]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NiceBridge/Section4/bridge-section" unique_id=1746149420]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NiceBridge/Section4/bridge-section/StaticBody3D" unique_id=1176768362]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section5" type="Node3D" parent="GameplayPhaseObjects/NiceBridge" unique_id=1135426856]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.57, 12.743, 0)
 
-[node name="Section6" parent="GameplayPhaseObjects/NiceBridge" unique_id=306529431 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NiceBridge/Section5" unique_id=62317866]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NiceBridge/Section5/bridge-section" unique_id=2022638615]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NiceBridge/Section5/bridge-section/StaticBody3D" unique_id=1997850637]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section6" type="Node3D" parent="GameplayPhaseObjects/NiceBridge" unique_id=306529431]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.28, 12.743, 0)
+
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/NiceBridge/Section6" unique_id=865695037]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/NiceBridge/Section6/bridge-section" unique_id=810859693]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/NiceBridge/Section6/bridge-section/StaticBody3D" unique_id=732563077]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
 
 [node name="PlayerBridge" type="Node3D" parent="GameplayPhaseObjects" unique_id=431266575]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -29.17)
 
-[node name="Section1" parent="GameplayPhaseObjects/PlayerBridge" unique_id=2127189492 instance=ExtResource("13_527rn")]
+[node name="Section1" type="Node3D" parent="GameplayPhaseObjects/PlayerBridge" unique_id=2127189492]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.28, 12.743, 0)
 
-[node name="Section2" parent="GameplayPhaseObjects/PlayerBridge" unique_id=2120015915 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/PlayerBridge/Section1" unique_id=786206647]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/PlayerBridge/Section1/bridge-section" unique_id=2001698833]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/PlayerBridge/Section1/bridge-section/StaticBody3D" unique_id=1031127230]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section2" type="Node3D" parent="GameplayPhaseObjects/PlayerBridge" unique_id=2120015915]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.57, 12.743, 0)
 
-[node name="Section3" parent="GameplayPhaseObjects/PlayerBridge" unique_id=1340359431 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/PlayerBridge/Section2" unique_id=325080483]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/PlayerBridge/Section2/bridge-section" unique_id=610855975]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/PlayerBridge/Section2/bridge-section/StaticBody3D" unique_id=1761632503]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section3" type="Node3D" parent="GameplayPhaseObjects/PlayerBridge" unique_id=1340359431]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.86, 12.743, 0)
 
-[node name="Section4" parent="GameplayPhaseObjects/PlayerBridge" unique_id=1182742291 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/PlayerBridge/Section3" unique_id=48499345]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/PlayerBridge/Section3/bridge-section" unique_id=1395742377]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/PlayerBridge/Section3/bridge-section/StaticBody3D" unique_id=118673728]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section4" type="Node3D" parent="GameplayPhaseObjects/PlayerBridge" unique_id=1182742291]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.86, 12.743, 0)
 
-[node name="Section5" parent="GameplayPhaseObjects/PlayerBridge" unique_id=2004666946 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/PlayerBridge/Section4" unique_id=287361291]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/PlayerBridge/Section4/bridge-section" unique_id=1026846102]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/PlayerBridge/Section4/bridge-section/StaticBody3D" unique_id=406267185]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section5" type="Node3D" parent="GameplayPhaseObjects/PlayerBridge" unique_id=2004666946]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.57, 12.743, 0)
 
-[node name="Section6" parent="GameplayPhaseObjects/PlayerBridge" unique_id=221414756 instance=ExtResource("13_527rn")]
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/PlayerBridge/Section5" unique_id=947248069]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/PlayerBridge/Section5/bridge-section" unique_id=1420662355]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/PlayerBridge/Section5/bridge-section/StaticBody3D" unique_id=2140910997]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
+
+[node name="Section6" type="Node3D" parent="GameplayPhaseObjects/PlayerBridge" unique_id=221414756]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.28, 12.743, 0)
+
+[node name="bridge-section" type="MeshInstance3D" parent="GameplayPhaseObjects/PlayerBridge/Section6" unique_id=29676057]
+mesh = SubResource("ArrayMesh_bwu72")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GameplayPhaseObjects/PlayerBridge/Section6/bridge-section" unique_id=293237652]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/PlayerBridge/Section6/bridge-section/StaticBody3D" unique_id=332903364]
+shape = SubResource("ConcavePolygonShape3D_rtowg")
 
 [connection signal="area_entered" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
