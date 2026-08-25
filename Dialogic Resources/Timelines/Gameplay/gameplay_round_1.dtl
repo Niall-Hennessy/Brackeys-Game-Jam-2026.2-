@@ -2,43 +2,64 @@ do MouseManager.switch_mouse_mode()
 In this game you must cross a bridge
 The bridge is composed of 6 segments. You must decide if you want to step onto a segment or jump acorss it to land on the next segment.
 It truly is not for the faint of heart
+Now vote for a bridge to remove your segment from
+- Bridge 1
+- Bridge 2
+- Bridge 3
+- Bridge 4
+- Bridge 5
+- Bridge 6
+	set {GameplayRound1Tracker.segment_6_rigged} = true
+I hope you don't regret your choice
+You find yourself in front of a bridge containing 6 segments. Everyone else has crossed.
 label At Start
 Do you wish to step onto or jump over segment 1?
 - Step onto
 - Jump Over
 	jump Segment 2
 label Segment 1
-if {true} == "":
+if {GameplayRound1Tracker.segment_1_rigged}:
+	jump Loss
 You safely step onto segment 1
 Do you wish to step onto or jump over segment 2?
 - Step onto
 - Jump Over
 	jump Segment 3
 label Segment 2
+if {GameplayRound1Tracker.segment_2_rigged}:
+	jump Loss
 You safely step onto segment 2
 Do you wish to step onto or jump over segment 3?
 - Step onto
 - Jump Over
 	jump Segment 4
 label Segment 3
+if {GameplayRound1Tracker.segment_3_rigged}:
+	jump Loss
 You safely step onto segment 3
 Do you wish to step onto or jump over segment 4?
 - Step onto
 - Jump Over
 	jump Segment 5
 label Segment 4
+if {GameplayRound1Tracker.segment_4_rigged}:
+	jump Loss
 You safely step onto segment 4
 Do you wish to step onto or jump over segment 5?
 - Step onto
 - Jump Over
 	jump Segment 6
 label Segment 5
+if {GameplayRound1Tracker.segment_5_rigged}:
+	jump Loss
 You safely step onto segment 5
 Do you wish to step onto or jump over segment 6?
 - Step onto
 - Jump Over
 	jump At End
 label Segment 6
+if {GameplayRound1Tracker.segment_6_rigged}:
+	jump Loss
 You safely step onto segment 6
 There are no more segments
 - Step onto the other side

@@ -30,8 +30,8 @@ func _input(event):
 	# camera control with the mouse
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
 		rotate_y(-event.relative.x * look_sensitivity)
-		$Camera3D.rotate_x(-event.relative.y * look_sensitivity)
-		$Camera3D.rotation.x = clampf($Camera3D.rotation.x, -deg_to_rad(70), deg_to_rad(70))
+		$PlayerCamera.rotate_x(-event.relative.y * look_sensitivity)
+		$PlayerCamera.rotation.x = clampf($PlayerCamera.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 	# interact button
 	if event.is_action_pressed("interact") and current_interactable != null:
 		current_interactable.interaction(current_interactable.get_parent())
@@ -47,9 +47,9 @@ func _on_detection_area_entered(area: Area3D) -> void:
 	current_interactable = component
 	
 	# display the text once you know what you're looking at
-	get_node("Camera3D/InteractLabel").visible = true
+	get_node("PlayerCamera/InteractLabel").visible = true
 
 
 func _on_detection_area_area_exited(area: Area3D) -> void:
-	get_node("Camera3D/InteractLabel").visible = false
+	get_node("PlayerCamera/InteractLabel").visible = false
 	current_interactable = null

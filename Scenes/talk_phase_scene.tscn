@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://d2sr3rw7t0xn2" path="res://Scripts/character_movement.gd" id="2_uk64b"]
 [ext_resource type="Script" uid="uid://nrylfgq17gtx" path="res://Scripts/pause_menu.gd" id="3_873g7"]
 [ext_resource type="Script" uid="uid://ct5d485g3n5j6" path="res://Scripts/opponent.gd" id="3_uk64b"]
+[ext_resource type="Script" uid="uid://cac8c8kour3oi" path="res://Scripts/player_camera.gd" id="3_xuycp"]
 [ext_resource type="Script" uid="uid://b72d6pbjof4n2" path="res://Scripts/interactable.gd" id="4_1q4yl"]
 [ext_resource type="Script" uid="uid://cx83puwplc3r5" path="res://Scripts/resume_button.gd" id="4_shicq"]
 [ext_resource type="Script" uid="uid://bngiph7v5qtnt" path="res://Scripts/player_phase_timer.gd" id="4_tt5lj"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cxy6jv1fgw6ex" path="res://Assets/2D Assets/Temp Turn Timer One Unit.png" id="5_q2qrx"]
 [ext_resource type="Texture2D" uid="uid://cgsl17vrhgdrq" path="res://Assets/2D Assets/Temp Turn Timer Two Units.png" id="6_873g7"]
 [ext_resource type="Texture2D" uid="uid://f743qks5hmay" path="res://Assets/2D Assets/Temp Turn Timer Three Units.png" id="7_shicq"]
+[ext_resource type="Script" uid="uid://dktl5eg4gsye2" path="res://Scripts/gameplay_camera.gd" id="12_kk0m7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -108,18 +110,19 @@ script = ExtResource("2_uk64b")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=878742394]
 shape = SubResource("CapsuleShape3D_vek3k")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=639704612]
+[node name="PlayerCamera" type="Camera3D" parent="CharacterBody3D" unique_id=639704612]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+script = ExtResource("3_xuycp")
 
-[node name="DetectionArea" type="Area3D" parent="CharacterBody3D/Camera3D" unique_id=654951314]
+[node name="DetectionArea" type="Area3D" parent="CharacterBody3D/PlayerCamera" unique_id=654951314]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/Camera3D/DetectionArea" unique_id=1585111403]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/PlayerCamera/DetectionArea" unique_id=1585111403]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
 shape = SubResource("BoxShape3D_vek3k")
 debug_color = Color(0, 0.70980394, 0.8235294, 1)
 
-[node name="InteractLabel" type="Label" parent="CharacterBody3D/Camera3D" unique_id=298906998]
+[node name="InteractLabel" type="Label" parent="CharacterBody3D/PlayerCamera" unique_id=298906998]
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -134,13 +137,13 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Press E to Interact!"
 
-[node name="PauseMenu" type="CanvasLayer" parent="CharacterBody3D/Camera3D" unique_id=1854293014]
+[node name="PauseMenu" type="CanvasLayer" parent="CharacterBody3D/PlayerCamera" unique_id=1854293014]
 process_mode = 3
 layer = 2
 visible = false
 script = ExtResource("3_873g7")
 
-[node name="BoxContainer" type="VBoxContainer" parent="CharacterBody3D/Camera3D/PauseMenu" unique_id=2126195662]
+[node name="BoxContainer" type="VBoxContainer" parent="CharacterBody3D/PlayerCamera/PauseMenu" unique_id=2126195662]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -154,18 +157,18 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="PauseText" type="Label" parent="CharacterBody3D/Camera3D/PauseMenu/BoxContainer" unique_id=501769961]
+[node name="PauseText" type="Label" parent="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer" unique_id=501769961]
 layout_mode = 2
 text = "Game Paused"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ResumeButton" type="Button" parent="CharacterBody3D/Camera3D/PauseMenu/BoxContainer" unique_id=422682565]
+[node name="ResumeButton" type="Button" parent="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer" unique_id=422682565]
 layout_mode = 2
 text = "Resume"
 script = ExtResource("4_shicq")
 
-[node name="QuitButton" type="Button" parent="CharacterBody3D/Camera3D/PauseMenu/BoxContainer" unique_id=936472958]
+[node name="QuitButton" type="Button" parent="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer" unique_id=936472958]
 layout_mode = 2
 text = "Quit to Menu"
 script = ExtResource("5_q0a1l")
@@ -722,7 +725,11 @@ mesh = SubResource("ArrayMesh_bwu72")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/PlayerBridge/Section6/bridge-section/StaticBody3D" unique_id=332903364]
 shape = SubResource("ConcavePolygonShape3D_rtowg")
 
-[connection signal="area_entered" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
-[connection signal="area_exited" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
-[connection signal="button_up" from="CharacterBody3D/Camera3D/PauseMenu/BoxContainer/ResumeButton" to="CharacterBody3D/Camera3D/PauseMenu/BoxContainer/ResumeButton" method="_on_button_up"]
-[connection signal="button_down" from="CharacterBody3D/Camera3D/PauseMenu/BoxContainer/QuitButton" to="CharacterBody3D/Camera3D/PauseMenu/BoxContainer/QuitButton" method="_on_button_down"]
+[node name="GameplayCamera" type="Camera3D" parent="GameplayPhaseObjects" unique_id=1225826617]
+transform = Transform3D(0.9587778, 0.035718873, -0.28190306, 0.066535585, 0.93626916, 0.3449247, 0.27625746, -0.34946272, 0.8952975, -31.461212, 40.75437, 70.2003)
+script = ExtResource("12_kk0m7")
+
+[connection signal="area_entered" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
+[connection signal="area_exited" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
+[connection signal="button_up" from="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer/ResumeButton" to="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer/ResumeButton" method="_on_button_up"]
+[connection signal="button_down" from="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer/QuitButton" to="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer/QuitButton" method="_on_button_down"]
