@@ -1,0 +1,4 @@
+do MouseManager.set_mouse_mode_visible()
+Jock: Jock Round 1 Dialogue 1
+do MouseManager.set_mouse_mode_captured()
+do InteractPhaseManager.interaction_finished()
