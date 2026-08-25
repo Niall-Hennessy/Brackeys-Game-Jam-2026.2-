@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://cxy6jv1fgw6ex" path="res://Assets/2D Assets/Temp Turn Timer One Unit.png" id="5_q2qrx"]
 [ext_resource type="Texture2D" uid="uid://cgsl17vrhgdrq" path="res://Assets/2D Assets/Temp Turn Timer Two Units.png" id="6_873g7"]
 [ext_resource type="Texture2D" uid="uid://f743qks5hmay" path="res://Assets/2D Assets/Temp Turn Timer Three Units.png" id="7_shicq"]
+[ext_resource type="PackedScene" uid="uid://bwevrqv6y067d" path="res://Assets/3D Assets/basicgorge-col.glb" id="12_xuycp"]
+[ext_resource type="PackedScene" uid="uid://baly77dauyf21" path="res://Assets/3D Assets/bridgesection-col.glb" id="13_527rn"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -143,6 +145,15 @@ shape = SubResource("BoxShape3D_opp37")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="TestInteractable" unique_id=564004207]
 mesh = SubResource("BoxMesh_mf5ox")
+
+[node name="GameplayPhaseObjects" type="Node3D" parent="." unique_id=344445609]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -123.378265, 0, -66.03337)
+
+[node name="basicgorge-col" parent="GameplayPhaseObjects" unique_id=1249886154 instance=ExtResource("12_xuycp")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -10.592804, 0)
+
+[node name="bridgesection-col" parent="GameplayPhaseObjects" unique_id=430197900 instance=ExtResource("13_527rn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.742744, 0)
 
 [connection signal="area_entered" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
