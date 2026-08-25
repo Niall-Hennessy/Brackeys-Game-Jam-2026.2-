@@ -1,11 +1,52 @@
 do MouseManager.switch_mouse_mode()
-This is a difficult game
-Do you really think you can beat it?
+In this game you must cross a bridge
+The bridge is composed of 6 segments. You must decide if you want to step onto a segment or jump acorss it to land on the next segment.
 It truly is not for the faint of heart
-Well if you're sureeee
-- I win
-	Congratz
-- I win
-	Why did you pick this one
+label At Start
+Do you wish to step onto or jump over segment 1?
+- Step onto
+- Jump Over
+	jump Segment 2
+label Segment 1
+if {true} == "":
+You safely step onto segment 1
+Do you wish to step onto or jump over segment 2?
+- Step onto
+- Jump Over
+	jump Segment 3
+label Segment 2
+You safely step onto segment 2
+Do you wish to step onto or jump over segment 3?
+- Step onto
+- Jump Over
+	jump Segment 4
+label Segment 3
+You safely step onto segment 3
+Do you wish to step onto or jump over segment 4?
+- Step onto
+- Jump Over
+	jump Segment 5
+label Segment 4
+You safely step onto segment 4
+Do you wish to step onto or jump over segment 5?
+- Step onto
+- Jump Over
+	jump Segment 6
+label Segment 5
+You safely step onto segment 5
+Do you wish to step onto or jump over segment 6?
+- Step onto
+- Jump Over
+	jump At End
+label Segment 6
+You safely step onto segment 6
+There are no more segments
+- Step onto the other side
+label At End
+You've reached the end of the bridge
 do MouseManager.switch_mouse_mode()
 do GameplayerManager.end_gameplay()
+[end_timeline]
+label Loss
+The segment opens up underneath you, and you plummet to your demise.
+Remember, Trust No One!

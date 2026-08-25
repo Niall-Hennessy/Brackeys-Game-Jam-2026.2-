@@ -25,6 +25,7 @@ MouseManager="*uid://c0eiiu8smk4fu"
 CutsceneManager="*uid://taw5vieymkt"
 GameplayerManager="*uid://xx30n7xqxwye"
 InteractPhaseManager="*uid://bi5knxilgoirg"
+GameplayRound1Tracker="*uid://c7cxjlpn8mgpe"
 
 [dialogic]
 
