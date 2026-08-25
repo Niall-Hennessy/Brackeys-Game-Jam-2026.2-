@@ -1,28 +1,57 @@
 extends Node
 
-@export var segment_1_rigged: bool 
-@export var segment_2_rigged: bool 
-@export var segment_3_rigged: bool 
-@export var segment_4_rigged: bool 
-@export var segment_5_rigged: bool 
-@export var segment_6_rigged: bool 
+#Artsy Rival bridge
+var bridge_1_segment_1_rigged: bool 
+var bridge_1_segment_2_rigged: bool 
+var bridge_1_segment_3_rigged: bool 
+var bridge_1_segment_4_rigged: bool 
+var bridge_1_segment_5_rigged: bool 
+var bridge_1_segment_6_rigged: bool 
 
-@export var gameplay_camera: Camera3D
-@export var player_camera: Camera3D
+#Bridge 2
+var bridge_2_segment_1_rigged: bool 
+var bridge_2_segment_2_rigged: bool 
+var bridge_2_segment_3_rigged: bool 
+var bridge_2_segment_4_rigged: bool 
+var bridge_2_segment_5_rigged: bool 
+var bridge_2_segment_6_rigged: bool 
+
+#Bridge 3
+var bridge_3_segment_1_rigged: bool 
+var bridge_3_segment_2_rigged: bool 
+var bridge_3_segment_3_rigged: bool 
+var bridge_3_segment_4_rigged: bool 
+var bridge_3_segment_5_rigged: bool 
+var bridge_3_segment_6_rigged: bool 
+
+#Bridge 4
+var bridge_4_segment_1_rigged: bool 
+var bridge_4_segment_2_rigged: bool 
+var bridge_4_segment_3_rigged: bool 
+var bridge_4_segment_4_rigged: bool 
+var bridge_4_segment_5_rigged: bool 
+var bridge_4_segment_6_rigged: bool 
+
+#Bridge 5
+var bridge_5_segment_1_rigged: bool 
+var bridge_5_segment_2_rigged: bool 
+var bridge_5_segment_3_rigged: bool 
+var bridge_5_segment_4_rigged: bool 
+var bridge_5_segment_5_rigged: bool 
+var bridge_5_segment_6_rigged: bool 
+
+#Player Bridge
+var bridge_6_segment_1_rigged: bool 
+var bridge_6_segment_2_rigged: bool 
+var bridge_6_segment_3_rigged: bool 
+var bridge_6_segment_4_rigged: bool 
+var bridge_6_segment_5_rigged: bool 
+var bridge_6_segment_6_rigged: bool 
 
 func _ready() -> void:
-	segment_1_rigged = true
-	segment_2_rigged = false
-	segment_3_rigged = true
-	segment_4_rigged = false
-	segment_5_rigged = true
-	segment_6_rigged = false
-	
-	EventBus.connect("entered_gameplay_phase", switch_to_gameplay_camera)
-	EventBus.connect("entered_cutscene_phase", switch_to_player_camera)
-	
-func switch_to_gameplay_camera():
-	gameplay_camera.current = true
-
-func switch_to_player_camera():
-	player_camera.current = true
+	bridge_6_segment_1_rigged = true
+	bridge_6_segment_2_rigged = false
+	bridge_6_segment_3_rigged = true
+	bridge_6_segment_4_rigged = false
+	bridge_6_segment_5_rigged = true
+	bridge_6_segment_6_rigged = false
