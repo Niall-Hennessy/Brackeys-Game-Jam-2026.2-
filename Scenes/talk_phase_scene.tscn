@@ -116,14 +116,12 @@ transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, 
 [node name="OpponentNodes" type="Node" parent="." unique_id=276051581]
 
 [node name="OpponentJock" type="Node3D" parent="OpponentNodes" unique_id=326860594]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 35)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 29.518803)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentJock" unique_id=104518393]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 0, 0)
 script = ExtResource("4_1q4yl")
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentJock/InteractableComponent" unique_id=1426721245]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.326524, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentJock/InteractableComponent/Area3D" unique_id=939141195]
 shape = SubResource("CapsuleShape3D_a8j4q")
@@ -137,14 +135,12 @@ dialogues = ["Jock_round_1_dialogue_1"]
 mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="OpponentNerd" type="Node3D" parent="OpponentNodes" unique_id=920471629]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8710947, 2, 32.340046)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8710947, 2, 26.858849)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentNerd" unique_id=526867993]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 0, 0)
 script = ExtResource("4_1q4yl")
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentNerd/InteractableComponent" unique_id=1525997103]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.326524, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentNerd/InteractableComponent/Area3D" unique_id=1849048282]
 shape = SubResource("CapsuleShape3D_a8j4q")
@@ -158,14 +154,12 @@ dialogues = ["Nerd_round_1_dialogue_1"]
 mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="OpponentArtsy" type="Node3D" parent="OpponentNodes" unique_id=381296537]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.778841, 2, 28.730623)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.778841, 2, 23.249426)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentArtsy" unique_id=1973797434]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 0, 0)
 script = ExtResource("4_1q4yl")
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentArtsy/InteractableComponent" unique_id=1661698833]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.326524, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentArtsy/InteractableComponent/Area3D" unique_id=592117619]
 shape = SubResource("CapsuleShape3D_a8j4q")
@@ -179,14 +173,12 @@ dialogues = ["Artsy_round_1_dialogue_1"]
 mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="OpponentMean" type="Node3D" parent="OpponentNodes" unique_id=1191863932]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.403825, 2, 30.40038)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.403825, 2, 24.919182)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentMean" unique_id=834519595]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 0, 0)
 script = ExtResource("4_1q4yl")
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentMean/InteractableComponent" unique_id=1825450800]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.326524, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentMean/InteractableComponent/Area3D" unique_id=1714470496]
 shape = SubResource("CapsuleShape3D_a8j4q")
@@ -200,14 +192,12 @@ dialogues = ["Mean_round_1_dialogue_1"]
 mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="OpponentNice" type="Node3D" parent="OpponentNodes" unique_id=938493559]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.242646, 2, 26.196005)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.242646, 2, 20.714808)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentNice" unique_id=1314879660]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 0, 0)
 script = ExtResource("4_1q4yl")
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentNice/InteractableComponent" unique_id=106812061]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.326524, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentNice/InteractableComponent/Area3D" unique_id=1310721132]
 shape = SubResource("CapsuleShape3D_a8j4q")
@@ -221,7 +211,7 @@ dialogues = ["Nice_round_1_dialogue_1"]
 mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="TestInteractable" type="Node3D" parent="." unique_id=1063957902]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 35)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 29.518803)
 
 [node name="InteractableComponent" type="Node3D" parent="TestInteractable" unique_id=1610960539]
 script = ExtResource("4_1q4yl")
