@@ -49,5 +49,6 @@ offset_bottom = 565.0
 text = "Return to Main Menu"
 script = ExtResource("1_i367p")
 
+[connection signal="button_down" from="ReturnToInteractPhaseButton" to="ReturnToInteractPhaseButton" method="_on_button_down"]
 [connection signal="button_down" from="ReturnToGameplayPhaseButton" to="ReturnToGameplayPhaseButton" method="_on_button_down"]
 [connection signal="button_down" from="ReturnToMenuButton" to="ReturnToMenuButton" method="_on_button_down"]
