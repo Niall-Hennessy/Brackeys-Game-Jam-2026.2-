@@ -1,21 +1,4 @@
 do MouseManager.switch_mouse_mode()
-In this game you must cross a bridge
-The bridge is composed of 6 segments. You must decide if you want to step onto a segment or jump acorss it to land on the next segment.
-It truly is not for the faint of heart
-Now vote for a bridge to remove your segment from
-- Bridge 1
-	set {GameplayRound1Tracker.bridge_1_segment_6_rigged} = true
-- Bridge 2
-	set {GameplayRound1Tracker.bridge_2_segment_6_rigged} = true
-- Bridge 3
-	set {GameplayRound1Tracker.bridge_3_segment_6_rigged} = true
-- Bridge 4
-	set {GameplayRound1Tracker.bridge_4_segment_6_rigged} = true
-- Bridge 5
-	set {GameplayRound1Tracker.bridge_5_segment_6_rigged} = true
-- Bridge 6
-	set {GameplayRound1Tracker.bridge_6_segment_6_rigged} = true
-I hope you don't regret your choice
 You find yourself in front of a bridge containing 6 segments. Everyone else has crossed.
 label At Start
 Do you wish to step onto or jump over segment 1?
