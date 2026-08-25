@@ -1,0 +1,5 @@
+do MouseManager.set_mouse_mode_visible()
+So you survived round 4
+Now onto round 5
+do MouseManager.set_mouse_mode_captured()
+do PhaseTracker.progress_current_phase()

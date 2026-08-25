@@ -1,0 +1,11 @@
+do MouseManager.switch_mouse_mode()
+This is a difficult game
+Do you really think you can beat it?
+It truly is not for the faint of heart
+Well if you're sureeee
+- I win
+	Congratz
+- I win
+	Why did you pick this one
+do MouseManager.switch_mouse_mode()
+do GameplayerManager.end_gameplay()
