@@ -1,0 +1,9 @@
+do MouseManager.switch_mouse_mode()
+This is another difficult game
+So what if you beat the third one
+- I win
+	Why did you pick this one
+- I win
+	Hooray
+do MouseManager.switch_mouse_mode()
+do GameplayerManager.end_gameplay()
