@@ -722,6 +722,10 @@ mesh = SubResource("ArrayMesh_bwu72")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="GameplayPhaseObjects/PlayerBridge/Section6/bridge-section/StaticBody3D" unique_id=332903364]
 shape = SubResource("ConcavePolygonShape3D_rtowg")
 
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=257368777]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024425507, 4.7614956, 0)
+omni_range = 86.803
+
 [connection signal="area_entered" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/Camera3D/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
 [connection signal="button_up" from="CharacterBody3D/Camera3D/PauseMenu/BoxContainer/ResumeButton" to="CharacterBody3D/Camera3D/PauseMenu/BoxContainer/ResumeButton" method="_on_button_up"]
