@@ -32,38 +32,38 @@ func remove_mean():
 func remove_nice():
 	opponent_nice.visible = false
 
-func increase_opponent_trust_level(opponent_name: String):
+func increase_opponent_trust_level(opponent_name: String, trust_increase_target: String):
 	if opponent_name == "Artsy":
-		opponent_artsy.increase_trust_level()
+		opponent_artsy.increase_trust_level(trust_increase_target)
 	elif opponent_name == "Jock":
-		opponent_jock.increase_trust_level()
+		opponent_jock.increase_trust_level(trust_increase_target)
 	elif opponent_name == "Nerd":
-		opponent_nerd.increase_trust_level()
+		opponent_nerd.increase_trust_level(trust_increase_target)
 	elif opponent_name == "Mean":
-		opponent_mean.increase_trust_level()
+		opponent_mean.increase_trust_level(trust_increase_target)
 	elif opponent_name == "Nice":
-		opponent_nice.increase_trust_level()
+		opponent_nice.increase_trust_level(trust_increase_target)
 #
-func decrease_opponent_trust_level(opponent_name: String):
+func decrease_opponent_trust_level(opponent_name: String, trust_decrease_target: String):
 	if opponent_name == "Artsy":
-		opponent_artsy.decrease_trust_level()
+		opponent_artsy.decrease_trust_level(trust_decrease_target)
 	elif opponent_name == "Jock":
-		opponent_jock.decrease_trust_level()
+		opponent_jock.decrease_trust_level(trust_decrease_target)
 	elif opponent_name == "Nerd":
-		opponent_nerd.decrease_trust_level()
+		opponent_nerd.decrease_trust_level(trust_decrease_target)
 	elif opponent_name == "Mean":
-		opponent_mean.decrease_trust_level()
+		opponent_mean.decrease_trust_level(trust_decrease_target)
 	elif opponent_name == "Nice":
-		opponent_nice.decrease_trust_level()
+		opponent_nice.decrease_trust_level(trust_decrease_target)
 		
-func change_opponent_trust_level(opponent_name: String, change_in_trust: int):
+func change_opponent_trust_level(opponent_name: String, trust_change_target: String, change_in_trust: int):
 	if opponent_name == "Artsy":
-		opponent_artsy.change_opponent_trust_level(change_in_trust)
+		opponent_artsy.change_opponent_trust_level(trust_change_target, change_in_trust)
 	elif opponent_name == "Jock":
-		opponent_jock.change_opponent_trust_level(change_in_trust)
+		opponent_jock.change_opponent_trust_level(trust_change_target, change_in_trust)
 	elif opponent_name == "Nerd":
-		opponent_nerd.change_opponent_trust_level(change_in_trust)
+		opponent_nerd.change_opponent_trust_level(trust_change_target, change_in_trust)
 	elif opponent_name == "Mean":
-		opponent_mean.change_opponent_trust_level(change_in_trust)
+		opponent_mean.change_opponent_trust_level(trust_change_target, change_in_trust)
 	elif opponent_name == "Nice":
-		opponent_nice.change_opponent_trust_level(change_in_trust)
+		opponent_nice.change_opponent_trust_level(trust_change_target, change_in_trust)
