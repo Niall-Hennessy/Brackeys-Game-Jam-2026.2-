@@ -12,3 +12,5 @@ signal entered_cutscene_phase
 signal entered_interact_phase
 signal entered_gameplay_phase
 #signal object_interacted(interactable:Node3D)
+
+signal bridge_segment_dropped(bridge_number: int, segment_number: int)

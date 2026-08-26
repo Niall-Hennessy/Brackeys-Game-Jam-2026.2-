@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cgsl17vrhgdrq" path="res://Assets/2D Assets/Temp Turn Timer Two Units.png" id="6_873g7"]
 [ext_resource type="Texture2D" uid="uid://f743qks5hmay" path="res://Assets/2D Assets/Temp Turn Timer Three Units.png" id="7_shicq"]
 [ext_resource type="Script" uid="uid://dktl5eg4gsye2" path="res://Scripts/gameplay_camera.gd" id="12_kk0m7"]
+[ext_resource type="Script" uid="uid://dbh2pgoheyxdh" path="res://Scripts/bridges.gd" id="14_527rn"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -316,6 +317,7 @@ transform = Transform3D(-0.97955775, -0.004478924, 0.20111331, 0.0665356, 0.9362
 script = ExtResource("12_kk0m7")
 
 [node name="Bridges" type="Node3D" parent="GameplayPhaseObjects" unique_id=794539849]
+script = ExtResource("14_527rn")
 
 [node name="ArtsyBridge" type="Node3D" parent="GameplayPhaseObjects/Bridges" unique_id=1779402876]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 29.169998)

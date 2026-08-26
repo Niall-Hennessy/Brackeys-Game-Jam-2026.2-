@@ -7,6 +7,7 @@ Do you wish to step onto or jump over segment 1?
 	jump Segment 2
 label Segment 1
 if {GameplayRound1Tracker.bridge_6_segment_1_rigged}:
+	do GameplayRound1Tracker.drop_bridge_segment(6, 1)
 	jump Loss
 You safely step onto segment 1
 Do you wish to step onto or jump over segment 2?
@@ -15,6 +16,7 @@ Do you wish to step onto or jump over segment 2?
 	jump Segment 3
 label Segment 2
 if {GameplayRound1Tracker.bridge_6_segment_2_rigged}:
+	do GameplayRound1Tracker.drop_bridge_segment(6, 2)
 	jump Loss
 You safely step onto segment 2
 Do you wish to step onto or jump over segment 3?
@@ -23,6 +25,7 @@ Do you wish to step onto or jump over segment 3?
 	jump Segment 4
 label Segment 3
 if {GameplayRound1Tracker.bridge_6_segment_3_rigged}:
+	do GameplayRound1Tracker.drop_bridge_segment(6, 3)
 	jump Loss
 You safely step onto segment 3
 Do you wish to step onto or jump over segment 4?
@@ -31,6 +34,7 @@ Do you wish to step onto or jump over segment 4?
 	jump Segment 5
 label Segment 4
 if {GameplayRound1Tracker.bridge_6_segment_4_rigged}:
+	do GameplayRound1Tracker.drop_bridge_segment(6, 4)
 	jump Loss
 You safely step onto segment 4
 Do you wish to step onto or jump over segment 5?
@@ -39,6 +43,7 @@ Do you wish to step onto or jump over segment 5?
 	jump Segment 6
 label Segment 5
 if {GameplayRound1Tracker.bridge_6_segment_5_rigged}:
+	do GameplayRound1Tracker.drop_bridge_segment(6, 5)
 	jump Loss
 You safely step onto segment 5
 Do you wish to step onto or jump over segment 6?
@@ -47,6 +52,7 @@ Do you wish to step onto or jump over segment 6?
 	jump At End
 label Segment 6
 if {GameplayRound1Tracker.bridge_6_segment_6_rigged}:
+	do GameplayRound1Tracker.drop_bridge_segment(6, 6)
 	jump Loss
 You safely step onto segment 6
 There are no more segments
