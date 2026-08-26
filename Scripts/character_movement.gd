@@ -34,7 +34,7 @@ func _input(event):
 		$PlayerCamera.rotation.x = clampf($PlayerCamera.rotation.x, -deg_to_rad(70), deg_to_rad(70))
 	# interact button
 	if event.is_action_pressed("interact") and current_interactable != null:
-		current_interactable.interaction(current_interactable.get_parent())
+		current_interactable.interaction()
 		# passing the parent allows you to run all the possible interactions in one function
 
 

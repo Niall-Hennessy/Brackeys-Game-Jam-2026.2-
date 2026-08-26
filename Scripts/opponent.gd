@@ -1,25 +1,27 @@
 class_name Opponent extends Node
 
 @export var opponent_name: String
-@export var number:int # 1 to 5, 0 for none
-@export var dialogues = [] #Could be improved but notion is to idividualize different opponents dialogues
 
-var current_round_dialogue: int = 1
+var current_trust: int = 0
+enum trust_levels {distrust = -2, low_distrust = -1, no_trust = 0, low_trust = 1, high_trust = 2}
 
- # dialogue/decision making logic can live here
-func _ready() -> void:
-	if not number:
-		number = 1
+func increase_trust_level():
+	current_trust += 1
+	if current_trust > trust_levels.high_trust:
+		current_trust = trust_levels.high_trust
+
+func decrease_trust_level():
+	current_trust -= 1
+	if current_trust < trust_levels.distrust:
+		current_trust = trust_levels.distrust
+		
+func change_trust_level(change_in_trust: int):
+	change_in_trust += change_in_trust
 	
-	EventBus.connect("entered_cutscene_phase", reset_current_round_dialogue)
+	if current_trust > trust_levels.high_trust:
+		current_trust = trust_levels.high_trust
+	elif current_trust < trust_levels.distrust:
+		current_trust = trust_levels.distrust
 
-func reset_current_round_dialogue():
-	current_round_dialogue = 1
-
-func start_dialogue(opponent_number) -> void:
-	if opponent_number != number:
-		return
-	
-	print(opponent_name + "_round_" + str(PhaseTracker.current_round) + "_dialogue_" + str(current_round_dialogue))
-	Dialogic.start(opponent_name + "_round_" + str(PhaseTracker.current_round) + "_dialogue_" + str(current_round_dialogue)) #Magic number alert
-	current_round_dialogue += 1
+func set_trust_level(new_trust_level: trust_levels):
+	current_trust = new_trust_level

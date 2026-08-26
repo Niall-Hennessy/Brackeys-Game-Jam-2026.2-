@@ -197,6 +197,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 29.518803)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentJock" unique_id=104518393]
 script = ExtResource("4_1q4yl")
+interactable_name = "Jock"
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentJock/InteractableComponent" unique_id=1426721245]
 
@@ -206,7 +207,6 @@ shape = SubResource("CapsuleShape3D_a8j4q")
 [node name="OpponentComponent" type="Node3D" parent="OpponentNodes/OpponentJock" unique_id=792263922]
 script = ExtResource("3_uk64b")
 opponent_name = "Jock"
-dialogues = ["Jock_round_1_dialogue_1"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="OpponentNodes/OpponentJock" unique_id=1155369476]
 mesh = SubResource("CapsuleMesh_vek3k")
@@ -217,6 +217,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8710947, 2, 26.858849)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentNerd" unique_id=526867993]
 script = ExtResource("4_1q4yl")
+interactable_name = "Nerd"
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentNerd/InteractableComponent" unique_id=1525997103]
 
@@ -226,7 +227,6 @@ shape = SubResource("CapsuleShape3D_a8j4q")
 [node name="OpponentComponent" type="Node3D" parent="OpponentNodes/OpponentNerd" unique_id=1609907823]
 script = ExtResource("3_uk64b")
 opponent_name = "Nerd"
-dialogues = ["Nerd_round_1_dialogue_1"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="OpponentNodes/OpponentNerd" unique_id=226188980]
 mesh = SubResource("CapsuleMesh_vek3k")
@@ -237,6 +237,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.778841, 2, 23.249426)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentArtsy" unique_id=1973797434]
 script = ExtResource("4_1q4yl")
+interactable_name = "Artsy"
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentArtsy/InteractableComponent" unique_id=1661698833]
 
@@ -246,7 +247,6 @@ shape = SubResource("CapsuleShape3D_a8j4q")
 [node name="OpponentComponent" type="Node3D" parent="OpponentNodes/OpponentArtsy" unique_id=1402273218]
 script = ExtResource("3_uk64b")
 opponent_name = "Artsy"
-dialogues = ["Artsy_round_1_dialogue_1"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="OpponentNodes/OpponentArtsy" unique_id=897357047]
 mesh = SubResource("CapsuleMesh_vek3k")
@@ -254,19 +254,17 @@ mesh = SubResource("CapsuleMesh_vek3k")
 [node name="OpponentMean" type="Node3D" parent="OpponentNodes" unique_id=1191863932]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.403825, 2, 24.919182)
+script = ExtResource("3_uk64b")
+opponent_name = "Mean"
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentMean" unique_id=834519595]
 script = ExtResource("4_1q4yl")
+interactable_name = "Mean"
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentMean/InteractableComponent" unique_id=1825450800]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentMean/InteractableComponent/Area3D" unique_id=1714470496]
 shape = SubResource("CapsuleShape3D_a8j4q")
-
-[node name="OpponentComponent" type="Node3D" parent="OpponentNodes/OpponentMean" unique_id=1911819108]
-script = ExtResource("3_uk64b")
-opponent_name = "Mean"
-dialogues = ["Mean_round_1_dialogue_1"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="OpponentNodes/OpponentMean" unique_id=1536987860]
 mesh = SubResource("CapsuleMesh_vek3k")
@@ -277,6 +275,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.242646, 2, 20.714808)
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentNice" unique_id=1314879660]
 script = ExtResource("4_1q4yl")
+interactable_name = "Nice"
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentNice/InteractableComponent" unique_id=106812061]
 
@@ -286,7 +285,6 @@ shape = SubResource("CapsuleShape3D_a8j4q")
 [node name="OpponentComponent" type="Node3D" parent="OpponentNodes/OpponentNice" unique_id=774415850]
 script = ExtResource("3_uk64b")
 opponent_name = "Nice"
-dialogues = ["Nice_round_1_dialogue_1"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="OpponentNodes/OpponentNice" unique_id=4182492]
 mesh = SubResource("CapsuleMesh_vek3k")
