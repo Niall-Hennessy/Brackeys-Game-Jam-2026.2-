@@ -14,3 +14,9 @@ signal entered_gameplay_phase
 #signal object_interacted(interactable:Node3D)
 
 signal bridge_segment_dropped(bridge_number: int, segment_number: int)
+
+signal artsy_dies
+signal jock_dies
+signal nerd_dies
+signal mean_dies
+signal nice_dies

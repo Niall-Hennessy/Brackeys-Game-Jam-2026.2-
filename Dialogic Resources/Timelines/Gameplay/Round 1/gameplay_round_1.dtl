@@ -59,6 +59,17 @@ There are no more segments
 - Step onto the other side
 label At End
 You've reached the end of the bridge
+*TEMPORARY* KILL OFF A CHARACTER
+- artsy
+	do OpponentStatusTracker.opponent_died("artsy")
+- jock
+	do OpponentStatusTracker.opponent_died("jock")
+- nerd
+	do OpponentStatusTracker.opponent_died("nerd")
+- mean
+	do OpponentStatusTracker.opponent_died("mean")
+- nice
+	do OpponentStatusTracker.opponent_died("nice")
 do MouseManager.switch_mouse_mode()
 do GameplayerManager.end_gameplay()
 [end_timeline]

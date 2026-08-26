@@ -27,6 +27,7 @@ GameplayerManager="*uid://xx30n7xqxwye"
 InteractPhaseManager="*uid://bi5knxilgoirg"
 GameplayRound1Tracker="*uid://c7cxjlpn8mgpe"
 CameraManager="*uid://dfgvn8d5bapvv"
+OpponentStatusTracker="*uid://b6ha32yd3exru"
 
 [dialogic]
 
