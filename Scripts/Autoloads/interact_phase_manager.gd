@@ -1,11 +1,11 @@
 extends Node
 
 #Opponent variables are set in the OpponentNodes Script in a _ready function
-var opponent_artsy
-var opponent_jock
-var opponent_nerd
-var opponent_mean
-var opponent_nice
+var opponent_artsy: Opponent
+var opponent_jock: Opponent
+var opponent_nerd: Opponent
+var opponent_mean: Opponent
+var opponent_nice: Opponent
 
 func _ready() -> void:
 	EventBus.connect("artsy_dies", remove_artsy)
@@ -33,25 +33,37 @@ func remove_nice():
 	opponent_nice.visible = false
 
 func increase_opponent_trust_level(opponent_name: String):
-	if opponent_name == "artsy":
+	if opponent_name == "Artsy":
 		opponent_artsy.increase_trust_level()
-	#
-	#current_trust += 1
-	#if current_trust > trust_levels.high_trust:
-		#current_trust = trust_levels.high_trust
+	elif opponent_name == "Jock":
+		opponent_jock.increase_trust_level()
+	elif opponent_name == "Nerd":
+		opponent_nerd.increase_trust_level()
+	elif opponent_name == "Mean":
+		opponent_mean.increase_trust_level()
+	elif opponent_name == "Nice":
+		opponent_nice.increase_trust_level()
 #
-#func decrease_opponent_trust_level():
-	#current_trust -= 1
-	#if current_trust < trust_levels.distrust:
-		#current_trust = trust_levels.distrust
-		#
-#func change_opponent_trust_level(change_in_trust: int):
-	#change_in_trust += change_in_trust
-	#
-	#if current_trust > trust_levels.high_trust:
-		#current_trust = trust_levels.high_trust
-	#elif current_trust < trust_levels.distrust:
-		#current_trust = trust_levels.distrust
-#
-#func set_opponent_trust_level(new_trust_level: trust_levels):
-	#current_trust = new_trust_level
+func decrease_opponent_trust_level(opponent_name: String):
+	if opponent_name == "Artsy":
+		opponent_artsy.decrease_trust_level()
+	elif opponent_name == "Jock":
+		opponent_jock.decrease_trust_level()
+	elif opponent_name == "Nerd":
+		opponent_nerd.decrease_trust_level()
+	elif opponent_name == "Mean":
+		opponent_mean.decrease_trust_level()
+	elif opponent_name == "Nice":
+		opponent_nice.decrease_trust_level()
+		
+func change_opponent_trust_level(opponent_name: String, change_in_trust: int):
+	if opponent_name == "Artsy":
+		opponent_artsy.change_opponent_trust_level(change_in_trust)
+	elif opponent_name == "Jock":
+		opponent_jock.change_opponent_trust_level(change_in_trust)
+	elif opponent_name == "Nerd":
+		opponent_nerd.change_opponent_trust_level(change_in_trust)
+	elif opponent_name == "Mean":
+		opponent_mean.change_opponent_trust_level(change_in_trust)
+	elif opponent_name == "Nice":
+		opponent_nice.change_opponent_trust_level(change_in_trust)
