@@ -1,5 +1,4 @@
 extends Camera3D
 
-
-func _ready() -> void:
+func _init() -> void:
 	CameraManager.gameplay_camera = self

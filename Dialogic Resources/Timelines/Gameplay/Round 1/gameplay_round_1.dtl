@@ -76,3 +76,4 @@ do GameplayerManager.end_gameplay()
 label Loss
 The segment opens up underneath you, and you plummet to your demise.
 Remember, Trust No One!
+do GameplayerManager.go_to_loss_screen()
