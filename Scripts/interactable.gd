@@ -1,18 +1,19 @@
 class_name Interactable extends Node
 
-#func _ready() -> void:
-	#EventBus.connect("object_interacted", interaction)
+@export var interactable_name: String
+var current_round_dialogue: int = 1
 
-func interaction(interactable:Node3D) -> void:
-
-	if interactable == null:
-		return
-		
-	if interactable.has_node("OpponentComponent"):
-		var opponent = interactable.get_node("OpponentComponent")
-		opponent.start_dialogue(1) #TODO magic number
-	elif interactable.has_node("InteractableComponent"):
-		# do interactable-specific things
-		InteractPhaseManager.interaction_finished()
+# dialogue/decision making logic can live here
+func _ready() -> void:
+	EventBus.connect("entered_cutscene_phase", reset_current_round_dialogue)
 	
-	return
+func interaction() -> void:
+	print(interactable_name + "_round_" + str(PhaseTracker.current_round) + "_dialogue_" + str(current_round_dialogue))
+	Dialogic.start(interactable_name + "_round_" + str(PhaseTracker.current_round) + "_dialogue_" + str(current_round_dialogue))
+	current_round_dialogue += 1
+
+func reset_current_round_dialogue():
+	current_round_dialogue = 1
+
+func increase_current_round_dialogue():
+	current_round_dialogue += 1

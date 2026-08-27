@@ -60,5 +60,4 @@ func _ready() -> void:
 	bridge_6_segment_6_rigged = false
 
 func drop_bridge_segment(bridge_number:int, segment_number: int):
-	print("Tester")
 	bridges.drop_bridge_segment_by_number(bridge_number, segment_number)
