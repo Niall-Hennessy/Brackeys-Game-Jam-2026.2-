@@ -1,4 +1,3 @@
 do MouseManager.set_mouse_mode_visible()
 Still just a cube!
 do MouseManager.set_mouse_mode_captured()
-do InteractPhaseManager.interaction_finished()

@@ -287,6 +287,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 29.518803)
 [node name="InteractableComponent" type="Node3D" parent="TestInteractable" unique_id=1610960539]
 script = ExtResource("4_1q4yl")
 interactable_name = "Cube"
+max_round_dialogue = 1
+consume_time_slot = false
 
 [node name="Area3D" type="Area3D" parent="TestInteractable/InteractableComponent" unique_id=126438074]
 
