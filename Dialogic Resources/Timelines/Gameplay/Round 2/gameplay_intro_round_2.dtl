@@ -1,0 +1,4 @@
+do MouseManager.set_mouse_mode_visible()
+Gameplay Round 2 Intro
+do MouseManager.set_mouse_mode_captured()
+jump gameplay_round_2/

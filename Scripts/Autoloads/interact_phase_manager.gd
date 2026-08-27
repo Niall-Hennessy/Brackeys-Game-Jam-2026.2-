@@ -14,7 +14,7 @@ func _ready() -> void:
 	EventBus.connect("mean_dies", remove_mean)
 	EventBus.connect("nice_dies", remove_nice)
 
-func interaction_finished():
+func consume_interaction_time():
 	EventBus.emit_signal("progress_phase_timer")
 
 func remove_artsy():

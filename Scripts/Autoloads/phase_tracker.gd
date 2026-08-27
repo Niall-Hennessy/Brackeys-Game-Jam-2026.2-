@@ -35,8 +35,15 @@ func progress_current_phase():
 		
 	EventBus.emit_signal("phase_updated")
 
+func reset_game():
+	reset_phase()
+	reset_round()
+
 func reset_phase():
 	current_phase = first_phase
+
+func reset_round():
+	current_round = 1
 
 func rollback_to_gameplay_phase():
 	current_phase = phases.GAMEPLAY
