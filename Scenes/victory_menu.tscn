@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dmoqwp42tta7y"]
+
+[ext_resource type="Script" uid="uid://c0oakjt0r6824" path="res://Scripts/quit_to_menu_button.gd" id="2_fbmh8"]
+
+[node name="VictoryMenu" type="Control" unique_id=581501601]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VictoryText" type="Label" parent="." unique_id=374473330]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 232.0
+offset_right = 702.0
+offset_bottom = 316.0
+text = "You Won!! Hell yeah that'll teach
+em to trust people"
+horizontal_alignment = 1
+
+[node name="ReturnToMenuButton" type="Button" parent="." unique_id=1425188700]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 389.0
+offset_right = 702.0
+offset_bottom = 473.0
+text = "Return to Main Menu"
+script = ExtResource("2_fbmh8")
+
+[connection signal="button_down" from="ReturnToMenuButton" to="ReturnToMenuButton" method="_on_button_down"]
