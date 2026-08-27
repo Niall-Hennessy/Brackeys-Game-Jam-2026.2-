@@ -185,9 +185,6 @@ texture = ExtResource("5_q2qrx")
 script = ExtResource("4_tt5lj")
 phase_texture_array = Array[Texture]([ExtResource("5_q2qrx"), ExtResource("6_873g7"), ExtResource("7_shicq")])
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1160542673]
-transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 0, 0, 0)
-
 [node name="OpponentNodes" type="Node" parent="." unique_id=276051581]
 script = ExtResource("11_0pelt")
 
@@ -733,8 +730,9 @@ mesh = SubResource("ArrayMesh_bwu72")
 shape = SubResource("ConcavePolygonShape3D_rtowg")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2018592648]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.1092234, 0)
-omni_range = 83.08938
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3664217, 10.889104, 0)
+omni_range = 106.93455
+omni_attenuation = 0.0
 
 [connection signal="area_entered" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
