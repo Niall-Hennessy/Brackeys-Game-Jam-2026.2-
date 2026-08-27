@@ -16,7 +16,9 @@ func interaction() -> void:
 	
 	if current_round_dialogue > max_round_dialogue:
 		current_round_dialogue = max_round_dialogue
-		
+	
+	await Dialogic.timeline_ended
+	
 	if consume_time_slot:
 		InteractPhaseManager.consume_interaction_time()
 
