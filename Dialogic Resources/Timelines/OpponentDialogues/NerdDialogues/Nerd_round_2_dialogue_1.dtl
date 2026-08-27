@@ -1,0 +1,3 @@
+do MouseManager.set_mouse_mode_visible()
+Nerd: Nerd Round 2 Dialogue 1
+do MouseManager.set_mouse_mode_captured()

@@ -10,7 +10,7 @@ func _ready() -> void:
 	artsy_is_alive = true
 	jock_is_alive = true
 	nerd_is_alive = true
-	mean_is_alive = false
+	mean_is_alive = true
 	nice_is_alive = true
 
 func opponent_died(opponent_name: String):

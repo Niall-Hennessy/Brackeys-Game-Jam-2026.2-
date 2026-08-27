@@ -1,0 +1,3 @@
+do MouseManager.set_mouse_mode_visible()
+Nice: Nice Round 4 Dialogue 2
+do MouseManager.set_mouse_mode_captured()
