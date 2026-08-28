@@ -1,3 +1,11 @@
 do MouseManager.set_mouse_mode_visible()
-Nerd: Nerd Round 1 Dialogue 1
+[i]He's staring into space when you approach.[/i]
+Nerd: Oh hi! Sorry, I've just been trying to think through all of this.\
+A seeming lack of exits aside from the one door allegedly hiding the "game", and the room doesn't look like we're supposed to be here for long.\
+I can't tell if we're just indoors or underground, either. Sorry - did you need something?
+- Just wanted to check in, you seem on edge
+	Nerd: Ah! Yes, this whole thing is obviously flooding my entire system with worry, but as long as I can keep my head straight I'll probably be fine. Thanks.
+- Just wanted to get everyone on the same page
+	Nerd: Hmm... a group strategy is probably the wisest move, in fact. If we can't prevent an elimination then forming a unanimous coalition as soon as possible will guarantee our safety, at least for a while.\
+	We'll have to wait and see what the game is, but that's an idea worth considering.
 do MouseManager.set_mouse_mode_captured()

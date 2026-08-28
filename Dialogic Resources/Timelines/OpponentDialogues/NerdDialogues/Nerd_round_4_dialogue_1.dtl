@@ -1,3 +1,9 @@
 do MouseManager.set_mouse_mode_visible()
-Nerd: Nerd Round 4 Dialogue 1
+Nerd: Hello again! We're getting into the home stretch now! How's your competitive spirit?
+- People might be dead
+	[i]His face completely falls at first, then he steels himself.
+	Nerd: I am not going to let you throw me off my game this close to victory.\
+	Whether it is fiction or not, we haven't got a choice to play! Don't make me feel guilt for taking the only path there is!
+- Sharper than yours!
+	Nerd: That's the spirit! May the best player win.
 do MouseManager.set_mouse_mode_captured()
