@@ -4,7 +4,8 @@ do MouseManager.set_mouse_mode_visible()
 [i]Suddenly, a voice rings out over the loudspeaker.[/i]
 Intercom: Hello, everyone! Welcome to the game!\
 I'm sure you have questions, but let's not worry about them for now. \
-In a few minutes the first round of our game will start. One of you will be the loser, and will be eliminated as a result.
+In a few minutes the first round of our game will start. You'll have to work together to select one of you as the loser.\
+That loser will be eliminated as a result.
 ManWithGlasses: Round of what? What game? What the hell is this??
 Intercom: We'll have five rounds all together, with the last person remaining being the winner! When the game begins, the door will open. Good luck!
 [i]Your initial glance around the room reveals the door and intercom are the only features of the walls, no other exits, even windows or vents.[/i]\
