@@ -15,11 +15,6 @@
 [ext_resource type="Script" uid="uid://bo7xr180ubcia" path="res://Scripts/opponent_nodes.gd" id="11_0pelt"]
 [ext_resource type="Script" uid="uid://dktl5eg4gsye2" path="res://Scripts/gameplay_camera.gd" id="12_kk0m7"]
 [ext_resource type="Script" uid="uid://dbh2pgoheyxdh" path="res://Scripts/bridges.gd" id="14_527rn"]
-[ext_resource type="Material" uid="uid://cja2t1l60s1np" path="res://Assets/Materials/jock_material.tres" id="14_dph0b"]
-[ext_resource type="Material" uid="uid://c58usq5gpusx3" path="res://Assets/Materials/nerd_material.tres" id="15_mvrur"]
-[ext_resource type="Material" uid="uid://chlpnxeas2sou" path="res://Assets/Materials/artsy_material.tres" id="16_1wdh8"]
-[ext_resource type="Material" uid="uid://dk0ykg4o03x75" path="res://Assets/Materials/mean_material.tres" id="17_hlh3y"]
-[ext_resource type="Material" uid="uid://bhdhyg8uj7hnt" path="res://Assets/Materials/nice_material.tres" id="18_cnejx"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -29,19 +24,14 @@ size = Vector3(1, 1, 2)
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a8j4q"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_mvrur"]
-material = ExtResource("14_dph0b")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_dph0b"]
-material = ExtResource("15_mvrur")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_1wdh8"]
-material = ExtResource("16_1wdh8")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_hlh3y"]
-material = ExtResource("17_hlh3y")
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_vek3k"]
-material = ExtResource("18_cnejx")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
 
