@@ -1,5 +1,6 @@
 do MouseManager.set_mouse_mode_visible()
-So you survived round 1
-Now onto round 2
+Intercom: And the first round is finished!\
+I hope you have a good handle on how the game works now!\
+Better get strategising! I'll see you again momentarily.
 do MouseManager.set_mouse_mode_captured()
 do PhaseTracker.progress_current_phase()

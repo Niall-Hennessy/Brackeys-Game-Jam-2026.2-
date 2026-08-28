@@ -1,3 +1,5 @@
 do MouseManager.set_mouse_mode_visible()
-Artsy: Artsy Round 3 Dialogue 1
+Artsy: You know, given how high the stakes turned out to be I didn't think you'd make it this far.\
+Especially not based on what the others have said to me.\
+But I wouldn't worrty about it if I were you.
 do MouseManager.set_mouse_mode_captured()
