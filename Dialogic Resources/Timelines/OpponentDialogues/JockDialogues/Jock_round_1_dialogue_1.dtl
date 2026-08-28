@@ -1,3 +1,8 @@
 do MouseManager.set_mouse_mode_visible()
-Jock: Jock Round 1 Dialogue 1
+Jock: [speed=1.5]Heyyyy[speed] big dog, how are you holding up?\
+Listen, I dunno what's going on in here, but we'll all be alright. Just gotta stick together, I reckon. Right?
+- Agreed!
+	Jock: Exactly! Team Trapped-In-A-Mysterious-Room! We'll bring home the win, whatever the hell it is.
+- We'll see what the game is
+	Jock: ...right, whatever man. Only way out is through.
 do MouseManager.set_mouse_mode_captured()
