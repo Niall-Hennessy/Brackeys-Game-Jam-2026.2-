@@ -15,6 +15,7 @@
 [ext_resource type="Script" uid="uid://bo7xr180ubcia" path="res://Scripts/opponent_nodes.gd" id="11_0pelt"]
 [ext_resource type="Script" uid="uid://dktl5eg4gsye2" path="res://Scripts/gameplay_camera.gd" id="12_kk0m7"]
 [ext_resource type="Script" uid="uid://dbh2pgoheyxdh" path="res://Scripts/bridges.gd" id="14_527rn"]
+[ext_resource type="AudioStream" uid="uid://cvqpx2j0f332a" path="res://Assets/Audio/Ambient Vol10 Frozen Orbit Main.wav" id="19_hlh3y"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -226,11 +227,12 @@ mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="OpponentArtsy" type="Node3D" parent="OpponentNodes" unique_id=381296537]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.778841, 2, 23.249426)
+transform = Transform3D(-0.9989684, 0, 0.04540953, 0, 1, 0, -0.04540953, 0, -0.9989684, -12.778841, 0.50016093, 23.249426)
 script = ExtResource("3_uk64b")
 opponent_name = "Artsy"
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentArtsy" unique_id=1973797434]
+transform = Transform3D(1.0000002, 0, 0, 0, 1, 0, 0, 0, 1.0000002, 0, 1.963814, 0)
 script = ExtResource("4_1q4yl")
 interactable_name = "Artsy"
 
@@ -238,9 +240,6 @@ interactable_name = "Artsy"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentArtsy/InteractableComponent/Area3D" unique_id=592117619]
 shape = SubResource("CapsuleShape3D_a8j4q")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="OpponentNodes/OpponentArtsy" unique_id=897357047]
-mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="OpponentMean" type="Node3D" parent="OpponentNodes" unique_id=1191863932]
 unique_name_in_owner = true
@@ -262,11 +261,12 @@ mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="OpponentNice" type="Node3D" parent="OpponentNodes" unique_id=938493559]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.242646, 2, 20.714808)
+transform = Transform3D(-0.9586266, 0, -0.2846663, 0, 1, 0, 0.2846663, 0, -0.9586266, 8.242646, 0.4854535, 20.714808)
 script = ExtResource("3_uk64b")
 opponent_name = "Nice"
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentNice" unique_id=1314879660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8942064, 0)
 script = ExtResource("4_1q4yl")
 interactable_name = "Nice"
 
@@ -274,9 +274,6 @@ interactable_name = "Nice"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentNice/InteractableComponent/Area3D" unique_id=1310721132]
 shape = SubResource("CapsuleShape3D_a8j4q")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="OpponentNodes/OpponentNice" unique_id=4182492]
-mesh = SubResource("CapsuleMesh_vek3k")
 
 [node name="TestInteractable" type="Node3D" parent="." unique_id=1063957902]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 29.518803)
@@ -733,6 +730,10 @@ shape = SubResource("ConcavePolygonShape3D_rtowg")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3664217, 10.889104, 0)
 omni_range = 106.93455
 omni_attenuation = 0.0
+
+[node name="MainBackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=869924690]
+stream = ExtResource("19_hlh3y")
+autoplay = true
 
 [connection signal="area_entered" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
