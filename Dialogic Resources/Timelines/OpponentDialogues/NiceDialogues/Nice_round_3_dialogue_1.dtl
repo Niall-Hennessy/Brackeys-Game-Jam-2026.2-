@@ -1,3 +1,9 @@
 do MouseManager.set_mouse_mode_visible()
-Nice: Nice Round 3 Dialogue 1
+Nice: Hey... am I the only one having such a hard time with this? I feel like I'm equally as worried about having to vote for others as I am about being voted off...
+- We don't have a choice
+	Nice: I know, of course I know that! But am I suddenly supposed to be fine with-\
+	Sorry, I didn't mean to snap at you. This is all just too much for me. I don't know what to do.
+- It's normal to feel that way
+	Nice: It's reassuring to hear that from someone else stuck here. Maybe we couldn't get everyone out, but there must be some way to save at least someone from the vote?\
+	I'm getting sick of thinking about what might have happened to the other two.
 do MouseManager.set_mouse_mode_captured()

@@ -1,3 +1,5 @@
 do MouseManager.set_mouse_mode_visible()
-Nice: Nice Round 4 Dialogue 2
+Nice: They're not giving us a lot to work with, are they? Just that weird announcer between rounds.\
+Nobody to talk to except each other, no real people who seem to be in charge and present...\
+...I don't know how we'd make an appeal to anybody here.
 do MouseManager.set_mouse_mode_captured()
