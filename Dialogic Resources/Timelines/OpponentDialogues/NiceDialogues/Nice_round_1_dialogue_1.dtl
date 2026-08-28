@@ -1,3 +1,11 @@
 do MouseManager.set_mouse_mode_visible()
-Nice: Nice Round 1 Dialogue 1
+Nice: Hey! I hope you're feeling okay, it's all really confusing isn't it?\
+I'm sure we'll get a better handle on what's going on soon, but in the mean time we're all in one piece.\
+What do you think they meant by "work together to select a loser"?
+- We're going to have to gang up on someone
+	Nice: Okay, let's not be too harsh right out the gate! We don't even know what's up ahead yet, we shouldn't be too aggressive.\
+	I think we'll fare better if we're more united, but that's just me.
+- We might need to decide who stays
+	Nice: That's a good way of looking at it, if we can't avoid eliminating someone.\
+	But all of this is putting me on edge, I don't like how they said "eliminate"...
 do MouseManager.set_mouse_mode_captured()
