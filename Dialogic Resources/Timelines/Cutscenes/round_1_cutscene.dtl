@@ -1,6 +1,25 @@
 do MouseManager.set_mouse_mode_visible()
-Hello
-And welcome to the GAME
-You will have to compete with 5 other contestants in order to survive
+[i]You awaken confused in a small, simple room, surrounded by five other people.[/i]\
+[i]All of you gather yourselves and look around - there's an intercom and a door, but little else.[/i]\
+[i]Suddenly, a voice rings out over the loudspeaker.[/i]
+Intercom: Hello, everyone! Welcome to the game!\
+I'm sure you have questions, but let's not worry about them for now. \
+In a few minutes the first round of our game will start. One of you will be the loser, and will be eliminated as a result.
+ManWithGlasses: Round of what? What game? What the hell is this??
+Intercom: We'll have five rounds all together, with the last person remaining being the winner! When the game begins, the door will open. Good luck!
+[i]Your initial glance around the room reveals the door and intercom are the only features of the walls, no other exits, even windows or vents.[/i]\
+[i]Slowly, tentatively, each of you gather and introduce yourselves. A group discussion begins to form.[/i]
+Artsy: So nobody remembers anything about what this is or how they got here?
+Nerd: No! I'm freaking out a bit, I normally have a great memory! I'm so confused-
+Jock: Calm down! Someone's probably playing a prank on us or something, it's chill.
+Mean: Yeah, don't pee your pants, we're gonna be fine.
+Nice: Nobody's even injured, by the looks of it - if they wanted to hurt us they probably wouldn't have brought us here so smoothly.
+Artsy: This one's awfully quiet.
+[i]He nods at you, and everyone glances your way.[/i]
+Nice: We're all a little bit stunned, give them a minute.
+Nerd: A little??
+Mean: Oh my god, will you ever-
+Jock: Okay! Cool it! Everyone walk it off and take a breath before whatever the hell is coming up happens.
+[i]Everyone backs off, and people start to pair off in short conversations. You decide to strike up a chat with some of them in the time you have before the game starts.[/i]
 do MouseManager.set_mouse_mode_captured()
 do PhaseTracker.progress_current_phase()
