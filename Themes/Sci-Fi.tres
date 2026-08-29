@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cnfhjhs5fb12u" path="res://Assets/UI/WenrexaAssetsUI_SciFI/PNG/Button03.png" id="2_qlly1"]
 [ext_resource type="Texture2D" uid="uid://bvrf3h4g2la6m" path="res://Assets/UI/WenrexaAssetsUI_SciFI/PNG/Button02.png" id="3_h7egs"]
 [ext_resource type="Texture2D" uid="uid://bak8bklaj7pl7" path="res://Assets/UI/WenrexaAssetsUI_SciFI/PNG/MainPanel02.png" id="4_h7egs"]
+[ext_resource type="Texture2D" uid="uid://br3e3vycyidse" path="res://Assets/UI/WenrexaAssetsUI_SciFI/PNG/TitlePanel02.png" id="5_h0x8k"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qlly1"]
 texture = ExtResource("1_hvlyu")
@@ -14,6 +15,9 @@ texture = ExtResource("2_qlly1")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_myc6s"]
 texture = ExtResource("3_h7egs")
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ce3w2"]
+texture = ExtResource("5_h0x8k")
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ooywk"]
 texture = ExtResource("4_h7egs")
 
@@ -21,4 +25,7 @@ texture = ExtResource("4_h7egs")
 Button/styles/hover = SubResource("StyleBoxTexture_qlly1")
 Button/styles/normal = SubResource("StyleBoxTexture_1ehe0")
 Button/styles/pressed = SubResource("StyleBoxTexture_myc6s")
+Label/colors/font_color = Color(0.25882354, 0.9843137, 0.8352941, 1)
+Label/colors/font_outline_color = Color(0.14585158, 0.24164265, 0.16956303, 1)
+Label/styles/normal = SubResource("StyleBoxTexture_ce3w2")
 Panel/styles/panel = SubResource("StyleBoxTexture_ooywk")

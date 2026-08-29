@@ -4,6 +4,9 @@
 [ext_resource type="Script" uid="uid://baxyai1hyr38i" path="res://Scripts/start_game_button.gd" id="1_28flt"]
 [ext_resource type="Script" uid="uid://4d1f1ar0n8qu" path="res://Scripts/quit_game_button.gd" id="2_48xlc"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_hvn1e"]
+font_size = 46
+
 [node name="MainMenu" type="Control" unique_id=581501601]
 layout_mode = 3
 anchors_preset = 15
@@ -17,6 +20,17 @@ theme = ExtResource("1_1ehe0")
 layout_mode = 0
 offset_right = 1149.0
 offset_bottom = 649.0
+
+[node name="Label" type="Label" parent="." unique_id=398397946]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 63.0
+offset_right = 744.0
+offset_bottom = 199.0
+text = "Trust Fall"
+label_settings = SubResource("LabelSettings_hvn1e")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="StartGameButton" type="Button" parent="." unique_id=265444731]
 layout_mode = 0
