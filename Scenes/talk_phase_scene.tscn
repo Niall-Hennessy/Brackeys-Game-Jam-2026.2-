@@ -24,6 +24,8 @@
 [ext_resource type="AudioStream" uid="uid://cvqpx2j0f332a" path="res://Assets/Audio/Ambient Vol10 Frozen Orbit Main.wav" id="19_hlh3y"]
 [ext_resource type="PackedScene" uid="uid://ddj5snqy2cdvq" path="res://Assets/3D Assets/brackeys-level.glb" id="22_1f8q2"]
 [ext_resource type="Script" uid="uid://b763vi7b5r1hv" path="res://Scripts/interactable_nodes.gd" id="22_6axmk"]
+[ext_resource type="PackedScene" uid="uid://ruqj0ba8eax" path="res://Assets/3D Assets/keycard.glb" id="23_kpbhl"]
+[ext_resource type="PackedScene" uid="uid://jss3ji5o6wbt" path="res://Assets/3D Assets/health-crate.glb" id="24_4pjyj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -106,6 +108,7 @@ shadow_mesh = SubResource("ArrayMesh_thetp")
 data = PackedVector3Array(-3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, -0.32097054, 3.2437763, -3.2437763, -0.32097054, -3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, -3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, -0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, -3.2437763, -0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, 0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, 0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
+size = Vector3(1.4296207, 1.9409704, 3.0006418)
 
 [sub_resource type="BoxMesh" id="BoxMesh_mf5ox"]
 
@@ -115,7 +118,7 @@ data = PackedVector3Array(-3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.3209
 visible = false
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=145125222]
-transform = Transform3D(-0.99998534, 0, 0.005413418, 0, 1, 0, -0.005413418, 0, -0.99998534, 2.3450942, 1.0344691, -28.497969)
+transform = Transform3D(-0.99998534, 0, 0.005413418, 0, 1, 0, -0.005413418, 0, -0.99998534, -1.6845489, 1.0344691, -9.222351)
 script = ExtResource("2_uk64b")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=878742394]
@@ -199,7 +202,7 @@ script = ExtResource("11_0pelt")
 
 [node name="OpponentJock" type="Node3D" parent="OpponentNodes" unique_id=326860594]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.205, 1.5621948, 6.198)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.439692, 1.5621946, 4.6900115)
 script = ExtResource("3_uk64b")
 opponent_name = "Jock"
 
@@ -218,7 +221,7 @@ transform = Transform3D(-1.6244377, 0, -0.50120145, 0, 1.7000003, 0, 0.50120145,
 
 [node name="OpponentNerd" type="Node3D" parent="OpponentNodes" unique_id=920471629]
 unique_name_in_owner = true
-transform = Transform3D(-0.9823636, 0, 0.18698081, 0, 1, 0, -0.18698081, 0, -0.9823636, -10.583702, 1.529289, 6.211033)
+transform = Transform3D(-0.9823636, 0, 0.18698081, 0, 1, 0, -0.18698081, 0, -0.9823636, -15.36827, 1.529289, 6.770259)
 script = ExtResource("3_uk64b")
 opponent_name = "Nerd"
 
@@ -272,7 +275,7 @@ transform = Transform3D(1.7000002, 0, 0, 0, 1.7, 0, 0, 0, 1.7000002, 0, -1.46669
 
 [node name="OpponentNice" type="Node3D" parent="OpponentNodes" unique_id=938493559]
 unique_name_in_owner = true
-transform = Transform3D(0.36021107, 0, -0.93287075, 0, 1, 0, 0.93287075, 0, 0.36021107, 5.273809, 0.4854535, -2.2126503)
+transform = Transform3D(0.36021107, 0, -0.93287075, 0, 1, 0, 0.93287075, 0, 0.36021107, 2.6015112, 0.4854535, -3.2718172)
 script = ExtResource("3_uk64b")
 opponent_name = "Nice"
 
@@ -733,7 +736,7 @@ script = ExtResource("22_6axmk")
 
 [node name="KeyCardInteractable" type="Node3D" parent="InteractableNodes" unique_id=1063957902]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.152357, 0.59273887, 6.88328)
+transform = Transform3D(-0.022975981, -0.99940073, -0.025890224, -0.011389363, -0.025633717, 0.9996064, -0.99967104, 0.023261905, -0.010793572, 8.1355095, 0.85120636, 8.753989)
 
 [node name="InteractableComponent" type="Node3D" parent="InteractableNodes/KeyCardInteractable" unique_id=1610960539]
 script = ExtResource("4_1q4yl")
@@ -743,10 +746,11 @@ consume_time_slot = false
 [node name="Area3D" type="Area3D" parent="InteractableNodes/KeyCardInteractable/InteractableComponent" unique_id=126438074]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableNodes/KeyCardInteractable/InteractableComponent/Area3D" unique_id=1542643730]
+transform = Transform3D(1.0000044, 8.940697e-08, 4.535541e-07, -2.30968e-06, 1.0000008, -9.915675e-08, -5.4948032e-08, 4.2491592e-09, 1, 0.42726707, 0.21751928, -0.0012967587)
 shape = SubResource("BoxShape3D_opp37")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractableNodes/KeyCardInteractable" unique_id=564004207]
-mesh = SubResource("BoxMesh_mf5ox")
+[node name="keycard" parent="InteractableNodes/KeyCardInteractable" unique_id=186992817 instance=ExtResource("23_kpbhl")]
+transform = Transform3D(0.93752974, 0.3478084, 0.008207356, -0.3477719, 0.9375627, -0.005563592, -0.009629974, 0.002361746, 0.9999508, 0, 0, 0)
 
 [node name="ItemInteractable" type="Node3D" parent="InteractableNodes" unique_id=2112464084]
 unique_name_in_owner = true
@@ -768,7 +772,7 @@ mesh = SubResource("BoxMesh_mf5ox")
 
 [node name="MedicalBoxInteractable" type="Node3D" parent="InteractableNodes" unique_id=763011258]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.337044, 0.59273887, 2.2078161)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.786459, 0.0037829876, 2.2078161)
 
 [node name="InteractableComponent" type="Node3D" parent="InteractableNodes/MedicalBoxInteractable" unique_id=1928787232]
 script = ExtResource("4_1q4yl")
@@ -777,10 +781,11 @@ interactable_name = "MedicalBox"
 [node name="Area3D" type="Area3D" parent="InteractableNodes/MedicalBoxInteractable/InteractableComponent" unique_id=50160605]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableNodes/MedicalBoxInteractable/InteractableComponent/Area3D" unique_id=1383150056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15030289, 0.4354682, -0.108258724)
 shape = SubResource("BoxShape3D_opp37")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractableNodes/MedicalBoxInteractable" unique_id=1817165853]
-mesh = SubResource("BoxMesh_mf5ox")
+[node name="health-crate" parent="InteractableNodes/MedicalBoxInteractable" unique_id=842605157 instance=ExtResource("24_4pjyj")]
+transform = Transform3D(-0.087027006, 0, -1.6977711, 0, 1.7, 0, 1.6977711, 0, -0.087027006, 0, 0, 0)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=2018592648]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3664217, 10.889104, 0)
