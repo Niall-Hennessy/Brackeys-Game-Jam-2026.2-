@@ -14,9 +14,6 @@ var bridge_4_name = "nerd"
 var bridge_5_name = "nice"
 var bridge_6_name = "player"
 
-func _ready() -> void:
-	GameplayRound1Tracker.bridges = self
-
 func drop_bridge_segment_by_name(bridge_name: String, segment_number: int):
 	if bridge_name == bridge_1_name:
 		print(bridge_name)

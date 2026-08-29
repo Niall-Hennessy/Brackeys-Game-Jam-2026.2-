@@ -1,79 +1,91 @@
-do MouseManager.switch_mouse_mode()
-You find yourself in front of a bridge containing 6 segments. Everyone else has crossed.
-label At Start
-Do you wish to step onto or jump over segment 1?
-- Step onto
-- Jump Over
-	jump Segment 2
-label Segment 1
-if {GameplayRound1Tracker.bridge_6_segment_1_rigged}:
-	do GameplayRound1Tracker.drop_bridge_segment(6, 1)
-	jump Loss
-You safely step onto segment 1
-Do you wish to step onto or jump over segment 2?
-- Step onto
-- Jump Over
-	jump Segment 3
-label Segment 2
-if {GameplayRound1Tracker.bridge_6_segment_2_rigged}:
-	do GameplayRound1Tracker.drop_bridge_segment(6, 2)
-	jump Loss
-You safely step onto segment 2
-Do you wish to step onto or jump over segment 3?
-- Step onto
-- Jump Over
-	jump Segment 4
-label Segment 3
-if {GameplayRound1Tracker.bridge_6_segment_3_rigged}:
-	do GameplayRound1Tracker.drop_bridge_segment(6, 3)
-	jump Loss
-You safely step onto segment 3
-Do you wish to step onto or jump over segment 4?
-- Step onto
-- Jump Over
-	jump Segment 5
-label Segment 4
-if {GameplayRound1Tracker.bridge_6_segment_4_rigged}:
-	do GameplayRound1Tracker.drop_bridge_segment(6, 4)
-	jump Loss
-You safely step onto segment 4
-Do you wish to step onto or jump over segment 5?
-- Step onto
-- Jump Over
-	jump Segment 6
-label Segment 5
-if {GameplayRound1Tracker.bridge_6_segment_5_rigged}:
-	do GameplayRound1Tracker.drop_bridge_segment(6, 5)
-	jump Loss
-You safely step onto segment 5
-Do you wish to step onto or jump over segment 6?
-- Step onto
-- Jump Over
-	jump At End
-label Segment 6
-if {GameplayRound1Tracker.bridge_6_segment_6_rigged}:
-	do GameplayRound1Tracker.drop_bridge_segment(6, 6)
-	jump Loss
-You safely step onto segment 6
-There are no more segments
-- Step onto the other side
-label At End
-You've reached the end of the bridge
-*TEMPORARY* KILL OFF A CHARACTER
-- artsy
-	do OpponentStatusTracker.opponent_died("artsy")
-- jock
-	do OpponentStatusTracker.opponent_died("jock")
-- nerd
-	do OpponentStatusTracker.opponent_died("nerd")
-- mean
-	do OpponentStatusTracker.opponent_died("mean")
-- nice
-	do OpponentStatusTracker.opponent_died("nice")
-do MouseManager.switch_mouse_mode()
-do GameplayerManager.end_gameplay()
+do MouseManager.set_mouse_mode_visible()
+Intercom: Voting will now comence
+[i]You look down at the screen. An option has appeared asking for which of your opponents you've decided to vote for.[/i]
+- Alastair
+	do GameplayRound1Tracker.set_player_vote_target("artsy")
+- Frank
+	do GameplayRound1Tracker.set_player_vote_target("jock")
+- Kelly
+	do GameplayRound1Tracker.set_player_vote_target("mean")
+- Damien
+	do GameplayRound1Tracker.set_player_vote_target("nerd")
+- Melanie
+	do GameplayRound1Tracker.set_player_vote_target("nice")
+Intercom: The votes have now been placed. Please choose who you wish to dodge.
+[i]The screen has changed and an option to dodge someone has appeared.[/i]
+- Alastair
+	do GameplayRound1Tracker.set_player_dodge_target("artsy")
+- Frank
+	do GameplayRound1Tracker.set_player_dodge_target("jock")
+- Kelly
+	do GameplayRound1Tracker.set_player_dodge_target("mean")
+- Damien
+	do GameplayRound1Tracker.set_player_dodge_target("nerd")
+- Melanie
+	do GameplayRound1Tracker.set_player_dodge_target("nice")
+- No One
+	do GameplayRound1Tracker.set_player_dodge_target("no one")
+do GameplayRound1Tracker.run_round_votes()
+[i]A moment of silence passes before a voice returns over the intercom[/i]
+Intercom: Thank you for voting. The results will now be displayed on your screen.
+[i]You quickly check the results and see[/i]
+Number of votes per participant\
+Alastair\: {GameplayRound1Tracker.num_artsy_votes}\
+Frank\: {GameplayRound1Tracker.num_jock_votes}\
+Kelly\: {GameplayRound1Tracker.num_mean_votes}\
+Damien\: {GameplayRound1Tracker.num_nerd_votes}\
+Melanie\: {GameplayRound1Tracker.num_nice_votes}\
+You\: {GameplayRound1Tracker.num_player_votes}
+if {GameplayRound1Tracker.num_player_votes} == 3.0:
+	[i]Three! The result hits you all at once[/i]
+[i]The screen flickers and the display changes[/i]
+Number of remaining lives per participant\
+Alastair\: {GameplayRound1Tracker.artsy_lives}\
+Frank\: {GameplayRound1Tracker.jock_lives}\
+Kelly\: {GameplayRound1Tracker.mean_lives}\
+Damien\: {GameplayRound1Tracker.nerd_lives}\
+Melanie\: {GameplayRound1Tracker.nice_lives}\
+You\: {GameplayRound1Tracker.player_lives}
+if {GameplayRound1Tracker.num_player_votes} == 3.0:
+	jump loss
+if {} != true:
+	Intercom: As player Melanie did not choose a vote target in time, she has been deducted two hearts.
+label Second Round
+Intercom: As no player has been eliminated yet, we will continue to the next round of voting.
+[i]You look back down at your screen once again. The voting options have returned[/i]
+- Alastair
+	do GameplayRound1Tracker.set_player_vote_target("artsy")
+- Frank
+	do GameplayRound1Tracker.set_player_vote_target("jock")
+- Kelly
+	do GameplayRound1Tracker.set_player_vote_target("mean")
+- Damien
+	do GameplayRound1Tracker.set_player_vote_target("nerd")
+- Melanie
+	do GameplayRound1Tracker.set_player_vote_target("nice")
+Intercom: The votes have now been placed. Please choose who you wish to dodge.
+[i]The screen has changed and an option to dodge someone has appeared.[/i]
+- Alastair
+	do GameplayRound1Tracker.set_player_dodge_target("artsy")
+- Frank
+	do GameplayRound1Tracker.set_player_dodge_target("jock")
+- Kelly
+	do GameplayRound1Tracker.set_player_dodge_target("mean")
+- Damien
+	do GameplayRound1Tracker.set_player_dodge_target("nerd")
+- Melanie
+	do GameplayRound1Tracker.set_player_dodge_target("nice")
+- No One
+	do GameplayRound1Tracker.set_player_dodge_target("no one")
+do GameplayRound1Tracker.calculate_second_round_vote_targets()
+do GameplayRound1Tracker.run_round_votes()
 [end_timeline]
-label Loss
-The segment opens up underneath you, and you plummet to your demise.
-Remember, Trust No One!
+
+
+do MouseManager.set_mouse_mode_captured()
+do GameplayerManager.end_gameplay()
+label loss
+[i]Everyone looks over at you in pity. You can feel the floor beneath you start to move. Who was it, who voted for you[/i]
+[i]*KKKRRRRRRNK*[/i]
+[i]The grating of the platform beneath you is the last thing you hear as you plunge into the abyss below[/i]
 do GameplayerManager.go_to_loss_screen()

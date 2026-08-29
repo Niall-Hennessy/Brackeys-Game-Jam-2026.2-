@@ -1,6 +1,5 @@
-Artsy takes his position at the front of his bridge, he barely hesitates as he looks out across the gorge, then with a sudden leap he jumps over the first segement of the bridge.
-Artsy: Naturally I rigged my own Segment
-He continues on stepping onto the second, third, fourth and even fifth segment before pausing
-Artsy: Of course I can't fully put my trust in all of you.
-Saying that he leaps over the sixth segment of the bridge
-jump gameplay_jock_round_1/
+[i]You look over at Alastair. He seems to be staring at you.[/i]
+- Ask Alastair to team up
+	[i]For a moment his face flashes a hint of confusion.[/i]
+	Artsy: Of course, we can team up.
+jump gameplay_round_1/
