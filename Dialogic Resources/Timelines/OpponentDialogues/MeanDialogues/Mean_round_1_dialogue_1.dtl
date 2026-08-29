@@ -1,3 +1,11 @@
 do MouseManager.set_mouse_mode_visible()
-Mean: Mean Round 1 Dialogue 1
+Mean: Oh yeah, you were the weirdo who barely said anything earlier. Cat still got your tongue?
+- Nope
+- ...
+Mean: Whatever. Who cares. Unless you know anything about how we're gonna play this game, you can leave me alone now.
+- We should try to avoid eliminating anyone
+	Mean: [i]hah![/i] Fat chance we pull that off. We don't even know how we got in here and you wanna break the rules, minute one?\
+	...we'll see when we get in there.
+- Bite me
+	Mean: Ass.
 do MouseManager.set_mouse_mode_captured()

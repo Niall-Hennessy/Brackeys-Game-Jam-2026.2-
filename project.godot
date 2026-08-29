@@ -33,11 +33,12 @@ OpponentStatusTracker="*uid://b6ha32yd3exru"
 
 directories/dch_directory={
 "Artsy": "res://Dialogic Resources/Characters/Artsy.dch",
+"Intercom": "res://Dialogic Resources/Characters/Intercom.dch",
 "Jock": "res://Dialogic Resources/Characters/Jock.dch",
+"ManWithGlasses": "res://Dialogic Resources/Characters/ManWithGlasses.dch",
 "Mean": "res://Dialogic Resources/Characters/Mean.dch",
 "Nerd": "res://Dialogic Resources/Characters/Nerd.dch",
-"Nice": "res://Dialogic Resources/Characters/Nice.dch",
-"test_character": "res://Dialogic Resources/Characters/test_character.dch"
+"Nice": "res://Dialogic Resources/Characters/Nice.dch"
 }
 directories/dtl_directory={
 "Artsy_round_1_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/ArtsyDialogues/Artsy_round_1_dialogue_1.dtl",
@@ -52,9 +53,6 @@ directories/dtl_directory={
 "Artsy_round_4_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/ArtsyDialogues/Artsy_round_4_dialogue_1.dtl",
 "Artsy_round_4_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/ArtsyDialogues/Artsy_round_4_dialogue_2.dtl",
 "Artsy_round_4_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/ArtsyDialogues/Artsy_round_4_dialogue_3.dtl",
-"Artsy_round_5_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/ArtsyDialogues/Artsy_round_5_dialogue_1.dtl",
-"Artsy_round_5_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/ArtsyDialogues/Artsy_round_5_dialogue_2.dtl",
-"Artsy_round_5_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/ArtsyDialogues/Artsy_round_5_dialogue_3.dtl",
 "Cube_round_1_dialogue_1": "res://Dialogic Resources/Timelines/InteractableDialogues/Round 1/Cube_round_1_dialogue_1.dtl",
 "Cube_round_1_dialogue_2": "res://Dialogic Resources/Timelines/InteractableDialogues/Round 1/Cube_round_1_dialogue_2.dtl",
 "Cube_round_1_dialogue_3": "res://Dialogic Resources/Timelines/InteractableDialogues/Round 1/Cube_round_1_dialogue_3.dtl",
@@ -74,9 +72,6 @@ directories/dtl_directory={
 "Jock_round_4_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/JockDialogues/Jock_round_4_dialogue_1.dtl",
 "Jock_round_4_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/JockDialogues/Jock_round_4_dialogue_2.dtl",
 "Jock_round_4_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/JockDialogues/Jock_round_4_dialogue_3.dtl",
-"Jock_round_5_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/JockDialogues/Jock_round_5_dialogue_1.dtl",
-"Jock_round_5_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/JockDialogues/Jock_round_5_dialogue_2.dtl",
-"Jock_round_5_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/JockDialogues/Jock_round_5_dialogue_3.dtl",
 "Mean_round_1_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_1_dialogue_1.dtl",
 "Mean_round_1_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_1_dialogue_2.dtl",
 "Mean_round_1_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_1_dialogue_3.dtl",
@@ -89,9 +84,6 @@ directories/dtl_directory={
 "Mean_round_4_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_4_dialogue_1.dtl",
 "Mean_round_4_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_4_dialogue_2.dtl",
 "Mean_round_4_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_4_dialogue_3.dtl",
-"Mean_round_5_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_5_dialogue_1.dtl",
-"Mean_round_5_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_5_dialogue_2.dtl",
-"Mean_round_5_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_5_dialogue_3.dtl",
 "Nerd_round_1_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_1_dialogue_1.dtl",
 "Nerd_round_1_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_1_dialogue_2.dtl",
 "Nerd_round_1_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_1_dialogue_3.dtl",
@@ -104,9 +96,6 @@ directories/dtl_directory={
 "Nerd_round_4_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_4_dialogue_1.dtl",
 "Nerd_round_4_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_4_dialogue_2.dtl",
 "Nerd_round_4_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_4_dialogue_3.dtl",
-"Nerd_round_5_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_5_dialogue_1.dtl",
-"Nerd_round_5_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_5_dialogue_2.dtl",
-"Nerd_round_5_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/NerdDialogues/Nerd_round_5_dialogue_3.dtl",
 "Nice_round_1_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_1_dialogue_1.dtl",
 "Nice_round_1_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_1_dialogue_2.dtl",
 "Nice_round_1_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_1_dialogue_3.dtl",
@@ -119,9 +108,6 @@ directories/dtl_directory={
 "Nice_round_4_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_4_dialogue_1.dtl",
 "Nice_round_4_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_4_dialogue_2.dtl",
 "Nice_round_4_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_4_dialogue_3.dtl",
-"Nice_round_5_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_5_dialogue_1.dtl",
-"Nice_round_5_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_5_dialogue_2.dtl",
-"Nice_round_5_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/NiceDialogues/Nice_round_5_dialogue_3.dtl",
 "gameplay_artsy_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_artsy_round_1.dtl",
 "gameplay_intro_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_intro_round_1.dtl",
 "gameplay_intro_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_intro_round_2.dtl",
@@ -144,12 +130,46 @@ directories/dtl_directory={
 "round_3_cutscene": "res://Dialogic Resources/Timelines/Cutscenes/round_3_cutscene.dtl",
 "round_4_cutscene": "res://Dialogic Resources/Timelines/Cutscenes/round_4_cutscene.dtl",
 "round_5_cutscene": "res://Dialogic Resources/Timelines/Cutscenes/round_5_cutscene.dtl",
-"round_two_cutscene": "res://Dialogic Resources/Timelines/round_two_cutscene.dtl",
-"test_timeline": "res://Dialogic Resources/Timelines/test_timeline.dtl"
+"round_two_cutscene": "res://Dialogic Resources/Timelines/round_two_cutscene.dtl"
 }
 layout/style_directory={}
 variables={}
 glossary/default_case_sensitive=true
+layout/style_list=[]
+layout/default_style="Default"
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+text/autopauses={}
+audio/channel_defaults={
+"": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+}
+}
+text/split_at_new_lines=true
 
 [display]
 

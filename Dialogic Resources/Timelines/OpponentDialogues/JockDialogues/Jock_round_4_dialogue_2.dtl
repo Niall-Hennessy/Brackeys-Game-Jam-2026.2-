@@ -1,3 +1,7 @@
 do MouseManager.set_mouse_mode_visible()
-Jock: Jock Round 4 Dialogue 2
+Jock: I still think we can get everybody out of here. Am I just being a dumbass?
+- Of course not
+	Jock: Okay, great. I'll take your word I guess bro. Three people getting out is better than only one.
+- ...
+	Jock: Alright, damn, got it. Guess it's every man for himself in here.
 do MouseManager.set_mouse_mode_captured()

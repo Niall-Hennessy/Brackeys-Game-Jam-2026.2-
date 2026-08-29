@@ -1,3 +1,8 @@
 do MouseManager.set_mouse_mode_visible()
-Mean: Mean Round 4 Dialogue 1
+Mean: Leave me alone. We have a plan, I don't wanna hear a word from you at this point.
+- Does the plan involve you winning?
+	Mean: The plan involves you losing next round, asshole. Quit it with the mind games.
+- Good luck, you'll need it
+	Mean: ...shut up,\
+	You're just trying to get in my head.
 do MouseManager.set_mouse_mode_captured()

@@ -1,3 +1,8 @@
 do MouseManager.set_mouse_mode_visible()
-Jock: Jock Round 3 Dialogue 1
+Jock: Okay, this HAS to be a prank, right? This is all way too weird to be real.
+- I think it's real
+	Jock: Listen, I hope you're wrong, but I'll play it safe. I'm gonna keep staying out of people's way, maybe a few of us can get out of here if we all do that.
+- I think it's a prank
+	Jock: Yeah! Who cares who we vote for, everyone's gonna walk outta here at the end anyway. Winner probably gets a cool t-shirt or something.\
+	Good luck next round!
 do MouseManager.set_mouse_mode_captured()

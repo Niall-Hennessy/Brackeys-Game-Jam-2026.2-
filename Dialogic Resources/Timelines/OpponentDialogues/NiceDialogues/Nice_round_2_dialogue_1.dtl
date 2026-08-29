@@ -1,3 +1,13 @@
 do MouseManager.set_mouse_mode_visible()
-Nice: Nice Round 2 Dialogue 1
+Nice: Hi, how are you doing? I, uh..\
+I think some part of me was expecting elimination to mean...\
+...like, in a tournament or something? Hopefully that's still what happened and we're not all...\
+...in active danger, I guess?
+- We'll do better if we stick together
+	Nice: I agree! But the thought of voting for anybody makes me sick to my stomach now that that question is in my head.\
+	Although at the same time I obviously don't want to be voted off...\
+	We'll figure something out. Get everyone on the same wavelength, maybe. Thanks for listening.
+- We need to lock in
+	Nice: ...sounds so easy when you say it like that, but I think my head is still spinning too fast...\
+	I'll get it together in time for the next round.
 do MouseManager.set_mouse_mode_captured()
