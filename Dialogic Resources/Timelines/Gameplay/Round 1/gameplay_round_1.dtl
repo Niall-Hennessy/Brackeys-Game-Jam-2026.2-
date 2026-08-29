@@ -52,6 +52,8 @@ if {GameplayRound1Tracker.convinced_nice_to_participate} != true:
 	Intercom: As player Melanie did not choose a vote target in time, she has been deducted two hearts.
 if {GameplayRound1Tracker.nice_lives} == 0.0:
 	jump nice_loss
+if {GameplayRound1Tracker.jock_lives} == 0.0:
+	jump jock_loss
 label Second Round
 Intercom: As no player has been eliminated yet, we will continue to the next round of voting.
 [i]You look back down at your screen once again. The voting options have returned[/i]
@@ -105,22 +107,50 @@ if {GameplayRound1Tracker.mean_lives} <= 0.0:
 label player_loss
 [i]Everyone looks over at you in pity. You can feel the floor beneath you start to move. Who was it, who voted for you[/i]
 [i]*KKKRRRRRRNK*[/i]
+audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
 [i]The grating of the platform beneath you is the last thing you hear as you plunge into the abyss below[/i]
 do GameplayerManager.go_to_loss_screen()
 [end_timeline]
 label nice_loss
+Nice: NOOO! I didn't know, I didn't know not to vote. I panicked. Please, please don't do this.
+[i]You look on, adrenline pumping as Melania fearfuly pleads.[/i]
+[i]You hear a creaking of metal before a sudden...[/i]
+audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+[i]*KKKRRRRRRNK*[/i]
+[i]The floor opens beneath her as she drops into the abyss below[/i]
 do OpponentStatusTracker.opponent_died("nice")
 do GameplayerManager.end_gameplay()
 [end_timeline]
 label jock_loss
+Jock: What!! Nooo! Who the hell voted for me!
+Jock: Whatever it doesn't matter, it's all just a prank. Right?
+[i]The floor beneath him starts to groan. He looks down at his feet in growing anxiety[/i]
+This is just a prank right? You.. you.. you guys wouldn't actually....
+audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+[i]*KKKRRRRRRNK*[/i]
+[i]Before he can finish his sentence the floor beneath him violet snaps open, sending him into the abyss below[/i]
 do OpponentStatusTracker.opponent_died("jock")
 do GameplayerManager.end_gameplay()
 [end_timeline]
 label mean_loss
+Mean: WHO DID IT! WHO VOTED ME!
+Mean: WHEN I FIND OUT WHO DID THIS I'M GOING TO...
+[i]Because of her yelling Kelly could not hear the floor beneath her start to creak. Suddenly she slammed her foot down and right at that moment.[/i]
+audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+[i]*KKKRRRRRRNK*[/i]
+Mean: AAAAHHHHHHHHHHH!!!
+[i]Her screams eventually fade as she is swallowed by the abyss below[/i]
 do OpponentStatusTracker.opponent_died("mean")
 do GameplayerManager.end_gameplay()
 [end_timeline]
 label nerd_loss
+Nerd: No no no no! Why me?
+[i]He looks around the room, seemingly trying to identify his executioners.[/i]
+[/i]Suddenly he sees Melanie, he freezes for a moment as the ground beneath him starts to groan.[/i]
+Nerd: YOU!! IT WAS YOOUU....
+audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+[i]*KKKRRRRRRNK*[/i]
+[i]Damien is violently cut off as the ground beneath swings open. His face contorted in anger is eventually lost to the abyss below.[/i]
 do OpponentStatusTracker.opponent_died("nerd")
 do GameplayerManager.end_gameplay()
 [end_timeline]
