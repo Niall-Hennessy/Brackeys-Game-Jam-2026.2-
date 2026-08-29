@@ -55,6 +55,8 @@ func set_player_dodge_target(dodge_target: String):
 	player_dodge_target = dodge_target
 
 func run_round_votes():
+	calculate_vote_targets()
+	
 	if artsy_vote_target == "player": #Artsy only votes player
 		if player_dodge_target != "artsy":
 			player_lives -= 1
@@ -111,8 +113,23 @@ func reset_num_votes():
 	num_nerd_votes = 0
 	num_player_votes = 0
 
-func calculate_second_round_vote_targets():
+func calculate_vote_targets():
 	reset_num_votes()
 	
 	artsy_vote_target = "player"
-	jock_vote_target = "player"
+	nerd_vote_target = "jock"
+	
+	if convinced_jock_to_not_vote_you:
+		jock_vote_target = "mean"
+	else:
+		jock_vote_target = "player"
+		
+	if convinced_mean_to_not_vote_you:
+		mean_vote_target = "jock"
+	else:
+		mean_vote_target = "player"
+
+	if convinced_nice_to_participate or nice_lives == 1:
+		nice_vote_target = "nerd"
+	else:
+		nice_vote_target = "no one"
