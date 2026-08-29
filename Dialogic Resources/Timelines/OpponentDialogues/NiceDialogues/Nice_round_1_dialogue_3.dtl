@@ -1,3 +1,3 @@
 do MouseManager.set_mouse_mode_visible()
-Nice: I'm fine, seriously!
+Nice: I think i'm fine now. I'm sure it's just a prank.
 do MouseManager.set_mouse_mode_captured()

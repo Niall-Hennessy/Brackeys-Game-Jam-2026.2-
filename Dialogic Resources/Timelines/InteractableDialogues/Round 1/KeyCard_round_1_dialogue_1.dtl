@@ -1,0 +1,5 @@
+do MouseManager.set_mouse_mode_visible()
+[i]It's some sort of key card. You wonder what it could be used for.[/i]
+do GameplayRound1Tracker.set_has_medical_card(true)
+
+do MouseManager.set_mouse_mode_captured()

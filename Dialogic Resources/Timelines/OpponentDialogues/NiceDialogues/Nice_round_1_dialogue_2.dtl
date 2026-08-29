@@ -1,3 +1,20 @@
 do MouseManager.set_mouse_mode_visible()
-Nice: We should check in with the others too, see how they're doing.
+Nice: Is there any chance that this is just like a prank? You know like one of those shows?
+- It could be, it can't be real
+	Nice: Right!
+	Nice: After all if this were real, I probably wouldn't recognize anyone here
+	- You recognize someone?
+		Nice: Ahh yeah, I let that slip did I?
+		Nice: It's that guy Damien over there. I don't think he's recognized me though.
+		Nice: I used to know him quite well but... We didn't leave off on good terms.
+		- I think he might recognize you
+			Nice: Really? You think.. hmmm
+			[i]She brings he hand to her chin a look of contemplation etched on her face[/i]
+			do GameplayRound1Tracker.set_convinced_nice_to_participate(true)
+		- I don't think he recognizes you
+			Nice: Yeah, I'm sure he doesn't. This is all probably just some prank.
+- I don't think so
+	[i]She stares at the ground with a worried look on her face[/i]
+	Nice: We can't eliminate someone...
+	There's got to be another way.
 do MouseManager.set_mouse_mode_captured()

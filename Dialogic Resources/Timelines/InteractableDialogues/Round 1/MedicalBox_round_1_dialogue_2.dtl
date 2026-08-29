@@ -1,0 +1,13 @@
+do MouseManager.set_mouse_mode_visible()
+[i]Based on the medical symbol you wager that this box could help someone.[/i]
+if GameplayRound1Tracker.has_medical_card == true:
+	[i]You could try opening it using that card you found earlier.[/i]
+	- Open it
+		do GameplayRound1Tracker.set_has_medical_card(false)
+		[i]The medical box pops open revealing a variety of medical supplies inside[/i]
+		Jock: Sweeett! Nice one dude.
+		[i]Frank comes over and roots around until he finds some pain killers. He pops open the lid and flings a few into his mouth.[/i]
+		Jock: Finally, my headaches going away.
+	- Don't open it
+
+do MouseManager.set_mouse_mode_captured()
