@@ -52,6 +52,8 @@ if {GameplayRound1Tracker.convinced_nice_to_participate} != true:
 	Intercom: As player Melanie did not choose a vote target in time, she has been deducted two hearts.
 if {GameplayRound1Tracker.nice_lives} == 0.0:
 	jump nice_loss
+if {GameplayRound1Tracker.jock_lives} == 0.0:
+	jump jock_loss
 label Second Round
 Intercom: As no player has been eliminated yet, we will continue to the next round of voting.
 [i]You look back down at your screen once again. The voting options have returned[/i]

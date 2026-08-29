@@ -1,0 +1,5 @@
+do MouseManager.set_mouse_mode_visible()
+[i]It's some sort of item. You wonder who's it could be.[/i]
+do GameplayRound1Tracker.set_found_means_item(true)
+
+do MouseManager.set_mouse_mode_captured()

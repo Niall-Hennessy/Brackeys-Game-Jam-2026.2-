@@ -754,7 +754,8 @@ transform = Transform3D(-0.746075, 0, 0.66586196, 0, 1, 0, -0.66586196, 0, -0.74
 
 [node name="InteractableComponent" type="Node3D" parent="InteractableNodes/ItemInteractable" unique_id=2115024152]
 script = ExtResource("4_1q4yl")
-interactable_name = "Item"
+interactable_name = "MeanItem"
+max_round_dialogue = 1
 consume_time_slot = false
 
 [node name="Area3D" type="Area3D" parent="InteractableNodes/ItemInteractable/InteractableComponent" unique_id=2075751102]

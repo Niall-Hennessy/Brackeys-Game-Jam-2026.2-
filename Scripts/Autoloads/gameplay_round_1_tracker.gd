@@ -4,6 +4,7 @@ var has_medical_card: bool = false
 var found_means_item: bool = false
 
 var medical_card_ref: Node3D
+var means_item_ref: Node3D
 
 var found_out_nice_recognizes_someone: bool = false
 
@@ -48,6 +49,8 @@ func set_convinced_nice_to_participate(to_set_as: bool):
 	
 func set_found_means_item(to_set_as: bool):
 	found_means_item = to_set_as
+	if means_item_ref:
+		means_item_ref.queue_free()
 
 func set_convinced_jock_to_not_vote_you(to_set_as: bool):
 	convinced_jock_to_not_vote_you = to_set_as

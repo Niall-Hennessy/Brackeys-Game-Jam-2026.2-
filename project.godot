@@ -73,6 +73,7 @@ directories/dtl_directory={
 "Jock_round_4_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/JockDialogues/Jock_round_4_dialogue_2.dtl",
 "Jock_round_4_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/JockDialogues/Jock_round_4_dialogue_3.dtl",
 "KeyCard_round_1_dialogue_1": "res://Dialogic Resources/Timelines/InteractableDialogues/Round 1/KeyCard_round_1_dialogue_1.dtl",
+"MeanItem_round_1_dialogue_1": "res://Dialogic Resources/Timelines/InteractableDialogues/Round 1/MeanItem_round_1_dialogue_1.dtl",
 "Mean_round_1_dialogue_1": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_1_dialogue_1.dtl",
 "Mean_round_1_dialogue_2": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_1_dialogue_2.dtl",
 "Mean_round_1_dialogue_3": "res://Dialogic Resources/Timelines/OpponentDialogues/MeanDialogues/Mean_round_1_dialogue_3.dtl",
