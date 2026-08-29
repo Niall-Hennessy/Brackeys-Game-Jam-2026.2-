@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dmoqwp42tta7y"]
 
+[ext_resource type="Theme" uid="uid://cjbyv6wp65sck" path="res://Assets/Themes/default_theme.tres" id="1_fbmh8"]
 [ext_resource type="Script" uid="uid://c0oakjt0r6824" path="res://Scripts/quit_to_menu_button.gd" id="2_fbmh8"]
 
 [node name="VictoryMenu" type="Control" unique_id=581501601]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_fbmh8")
 
 [node name="VictoryText" type="Label" parent="." unique_id=374473330]
 layout_mode = 0

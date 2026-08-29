@@ -32,6 +32,16 @@ size = Vector3(1, 1, 2)
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a8j4q"]
 height = 3.1748047
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_mvrur"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_dph0b"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1wdh8"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hlh3y"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vek3k"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_mf5ox"]
@@ -295,7 +305,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 29.518803)
 [node name="InteractableComponent" type="Node3D" parent="TestInteractable" unique_id=1610960539]
 script = ExtResource("4_1q4yl")
 interactable_name = "Cube"
-max_round_dialogue = 1
 
 [node name="Area3D" type="Area3D" parent="TestInteractable/InteractableComponent" unique_id=126438074]
 

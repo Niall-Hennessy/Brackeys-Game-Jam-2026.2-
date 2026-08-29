@@ -1,3 +1,11 @@
 do MouseManager.set_mouse_mode_visible()
-Mean: Mean Round 3 Dialogue 1
+Mean: What do you want now?\
+I'm not dealing with any of this anymore. Alastair seems to have a cool head about all this, and he annoys me the least.
+- You can't trust him
+	Mean: As if I can trust you?
+	- Yeah
+	- No, I'm just saying you can't trust him
+	Mean: Whatever. Go bother someone else.
+- Have you been voting for the most annoying person every time?
+	Mean: No, or else you'd have been dead in round one. Scram.
 do MouseManager.set_mouse_mode_captured()

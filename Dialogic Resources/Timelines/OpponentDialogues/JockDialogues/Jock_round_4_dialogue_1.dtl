@@ -1,3 +1,4 @@
 do MouseManager.set_mouse_mode_visible()
-Jock: Jock Round 4 Dialogue 1
+Jock: Alright bro, time to lock in. It's just the three of us now.\
+I gotta warn you though, Alastair doesn't seem as jazzed on teamwork as I am. Did you piss him off somehow?
 do MouseManager.set_mouse_mode_captured()

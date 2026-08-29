@@ -1,3 +1,11 @@
 do MouseManager.set_mouse_mode_visible()
-Nice: Nice Round 4 Dialogue 1
+Nice: Okay I'm sorry but this is officially beyond me, I don't know how I'll keep this up.\
+Like...why did I make it this far, of all people? How is that fair?
+- You're being far too hard on yourself
+	Nice: It's not that I think I deserve to...uh, follow in their footsteps, it's just...\
+	...neither did they, y'know? But we're still here, they...
+- None of this is fair
+	Nice: It isn't! At all! God, if I make it out of here I'm going to [i]find[/i] whoever put us in here and-
+	[i]she freezes for just a moment and tenses so hard that you worry she might pull a muscle somehow.[/i]
+	Nice: That was too far, I'm sorry. I still haven't given up on getting more than one person out of here.
 do MouseManager.set_mouse_mode_captured()
