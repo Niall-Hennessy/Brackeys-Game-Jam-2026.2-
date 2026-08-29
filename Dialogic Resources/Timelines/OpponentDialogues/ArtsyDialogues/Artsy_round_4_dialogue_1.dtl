@@ -1,3 +1,4 @@
 do MouseManager.set_mouse_mode_visible()
-Artsy: Artsy Round 4 Dialogue 1
+Artsy: Okay, this is officially getting old.\
+Do you really think you deserve to make it to the end?
 do MouseManager.set_mouse_mode_captured()

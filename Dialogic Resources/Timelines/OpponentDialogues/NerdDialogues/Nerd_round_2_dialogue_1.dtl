@@ -1,3 +1,10 @@
 do MouseManager.set_mouse_mode_visible()
-Nerd: Nerd Round 2 Dialogue 1
+Nerd: Okay, I have a better sense for the game theory at play here now.\
+PLACEHOLDER REPLACE WHEN WE MAKE THE GAME\
+The question is, how to proceed?
+- Don't let anyone manipulate you
+	Nerd: Hm, that is a good point. My nerves are wearing off, and I trust my own intuition best.\
+	Of course, that would include you, too. So I will see you in the game.
+- We need to stick together
+	Nerd: An alliance would certainly make sense. If you look out for me I will do the same for you.
 do MouseManager.set_mouse_mode_captured()

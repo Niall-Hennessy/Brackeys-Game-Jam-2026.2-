@@ -1,5 +1,6 @@
 do MouseManager.set_mouse_mode_visible()
-So you survived round 3
-Now onto round 4
+And the third round is finished!\
+Half of the room has been cleared out! I bet it's getting pretty empty in there!\
+But whose luck will carry them to the exit door? Or have we thrown luck aside already?
 do MouseManager.set_mouse_mode_captured()
 do PhaseTracker.progress_current_phase()

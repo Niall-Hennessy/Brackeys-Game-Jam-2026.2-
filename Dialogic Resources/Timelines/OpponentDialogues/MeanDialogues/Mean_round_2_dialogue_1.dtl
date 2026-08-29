@@ -1,3 +1,10 @@
 do MouseManager.set_mouse_mode_visible()
-Mean: Mean Round 2 Dialogue 1
+Mean: Well, now we officially know who sucks the worst at that game.\
+...what? Don't give me that look, it's not like they can hear me.
+- We should be cooperating more
+	Mean: I don't think cooperating would have stopped that last- oh you mean you and me?\
+	Hm. I'll think about it.
+- Don't be a dick
+	Mean: Turns out we're in a life-or-death situation and not just some stupid YouTube video, I will be as much of a dick as I want.\
+	Now go away.
 do MouseManager.set_mouse_mode_captured()

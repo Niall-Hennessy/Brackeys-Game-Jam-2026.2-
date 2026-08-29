@@ -1,3 +1,12 @@
 do MouseManager.set_mouse_mode_visible()
-Jock: Jock Round 2 Dialogue 1
+Jock: Okay that didn't go how I was expecting it to go...\
+We don't even have everybody back yet, we're down one player.\
+...\
+...you don't think, when the voice said "eliminated" before...\
+...aw, hell...
+- We should try to prevent people dying
+	[i]This seems to snap him out of the daze a little bit.[/i]
+	Jock: Yeah! Yeah, duh, you're right! Just cause whoever they are says we can't all get out doesn't mean it's true! Next round I'll just stay out of the way, if everyone does that we'll all get outta here.
+- We should look out for ourselves
+	Jock: Yeah that... probably makes sense. I dunno man, this is all too much for me.
 do MouseManager.set_mouse_mode_captured()

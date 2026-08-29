@@ -1,3 +1,10 @@
 do MouseManager.set_mouse_mode_visible()
-Nerd: Nerd Round 3 Dialogue 1
+Nerd: Hi! I am feeling a lot more confident now after a few rounds.\\
+That's not me trying to talk trash or anything, of course! I know I was a mess at the start of the game, but I feel more at ease now. And when I'm more relaxed I can think more clearly.
+- Do you feel at ease about the people who've been eliminated?
+	Nerd: Wh-\\
+	I- that is not what I meant and you know it. Obviously it's not a good thing that they lost their rounds.\\
+	I'm just happy it wasn't me.
+- Whatever you've been doing is working, keep at it
+	Nerd: Stay the course, my thoughts exactly.
 do MouseManager.set_mouse_mode_captured()

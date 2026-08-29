@@ -19,8 +19,10 @@
 [ext_resource type="PackedScene" uid="uid://cu0ru2i3aciv1" path="res://Assets/3D Assets/Opponents Fixed/nerd_opponent.tscn" id="15_hlh3y"]
 [ext_resource type="PackedScene" uid="uid://d16ietwah8jci" path="res://Assets/3D Assets/Opponents Fixed/opponent_artsy.tscn" id="16_c4b5v"]
 [ext_resource type="PackedScene" uid="uid://b2vh0vr2tt5x3" path="res://Assets/3D Assets/Opponents Fixed/mean_opponent.tscn" id="16_cnejx"]
+[ext_resource type="PackedScene" uid="uid://vkvh74g4117q" path="res://Assets/3D Assets/brackeys-voting-terminal.glb" id="19_8pui6"]
 [ext_resource type="PackedScene" uid="uid://41u47bq3exmo" path="res://Assets/3D Assets/Opponents Fixed/nice_opponent.tscn" id="19_cnejx"]
 [ext_resource type="AudioStream" uid="uid://cvqpx2j0f332a" path="res://Assets/Audio/Ambient Vol10 Frozen Orbit Main.wav" id="19_hlh3y"]
+[ext_resource type="PackedScene" uid="uid://ddj5snqy2cdvq" path="res://Assets/3D Assets/brackeys-level.glb" id="22_1f8q2"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -28,6 +30,17 @@
 size = Vector3(1, 1, 2)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a8j4q"]
+height = 3.1748047
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_mvrur"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_dph0b"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_1wdh8"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_hlh3y"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vek3k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
 
@@ -108,9 +121,10 @@ data = PackedVector3Array(-3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.3209
 [node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
 
 [node name="basicroom-col" parent="." unique_id=1636015329 instance=ExtResource("1_lis1l")]
+visible = false
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=145125222]
-transform = Transform3D(-0.99998534, 0, 0.005413418, 0, 1, 0, -0.005413418, 0, -0.99998534, 0, 1.7481351, 0)
+transform = Transform3D(-0.99998534, 0, 0.005413418, 0, 1, 0, -0.005413418, 0, -0.99998534, 2.3450942, 1.0344691, -28.497969)
 script = ExtResource("2_uk64b")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=878742394]
@@ -194,7 +208,7 @@ script = ExtResource("11_0pelt")
 
 [node name="OpponentJock" type="Node3D" parent="OpponentNodes" unique_id=326860594]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 29.518803)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.205, 1.5621948, 6.198)
 script = ExtResource("3_uk64b")
 opponent_name = "Jock"
 
@@ -205,14 +219,15 @@ interactable_name = "Jock"
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentJock/InteractableComponent" unique_id=1426721245]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentJock/InteractableComponent/Area3D" unique_id=939141195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.119628906, 0)
 shape = SubResource("CapsuleShape3D_a8j4q")
 
 [node name="brackeys-jock" parent="OpponentNodes/OpponentJock" unique_id=1353726767 instance=ExtResource("14_1wdh8")]
-transform = Transform3D(-1.6244377, 0, -0.50120145, 0, 1.7000003, 0, 0.50120145, 0, -1.6244377, 0, -1.5337605, 0)
+transform = Transform3D(-1.6244377, 0, -0.50120145, 0, 1.7000003, 0, 0.50120145, 0, -1.6244377, 0, -1.5641549, 0)
 
 [node name="OpponentNerd" type="Node3D" parent="OpponentNodes" unique_id=920471629]
 unique_name_in_owner = true
-transform = Transform3D(-0.9823636, 0, 0.18698081, 0, 1, 0, -0.18698081, 0, -0.9823636, -6.8710947, 2, 26.858849)
+transform = Transform3D(-0.9823636, 0, 0.18698081, 0, 1, 0, -0.18698081, 0, -0.9823636, -10.583702, 1.529289, 6.211033)
 script = ExtResource("3_uk64b")
 opponent_name = "Nerd"
 
@@ -230,7 +245,7 @@ transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, -1.5203419, 0)
 
 [node name="OpponentArtsy" type="Node3D" parent="OpponentNodes" unique_id=381296537]
 unique_name_in_owner = true
-transform = Transform3D(-0.9989684, 0, 0.04540953, 0, 1, 0, -0.04540953, 0, -0.9989684, -12.778841, 0.50016093, 23.249426)
+transform = Transform3D(0.59715056, 0, 0.8021294, 0, 1, 0, -0.8021294, 0, 0.59715056, -10.733045, 0.0151981115, 0.20330429)
 script = ExtResource("3_uk64b")
 opponent_name = "Artsy"
 
@@ -248,7 +263,7 @@ shape = SubResource("CapsuleShape3D_a8j4q")
 
 [node name="OpponentMean" type="Node3D" parent="OpponentNodes" unique_id=1191863932]
 unique_name_in_owner = true
-transform = Transform3D(-0.95073557, 0, -0.31000295, 0, 1, 0, 0.31000295, 0, -0.95073557, 4.403825, 2, 24.919182)
+transform = Transform3D(-0.6801435, 0, -0.7330792, 0, 1, 0, 0.7330792, 0, -0.6801435, 2.2790363, 1.5030255, 9.250744)
 script = ExtResource("3_uk64b")
 opponent_name = "Mean"
 
@@ -266,21 +281,23 @@ transform = Transform3D(1.7000002, 0, 0, 0, 1.7, 0, 0, 0, 1.7000002, 0, -1.46669
 
 [node name="OpponentNice" type="Node3D" parent="OpponentNodes" unique_id=938493559]
 unique_name_in_owner = true
-transform = Transform3D(-0.9586266, 0, -0.2846663, 0, 1, 0, 0.2846663, 0, -0.9586266, 8.242646, 0.4854535, 20.714808)
+transform = Transform3D(0.36021107, 0, -0.93287075, 0, 1, 0, 0.93287075, 0, 0.36021107, 5.273809, 0.4854535, -2.2126503)
 script = ExtResource("3_uk64b")
 opponent_name = "Nice"
 
 [node name="InteractableComponent" type="Node3D" parent="OpponentNodes/OpponentNice" unique_id=1314879660]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8942064, 0)
+transform = Transform3D(1, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, 1, 0, 1.2374421, 0)
 script = ExtResource("4_1q4yl")
 interactable_name = "Nice"
 
 [node name="Area3D" type="Area3D" parent="OpponentNodes/OpponentNice/InteractableComponent" unique_id=106812061]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="OpponentNodes/OpponentNice/InteractableComponent/Area3D" unique_id=1310721132]
+transform = Transform3D(1, 0, 2.3841858e-07, 0, 1, 0, -2.3841858e-07, 0, 1, 0, -0.17089844, 0)
 shape = SubResource("CapsuleShape3D_a8j4q")
 
 [node name="brackeys-nice" parent="OpponentNodes/OpponentNice" unique_id=1096350722 instance=ExtResource("19_cnejx")]
+transform = Transform3D(1.6999999, 0, 5.9604645e-08, 0, 1.7, 0, -5.9604645e-08, 0, 1.6999999, 0, -0.48036122, 0)
 
 [node name="TestInteractable" type="Node3D" parent="." unique_id=1063957902]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 29.518803)
@@ -288,7 +305,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.326524, 2, 29.518803)
 [node name="InteractableComponent" type="Node3D" parent="TestInteractable" unique_id=1610960539]
 script = ExtResource("4_1q4yl")
 interactable_name = "Cube"
-max_round_dialogue = 1
 
 [node name="Area3D" type="Area3D" parent="TestInteractable/InteractableComponent" unique_id=126438074]
 
@@ -296,7 +312,11 @@ max_round_dialogue = 1
 shape = SubResource("BoxShape3D_opp37")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="TestInteractable" unique_id=564004207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.036102, -9.536743e-07, -16.360023)
 mesh = SubResource("BoxMesh_mf5ox")
+
+[node name="brackeys-voting-terminal" parent="TestInteractable" unique_id=938534874 instance=ExtResource("19_8pui6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.655361, 0, 21.04763)
 
 [node name="GameplayPhaseObjects" type="Node3D" parent="." unique_id=344445609]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -123.378265, 0, -66.03337)
@@ -313,7 +333,7 @@ mesh = SubResource("ArrayMesh_idt0p")
 shape = SubResource("ConcavePolygonShape3D_kkepk")
 
 [node name="GameplayCamera" type="Camera3D" parent="GameplayPhaseObjects" unique_id=1225826617]
-transform = Transform3D(-0.97955775, -0.004478924, 0.20111331, 0.0665356, 0.93626916, 0.34492472, -0.18984109, 0.35125485, -0.91683173, 19.54663, 40.75437, -71.69885)
+transform = Transform3D(0.9373405, 0, -0.34841475, 0, 1, 0, 0.34841475, 0, 0.9373405, 115.27924, 8.221931, 120.68047)
 script = ExtResource("12_kk0m7")
 
 [node name="Bridges" type="Node3D" parent="GameplayPhaseObjects" unique_id=794539849]
@@ -741,6 +761,8 @@ omni_attenuation = 0.0
 [node name="MainBackgroundMusic" type="AudioStreamPlayer" parent="." unique_id=869924690]
 stream = ExtResource("19_hlh3y")
 autoplay = true
+
+[node name="brackeys-level" parent="." unique_id=1405953680 instance=ExtResource("22_1f8q2")]
 
 [connection signal="area_entered" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]

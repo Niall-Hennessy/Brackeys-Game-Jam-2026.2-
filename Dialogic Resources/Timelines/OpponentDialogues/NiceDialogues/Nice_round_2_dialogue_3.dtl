@@ -1,3 +1,3 @@
 do MouseManager.set_mouse_mode_visible()
-Nice: Nice Round 2 Dialogue 3
+[i]She seems to be visibly more on edge as the time wears down.[/i]
 do MouseManager.set_mouse_mode_captured()

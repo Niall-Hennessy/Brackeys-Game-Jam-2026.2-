@@ -1,3 +1,3 @@
 do MouseManager.set_mouse_mode_visible()
-Artsy: Artsy Round 1 Dialogue 3
+Artsy: ...I thought you'd have something better to do.
 do MouseManager.set_mouse_mode_captured()

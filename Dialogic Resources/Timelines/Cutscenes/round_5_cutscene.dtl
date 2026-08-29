@@ -1,5 +1,7 @@
 do MouseManager.set_mouse_mode_visible()
-So you survived round 4
-Now onto round 5
+Intercom: And we are down to the final two!\
+I'm sure you've realised by now, but the final game will be a little different. Take a break for now, I'll explain once the door opens again.
+[i]Allistair is staring daggers at you.[/i]
+Artsy: oooooo boy oh boy im mad (placeholder)
 do MouseManager.set_mouse_mode_captured()
 do PhaseTracker.progress_current_phase()
