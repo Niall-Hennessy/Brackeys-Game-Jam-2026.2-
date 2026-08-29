@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bq333fa7rsp1p"
+path="res://.godot/imported/Caution One-Shot.wav-d654f14f8bdb15d471f0cab43ac750de.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Caution One-Shot.wav"
+dest_files=["res://.godot/imported/Caution One-Shot.wav-d654f14f8bdb15d471f0cab43ac750de.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
