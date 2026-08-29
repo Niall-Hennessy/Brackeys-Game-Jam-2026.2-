@@ -5,10 +5,10 @@
 [node name="brackeys-nerd-unlooped" unique_id=1911945026 instance=ExtResource("1_wm0lf")]
 transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 0, 0, 0)
 
-[node name="Root" parent="." index="0" unique_id=1349971025]
+[node name="Root" parent="." index="0" unique_id=1740645559]
 transform = Transform3D(0.009885087, -0.0015112583, 3.3825527e-05, 0.0001427594, 0.0007105492, -0.009973702, 0.0015048805, 0.009859575, 0.0007239588, 0.00084180495, -0.015431823, 0.079433225)
 
-[node name="Skeleton3D" parent="Root" index="0" unique_id=948670219]
+[node name="Skeleton3D" parent="Root" index="0" unique_id=629601514]
 bones/1/position = Vector3(10.393274, -1.9357253e-06, 4.5430255e-07)
 bones/1/rotation = Quaternion(0.9910232, 0.13365091, -0.00021865786, -0.0032302581)
 bones/2/position = Vector3(18.151123, 7.2629464e-06, -1.9505987e-06)
@@ -84,5 +84,5 @@ bones/46/rotation = Quaternion(-0.0002807015, 0.00015903318, 0.27018186, 0.96280
 bones/53/position = Vector3(159.92639, 0.00013589681, 5.6371373e-06)
 bones/53/rotation = Quaternion(1, 0, 7.54979e-08, -1.4853157e-08)
 
-[node name="AnimationPlayer" parent="." index="1" unique_id=1220880566]
+[node name="AnimationPlayer" parent="." index="1" unique_id=254025982]
 autoplay = &"Root|mixamo_com|Layer0_001"

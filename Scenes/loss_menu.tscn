@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cegy4mbn80tf7" path="res://Scripts/return_to_interact_phase_button.gd" id="1_1qypo"]
 [ext_resource type="Script" uid="uid://c0oakjt0r6824" path="res://Scripts/quit_to_menu_button.gd" id="1_i367p"]
-[ext_resource type="Theme" uid="uid://cjbyv6wp65sck" path="res://Assets/Themes/default_theme.tres" id="1_s242x"]
+[ext_resource type="Theme" uid="uid://cr7jcsretk4su" path="res://Themes/Sci-Fi.tres" id="1_s242x"]
 [ext_resource type="Script" uid="uid://cepdy4q50ws88" path="res://Scripts/return_to_gameplay_phase_button.gd" id="2_s242x"]
 
 [node name="LossMenu" type="Control" unique_id=581501601]
@@ -13,6 +13,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_s242x")
+
+[node name="Panel" type="Panel" parent="." unique_id=329280838]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 646.0
 
 [node name="LossText" type="Label" parent="." unique_id=374473330]
 layout_mode = 0
