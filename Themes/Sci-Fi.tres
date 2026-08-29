@@ -1,0 +1,24 @@
+[gd_resource type="Theme" format=3 uid="uid://cr7jcsretk4su"]
+
+[ext_resource type="Texture2D" uid="uid://m3h6yvosvbip" path="res://Assets/UI/WenrexaAssetsUI_SciFI/PNG/Button04.png" id="1_hvlyu"]
+[ext_resource type="Texture2D" uid="uid://cnfhjhs5fb12u" path="res://Assets/UI/WenrexaAssetsUI_SciFI/PNG/Button03.png" id="2_qlly1"]
+[ext_resource type="Texture2D" uid="uid://bvrf3h4g2la6m" path="res://Assets/UI/WenrexaAssetsUI_SciFI/PNG/Button02.png" id="3_h7egs"]
+[ext_resource type="Texture2D" uid="uid://bak8bklaj7pl7" path="res://Assets/UI/WenrexaAssetsUI_SciFI/PNG/MainPanel02.png" id="4_h7egs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qlly1"]
+texture = ExtResource("1_hvlyu")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1ehe0"]
+texture = ExtResource("2_qlly1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_myc6s"]
+texture = ExtResource("3_h7egs")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ooywk"]
+texture = ExtResource("4_h7egs")
+
+[resource]
+Button/styles/hover = SubResource("StyleBoxTexture_qlly1")
+Button/styles/normal = SubResource("StyleBoxTexture_1ehe0")
+Button/styles/pressed = SubResource("StyleBoxTexture_myc6s")
+Panel/styles/panel = SubResource("StyleBoxTexture_ooywk")

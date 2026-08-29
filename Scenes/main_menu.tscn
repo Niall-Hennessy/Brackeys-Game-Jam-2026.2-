@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c4oibj8m8164p"]
 
+[ext_resource type="Theme" uid="uid://cr7jcsretk4su" path="res://Themes/Sci-Fi.tres" id="1_1ehe0"]
 [ext_resource type="Script" uid="uid://baxyai1hyr38i" path="res://Scripts/start_game_button.gd" id="1_28flt"]
 [ext_resource type="Script" uid="uid://4d1f1ar0n8qu" path="res://Scripts/quit_game_button.gd" id="2_48xlc"]
 
@@ -10,6 +11,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_1ehe0")
+
+[node name="Panel" type="Panel" parent="." unique_id=1130751384]
+layout_mode = 0
+offset_right = 1149.0
+offset_bottom = 649.0
 
 [node name="StartGameButton" type="Button" parent="." unique_id=265444731]
 layout_mode = 0

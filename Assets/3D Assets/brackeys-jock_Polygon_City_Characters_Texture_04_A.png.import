@@ -2,14 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rx0hrlriwesi"
+uid="uid://n74pvhva876m"
 path.s3tc="res://.godot/imported/brackeys-jock_Polygon_City_Characters_Texture_04_A.png-01349e61d85b7aaaf2848e9c31adbcf7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "874e0392308db6a7dbc1329046e8b991"
 }
 
 [deps]
