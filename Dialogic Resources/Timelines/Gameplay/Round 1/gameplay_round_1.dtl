@@ -46,10 +46,12 @@ Kelly\: {GameplayRound1Tracker.mean_lives}\
 Damien\: {GameplayRound1Tracker.nerd_lives}\
 Melanie\: {GameplayRound1Tracker.nice_lives}\
 You\: {GameplayRound1Tracker.player_lives}
-if {GameplayRound1Tracker.num_player_votes} == 3.0:
-	jump loss
-if {} != true:
+if {GameplayRound1Tracker.player_lives} == 0.0:
+	jump player_loss
+if {GameplayRound1Tracker.convinced_nice_to_participate} != true:
 	Intercom: As player Melanie did not choose a vote target in time, she has been deducted two hearts.
+if {GameplayRound1Tracker.nice_lives} == 0.0:
+	jump nice_loss
 label Second Round
 Intercom: As no player has been eliminated yet, we will continue to the next round of voting.
 [i]You look back down at your screen once again. The voting options have returned[/i]
@@ -79,13 +81,17 @@ Intercom: The votes have now been placed. Please choose who you wish to dodge.
 	do GameplayRound1Tracker.set_player_dodge_target("no one")
 do GameplayRound1Tracker.calculate_second_round_vote_targets()
 do GameplayRound1Tracker.run_round_votes()
-[end_timeline]
 
 
 do MouseManager.set_mouse_mode_captured()
 do GameplayerManager.end_gameplay()
-label loss
+label player_loss
 [i]Everyone looks over at you in pity. You can feel the floor beneath you start to move. Who was it, who voted for you[/i]
 [i]*KKKRRRRRRNK*[/i]
 [i]The grating of the platform beneath you is the last thing you hear as you plunge into the abyss below[/i]
 do GameplayerManager.go_to_loss_screen()
+[end_timeline]
+label nice_loss
+do OpponentStatusTracker.opponent_died("nice")
+do GameplayerManager.end_gameplay()
+[end_timeline]

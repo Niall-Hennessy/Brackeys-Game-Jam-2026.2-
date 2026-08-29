@@ -87,6 +87,21 @@ func run_round_votes():
 	if nerd_vote_target == "jock":
 		jock_lives -= 1
 		num_jock_votes += 1
+		
+	if player_vote_target == "artsy":
+		num_artsy_votes += 1
+	elif  player_vote_target == "jock":
+		num_jock_votes += 1
+		jock_lives -= 1
+	elif  player_vote_target == "mean":
+		num_mean_votes += 1
+		mean_lives -= 1
+	elif  player_vote_target == "nice":
+		num_nice_votes += 1
+		nice_lives -= 1
+	elif  player_vote_target == "nerd":
+		num_nerd_votes += 1
+		nerd_lives -= 1
 
 func reset_num_votes():
 	num_artsy_votes = 0
