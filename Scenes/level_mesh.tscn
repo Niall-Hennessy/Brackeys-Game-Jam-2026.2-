@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ctoon0gsk5ql3"]
+
+[ext_resource type="PackedScene" uid="uid://ddj5snqy2cdvq" path="res://Assets/3D Assets/brackeys-level.glb" id="1_61u47"]
+
+[node name="level-mesh" unique_id=1407791102 instance=ExtResource("1_61u47")]

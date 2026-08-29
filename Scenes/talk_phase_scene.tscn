@@ -22,10 +22,10 @@
 [ext_resource type="PackedScene" uid="uid://vkvh74g4117q" path="res://Assets/3D Assets/brackeys-voting-terminal.glb" id="19_8pui6"]
 [ext_resource type="PackedScene" uid="uid://41u47bq3exmo" path="res://Assets/3D Assets/Opponents Fixed/nice_opponent.tscn" id="19_cnejx"]
 [ext_resource type="AudioStream" uid="uid://cvqpx2j0f332a" path="res://Assets/Audio/Ambient Vol10 Frozen Orbit Main.wav" id="19_hlh3y"]
-[ext_resource type="PackedScene" uid="uid://ddj5snqy2cdvq" path="res://Assets/3D Assets/brackeys-level.glb" id="22_1f8q2"]
 [ext_resource type="Script" uid="uid://b763vi7b5r1hv" path="res://Scripts/interactable_nodes.gd" id="22_6axmk"]
 [ext_resource type="PackedScene" uid="uid://ruqj0ba8eax" path="res://Assets/3D Assets/keycard.glb" id="23_kpbhl"]
 [ext_resource type="PackedScene" uid="uid://jss3ji5o6wbt" path="res://Assets/3D Assets/health-crate.glb" id="24_4pjyj"]
+[ext_resource type="PackedScene" uid="uid://ctoon0gsk5ql3" path="res://Scenes/level_mesh.tscn" id="26_4pjyj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
@@ -796,7 +796,7 @@ omni_attenuation = 0.0
 stream = ExtResource("19_hlh3y")
 autoplay = true
 
-[node name="brackeys-level" parent="." unique_id=1405953680 instance=ExtResource("22_1f8q2")]
+[node name="level-mesh" parent="." unique_id=1407791102 instance=ExtResource("26_4pjyj")]
 
 [connection signal="area_entered" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
