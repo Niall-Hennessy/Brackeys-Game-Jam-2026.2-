@@ -24,8 +24,18 @@ if {OpponentStatusTracker.artsy_is_alive} == true:
 elif {OpponentStatusTracker.jock_is_alive} == true:
 	if {GameplayRound5Tracker.player_vote_target} == "trust":
 		if {GameplayRound5Tracker.jock_vote_target} == "trust":
-		
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Jock: Man I knew I could count on you
+			[i]As he says that a strange groaning can be heard[/i]
+			Jock: Huh? Maybe it's an elevator
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
 		elif {GameplayRound5Tracker.jock_vote_target} == "fall":
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Jock: I'm sorry man, but I just couldn't trust you
 			[i]*KKKRRRRRRNK*[/i]
 			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
 			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
@@ -34,7 +44,13 @@ elif {OpponentStatusTracker.jock_is_alive} == true:
 	
 	elif {GameplayRound5Tracker.player_vote_target} == "fall":
 		if {GameplayRound5Tracker.jock_vote_target} == "trust":
-		
+			Jock: Is that it? Is it over? You trusted me right bro?
+			[i]A groaning sound can be heard under Frank's foot[/i]
+			Jock: HEY! You betrayed me didn't you?
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the him, as he plunges into the abyss below[/i]
+			[i]You input your password into the screen and activate the end game program, you have the data you need[/i]
 		elif {GameplayRound5Tracker.jock_vote_target} == "fall":
 			[i]*KKKRRRRRRNK*[/i]
 			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
