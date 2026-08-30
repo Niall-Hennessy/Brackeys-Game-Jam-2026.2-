@@ -1,10 +1,10 @@
 [i]You look over at Kelly. He seems to be trying to figure out who to pick[/i]
-if {GameplayRound1Tracker.found_means_item} == true:
+if {GameplayRound2Tracker.found_means_item} == true:
 	- Ask Kelly to team up
 		Mean: You got the hots for me or something? Fine I suppose I can let you work for me.
 	- Show Kelly the item
 		Mean: Oh! So [i]you[/i] stole it from me.
-		do GameplayRound1Tracker.set_convinced_mean_to_not_vote_you(true)
+		do GameplayRound2Tracker.set_convinced_mean_to_not_vote_you(true)
 		Mean: I am going to kill you after this round.
 else:
 	- Ask Kelly to team up

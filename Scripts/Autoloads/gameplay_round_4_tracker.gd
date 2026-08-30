@@ -65,48 +65,35 @@ func set_player_dodge_target(dodge_target: String):
 func run_round_votes():
 	calculate_vote_targets()
 	
-	if artsy_vote_target == "player": #Artsy only votes player
+	if artsy_vote_target == "player":
 		if player_dodge_target != "artsy":
 			player_lives -= 1
 		
 		num_player_votes += 1
-		
-	if mean_vote_target == "player":
-		if player_dodge_target != "mean":
-			player_lives -= 1
-			
-		num_player_votes += 1
-	elif mean_vote_target == "jock":
-		jock_lives -= 1
-		num_jock_votes += 1
-	elif mean_vote_target == "nice":
-		nice_lives -= 1
-		num_nice_votes += 1
 	
-	if jock_vote_target == "player":
+	if jock_vote_target == "player": 
 		if player_dodge_target != "jock":
 			player_lives -= 1
-		num_player_votes += 1
-	elif jock_vote_target == "mean":
-		mean_lives -= 1 
-		num_mean_votes += 1
-	elif jock_vote_target == "nerd":
-		mean_lives -= 1 
-		num_mean_votes += 1
 		
-	if nice_vote_target == "nerd":
-		nerd_lives -= 1
-		num_nerd_votes += 1
-	elif nice_vote_target == "mean":
-		mean_lives -= 1
-		num_mean_votes += 1
+		num_player_votes += 1
 	
-	if nerd_vote_target == "jock":
-		jock_lives -= 1
-		num_jock_votes += 1
-	elif nerd_vote_target == "nice":
-		nice_lives -= 1
-		num_nice_votes += 1
+	if mean_vote_target == "player": 
+		if player_dodge_target != "mean":
+			player_lives -= 1
+		
+		num_player_votes += 1
+		
+	if nerd_vote_target == "player": 
+		if player_dodge_target != "nerd":
+			player_lives -= 1
+		
+		num_player_votes += 1
+		
+	if nice_vote_target == "player": 
+		if player_dodge_target != "nice":
+			player_lives -= 1
+		
+		num_player_votes += 1
 		
 	if player_vote_target == "artsy":
 		num_artsy_votes += 1
@@ -134,30 +121,34 @@ func reset_num_votes():
 func calculate_vote_targets():
 	reset_num_votes()
 	
-	artsy_vote_target = "player"
-	
-	if OpponentStatusTracker.nerd_is_alive:
-		nice_vote_target = "nerd"
-	else:
-		nice_vote_target = "mean"
+	if OpponentStatusTracker.jock_is_alive:
+		artsy_vote_target = "player"
 		
-	if OpponentStatusTracker.nice_is_alive:
-		nerd_vote_target = "nice"
-	else:
-		nerd_vote_target = "jock"
+		if true:
+			jock_vote_target = "player"
+		else:
+			jock_vote_target = "artsy"
+					
+	elif OpponentStatusTracker.mean_is_alive:
+		artsy_vote_target = "player"
 		
-	if convinced_jock_to_not_vote_you:
-		if OpponentStatusTracker.mean_is_alive:
-			jock_vote_target = "mean"
+		if true:
+			mean_vote_target = "player"
 		else:
-			jock_vote_target = "nerd"
-	else:
-		jock_vote_target = "player"
-	
-	if convinced_mean_to_not_vote_you:
-		if OpponentStatusTracker.jock_is_alive:
-			jock_vote_target = "jock"
+			mean_vote_target = "artsy"
+			
+	elif OpponentStatusTracker.nerd_is_alive:
+		artsy_vote_target = "player"
+		
+		if true:
+			nerd_vote_target = "player"
 		else:
-			jock_vote_target = "nice"
-	else:
-		jock_vote_target = "player"
+			nerd_vote_target = "artsy"
+			
+	elif OpponentStatusTracker.nice_is_alive:
+		artsy_vote_target = "player"
+		
+		if true:
+			nice_vote_target = "player"
+		else:
+			nice_vote_target = "artsy"
