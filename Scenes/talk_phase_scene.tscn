@@ -8,11 +8,12 @@
 [ext_resource type="Script" uid="uid://b72d6pbjof4n2" path="res://Scripts/interactable.gd" id="4_1q4yl"]
 [ext_resource type="Script" uid="uid://cx83puwplc3r5" path="res://Scripts/resume_button.gd" id="4_shicq"]
 [ext_resource type="Script" uid="uid://bngiph7v5qtnt" path="res://Scripts/player_phase_timer.gd" id="4_tt5lj"]
+[ext_resource type="Theme" uid="uid://cr7jcsretk4su" path="res://Themes/Sci-Fi.tres" id="4_yo30x"]
 [ext_resource type="Script" uid="uid://c0oakjt0r6824" path="res://Scripts/quit_to_menu_button.gd" id="5_q0a1l"]
-[ext_resource type="Texture2D" uid="uid://cxy6jv1fgw6ex" path="res://Assets/2D Assets/Temp Turn Timer One Unit.png" id="5_q2qrx"]
-[ext_resource type="Texture2D" uid="uid://cgsl17vrhgdrq" path="res://Assets/2D Assets/Temp Turn Timer Two Units.png" id="6_873g7"]
-[ext_resource type="Texture2D" uid="uid://f743qks5hmay" path="res://Assets/2D Assets/Temp Turn Timer Three Units.png" id="7_shicq"]
+[ext_resource type="Texture2D" uid="uid://dles1n3w2wk4g" path="res://Assets/2D Assets/Turn Timer One Unit.png" id="10_kqrhw"]
 [ext_resource type="Script" uid="uid://bo7xr180ubcia" path="res://Scripts/opponent_nodes.gd" id="11_0pelt"]
+[ext_resource type="Texture2D" uid="uid://c10i8npxki2hy" path="res://Assets/2D Assets/Turn Timer Two Units.png" id="11_e2gxo"]
+[ext_resource type="Texture2D" uid="uid://tta4oxtrkyu5" path="res://Assets/2D Assets/Turn Timer Three Units.png" id="12_a8t3n"]
 [ext_resource type="Script" uid="uid://dktl5eg4gsye2" path="res://Scripts/gameplay_camera.gd" id="12_kk0m7"]
 [ext_resource type="PackedScene" uid="uid://deoavnlg5emh6" path="res://Assets/3D Assets/Opponents Fixed/jock_opponent.tscn" id="14_1wdh8"]
 [ext_resource type="Script" uid="uid://dbh2pgoheyxdh" path="res://Scripts/bridges.gd" id="14_527rn"]
@@ -32,6 +33,9 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vek3k"]
 size = Vector3(1, 1, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yo30x"]
+font_size = 20
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a8j4q"]
 height = 3.1748047
@@ -148,6 +152,7 @@ offset_right = 72.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("4_yo30x")
 text = "Press E to Interact!"
 
 [node name="PauseMenu" type="CanvasLayer" parent="CharacterBody3D/PlayerCamera" unique_id=1854293014]
@@ -168,6 +173,7 @@ offset_right = 55.5
 offset_bottom = 46.5
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("4_yo30x")
 alignment = 1
 
 [node name="PauseText" type="Label" parent="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer" unique_id=501769961]
@@ -192,9 +198,21 @@ offset_left = 947.0
 offset_top = 35.0
 offset_right = 1113.0
 offset_bottom = 192.0
-texture = ExtResource("5_q2qrx")
+theme = ExtResource("4_yo30x")
+texture = ExtResource("10_kqrhw")
+expand_mode = 2
 script = ExtResource("4_tt5lj")
-phase_texture_array = Array[Texture]([ExtResource("5_q2qrx"), ExtResource("6_873g7"), ExtResource("7_shicq")])
+phase_texture_array = Array[Texture]([ExtResource("10_kqrhw"), ExtResource("11_e2gxo"), ExtResource("12_a8t3n")])
+
+[node name="Player Phase Label" type="Label" parent="CharacterBody3D/PlayerPhaseTimer" unique_id=1494957102]
+layout_mode = 0
+offset_top = 157.0
+offset_right = 166.0
+offset_bottom = 191.0
+text = "3 Minutes Left"
+label_settings = SubResource("LabelSettings_yo30x")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="OpponentNodes" type="Node" parent="." unique_id=276051581]
 script = ExtResource("11_0pelt")

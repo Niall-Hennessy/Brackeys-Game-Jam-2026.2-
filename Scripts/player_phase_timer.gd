@@ -10,6 +10,8 @@ func _ready() -> void:
 
 func update_phase_texture(current_timer_unit):
 	texture = phase_texture_array[current_timer_unit]
+	var label_string = " Minutes Left" if current_timer_unit != 2 else " Minute Left"
+	get_node("Player Phase Label").text = str(3-current_timer_unit) + label_string
 
 func hide_player_phase_timer():
 	visible = false
