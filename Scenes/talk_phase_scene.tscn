@@ -32,7 +32,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vek3k"]
-size = Vector3(1, 1.5170898, 2)
+size = Vector3(1, 2.522461, 2)
 
 [sub_resource type="LabelSettings" id="LabelSettings_yo30x"]
 font_size = 20
@@ -113,7 +113,7 @@ shadow_mesh = SubResource("ArrayMesh_thetp")
 data = PackedVector3Array(-3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, -0.32097054, 3.2437763, -3.2437763, -0.32097054, -3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, -3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, -0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, -3.2437763, -0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, 0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, 0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
-size = Vector3(0.7483964, 1.3889422, 0.8615304)
+size = Vector3(1.2442235, 2.0820444, 1.3471627)
 
 [node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
 
@@ -135,7 +135,7 @@ script = ExtResource("3_xuycp")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/PlayerCamera/DetectionArea" unique_id=1585111403]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3841858e-07, -0.25854492, -1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.1525574e-07, 0.24414063, -1)
 shape = SubResource("BoxShape3D_vek3k")
 debug_color = Color(0, 0.70980394, 0.8235294, 1)
 
@@ -763,11 +763,11 @@ consume_time_slot = false
 [node name="Area3D" type="Area3D" parent="InteractableNodes/KeyCardInteractable/InteractableComponent" unique_id=126438074]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableNodes/KeyCardInteractable/InteractableComponent/Area3D" unique_id=1542643730]
-transform = Transform3D(1.0000044, 8.940697e-08, 4.535541e-07, -2.30968e-06, 1.0000008, -9.915675e-08, -5.4948032e-08, 4.2491592e-09, 1, 0.42726707, 0.21751928, -0.0012967587)
+transform = Transform3D(1.0000044, 8.940697e-08, 4.1536987e-07, -2.6319176e-06, 1.0000008, -2.734305e-07, -1.3317913e-07, 4.2491592e-09, 1, 0.42270565, 0.21751356, 0.07134533)
 shape = SubResource("BoxShape3D_opp37")
 
 [node name="keycard" parent="InteractableNodes/KeyCardInteractable" unique_id=186992817 instance=ExtResource("23_kpbhl")]
-transform = Transform3D(0.93752974, 0.3478084, 0.008207356, -0.3477719, 0.9375627, -0.005563592, -0.009629974, 0.002361746, 0.9999508, 0, 0, 0)
+transform = Transform3D(0.93752974, 0.3478084, 0.008207355, -0.3477719, 0.9375627, -0.0055635995, -0.009629976, 0.0023617535, 0.9999508, 0.22068691, -0.20274019, 0.38373083)
 
 [node name="ItemInteractable" type="Node3D" parent="InteractableNodes" unique_id=2112464084]
 unique_name_in_owner = true
@@ -782,11 +782,11 @@ consume_time_slot = false
 [node name="Area3D" type="Area3D" parent="InteractableNodes/ItemInteractable/InteractableComponent" unique_id=2075751102]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableNodes/ItemInteractable/InteractableComponent/Area3D" unique_id=802723824]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.036444187, -0.2760141, -0.03610611)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.027694702, 0.07053697, 0.001742363)
 shape = SubResource("BoxShape3D_opp37")
 
 [node name="child-art" parent="InteractableNodes/ItemInteractable" unique_id=937083333 instance=ExtResource("24_5moos")]
-transform = Transform3D(-0.6495546, -0.7290451, 0.2158052, 0.084984094, 0.21244, 0.9734714, -0.75555027, 0.650663, -0.076034166, -0.780663, -0.47241557, -0.8747053)
+transform = Transform3D(-0.6632969, -0.747896, 0.026245069, -0.004658561, 0.03919602, 0.99922055, -0.7483421, 0.66265774, -0.029482774, -0.049840927, -0.0010411143, 0.023929596)
 
 [node name="MedicalBoxInteractable" type="Node3D" parent="InteractableNodes" unique_id=763011258]
 unique_name_in_owner = true
