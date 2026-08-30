@@ -1,4 +1,4 @@
 [i]You look over at Melanie. She seems to be panicking[/i]
 - Ask Melanie to team up
-	Nice: I'm sorry, but I'd only hold you back. 
-jump gameplay_round_1/
+	Nice: ...
+jump gameplay_vote_round_2/
