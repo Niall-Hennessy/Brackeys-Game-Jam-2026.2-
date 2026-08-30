@@ -1,9 +1,24 @@
 do MouseManager.switch_mouse_mode()
-This is another difficult game
-So what if you beat the fourth one
-- I win
-	Why did you pick this one
-- I win
-	Hooray
+[i]Two choice appear on the screen in front of you.[/i]
+- Trust
+	do GameplayRound5Tracker.set_player_vote_target("trust")
+- Fall
+	do GameplayRound5Tracker.set_player_vote_target("fall")
+do GameplayRound5Tracker.run_round_votes()
+if {OpponentStatusTracker.artsy_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "fall":
+		[i]You stare across the room at Alastair, you know why he made his choice and you yours.[/i]
+		[i]*KKKRRRRRRNK*[/i]
+		audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+		[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+		do GameplayerManager.go_to_loss_screen()
+		[end_timeline]
+	else:
+		[i]Alastair's face is one of acceptance. He believes you voted Fall nothing else would make sense to him[/i]
+		[i]*KKKRRRRRRNK*[/i]
+		audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+		[i]That is why the last thing you see as you plunge into the abyss, is the remarkable look of confusion on his face.[/i]
+		do GameplayerManager.go_to_loss_screen()
+		[end_timeline]
 do MouseManager.switch_mouse_mode()
 do GameplayerManager.end_gameplay()
