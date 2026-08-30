@@ -25,6 +25,7 @@
 [ext_resource type="Script" uid="uid://b763vi7b5r1hv" path="res://Scripts/interactable_nodes.gd" id="22_6axmk"]
 [ext_resource type="PackedScene" uid="uid://ruqj0ba8eax" path="res://Assets/3D Assets/keycard.glb" id="23_kpbhl"]
 [ext_resource type="PackedScene" uid="uid://jss3ji5o6wbt" path="res://Assets/3D Assets/health-crate.glb" id="24_4pjyj"]
+[ext_resource type="PackedScene" uid="uid://cjgmcfjmt34yd" path="res://Assets/3D Assets/child-art.glb" id="24_5moos"]
 [ext_resource type="PackedScene" uid="uid://ctoon0gsk5ql3" path="res://Scenes/level_mesh.tscn" id="26_4pjyj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
@@ -109,8 +110,6 @@ data = PackedVector3Array(-3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.3209
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
 size = Vector3(1.4296207, 1.9409704, 3.0006418)
-
-[sub_resource type="BoxMesh" id="BoxMesh_mf5ox"]
 
 [node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
 
@@ -767,8 +766,8 @@ consume_time_slot = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableNodes/ItemInteractable/InteractableComponent/Area3D" unique_id=802723824]
 shape = SubResource("BoxShape3D_opp37")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractableNodes/ItemInteractable" unique_id=1640325401]
-mesh = SubResource("BoxMesh_mf5ox")
+[node name="child-art" parent="InteractableNodes/ItemInteractable" unique_id=937083333 instance=ExtResource("24_5moos")]
+transform = Transform3D(-0.6495546, -0.7290451, 0.2158052, 0.084984094, 0.21244, 0.9734714, -0.75555027, 0.650663, -0.076034166, -0.780663, -0.47241557, -0.8747053)
 
 [node name="MedicalBoxInteractable" type="Node3D" parent="InteractableNodes" unique_id=763011258]
 unique_name_in_owner = true
