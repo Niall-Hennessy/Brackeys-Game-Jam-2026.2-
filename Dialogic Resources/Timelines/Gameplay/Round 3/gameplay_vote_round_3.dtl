@@ -3,89 +3,89 @@ Intercom: Voting will now comence
 [i]You look down at the screen. An option has appeared asking for which of your opponents you've decided to vote for.[/i]
 if {OpponentStatusTracker.jock_is_alive} and {OpponentStatusTracker.mean_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_vote_target(("artsy")
+		do GameplayRound3Tracker.set_player_vote_target("artsy")
 	- Frank
-		do GameplayRound2Tracker.set_player_vote_target("jock")
+		do GameplayRound3Tracker.set_player_vote_target("jock")
 	- Kelly
-		do GameplayRound2Tracker.set_player_vote_target("mean")
+		do GameplayRound3Tracker.set_player_vote_target("mean")
 if {OpponentStatusTracker.jock_is_alive} and {OpponentStatusTracker.nerd_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_vote_target(("artsy")
+		do GameplayRound3Tracker.set_player_vote_target("artsy")
 	- Frank
-		do GameplayRound2Tracker.set_player_vote_target("jock")
+		do GameplayRound3Tracker.set_player_vote_target("jock")
 	- Damien
-		do GameplayRound2Tracker.set_player_vote_target("nerd")
+		do GameplayRound3Tracker.set_player_vote_target("nerd")
 if {OpponentStatusTracker.jock_is_alive} and {OpponentStatusTracker.nice_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_vote_target(("artsy")
+		do GameplayRound3Tracker.set_player_vote_target("artsy")
 	- Frank
-		do GameplayRound2Tracker.set_player_vote_target("jock")
+		do GameplayRound3Tracker.set_player_vote_target("jock")
 	- Melanie
-		do GameplayRound2Tracker.set_player_vote_target("nice")
+		do GameplayRound3Tracker.set_player_vote_target("nice")
 if {OpponentStatusTracker.mean_is_alive} and {OpponentStatusTracker.nerd_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_vote_target(("artsy")
+		do GameplayRound3Tracker.set_player_vote_target("artsy")
 	- Kelly
-		do GameplayRound2Tracker.set_player_vote_target("mean")
+		do GameplayRound3Tracker.set_player_vote_target("mean")
 	- Damien
-		do GameplayRound2Tracker.set_player_vote_target("nerd")
+		do GameplayRound3Tracker.set_player_vote_target("nerd")
 if {OpponentStatusTracker.mean_is_alive} and {OpponentStatusTracker.nice_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_vote_target(("artsy")
+		do GameplayRound3Tracker.set_player_vote_target("artsy")
 	- Kelly
-		do GameplayRound2Tracker.set_player_vote_target("mean")
+		do GameplayRound3Tracker.set_player_vote_target("mean")
 	- Melanie
-		do GameplayRound2Tracker.set_player_vote_target("nice")
+		do GameplayRound3Tracker.set_player_vote_target("nice")
 if {OpponentStatusTracker.nerd_is_alive} and {OpponentStatusTracker.nice_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_vote_target(("artsy")
+		do GameplayRound3Tracker.set_player_vote_target("artsy")
 	- Damien
-		do GameplayRound2Tracker.set_player_vote_target("nerd")
+		do GameplayRound3Tracker.set_player_vote_target("nerd")
 	- Melanie
-		do GameplayRound2Tracker.set_player_vote_target("nice")
+		do GameplayRound3Tracker.set_player_vote_target("nice")
 
 Intercom: The votes have now been placed. Please choose who you wish to dodge.
 [i]The screen has changed and an option to dodge someone has appeared.[/i]
 if {OpponentStatusTracker.jock_is_alive} and {OpponentStatusTracker.mean_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_dodge_target("artsy")
+		do GameplayRound3Tracker.set_player_dodge_target("artsy")
 	- Frank
-		do GameplayRound2Tracker.set_player_dodge_target("jock")
+		do GameplayRound3Tracker.set_player_dodge_target("jock")
 	- Kelly
-		do GameplayRound2Tracker.set_player_dodge_target("mean")
+		do GameplayRound3Tracker.set_player_dodge_target("mean")
 if {OpponentStatusTracker.jock_is_alive} and {OpponentStatusTracker.nerd_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_dodge_target(("artsy")
+		do GameplayRound3Tracker.set_player_dodge_target("artsy")
 	- Frank
-		do GameplayRound2Tracker.set_player_dodge_target("jock")
+		do GameplayRound3Tracker.set_player_dodge_target("jock")
 	- Damien
-		do GameplayRound2Tracker.set_player_dodge_target("nerd")
+		do GameplayRound3Tracker.set_player_dodge_target("nerd")
 if {OpponentStatusTracker.jock_is_alive} and {OpponentStatusTracker.nice_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_dodge_target(("artsy")
+		do GameplayRound3Tracker.set_player_dodge_target("artsy")
 	- Frank
-		do GameplayRound2Tracker.set_player_dodge_target("jock")
+		do GameplayRound3Tracker.set_player_dodge_target("jock")
 	- Melanie
-		do GameplayRound2Tracker.set_player_dodge_target("nice")
+		do GameplayRound3Tracker.set_player_dodge_target("nice")
 if {OpponentStatusTracker.mean_is_alive} and {OpponentStatusTracker.nerd_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_dodge_target(("artsy")
+		do GameplayRound3Tracker.set_player_dodge_target("artsy")
 	- Kelly
-		do GameplayRound2Tracker.set_player_dodge_target("mean")
+		do GameplayRound3Tracker.set_player_dodge_target("mean")
 	- Damien
-		do GameplayRound2Tracker.set_player_dodge_target("nerd")
+		do GameplayRound3Tracker.set_player_dodge_target("nerd")
 if {OpponentStatusTracker.mean_is_alive} and {OpponentStatusTracker.nice_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_dodge_target(("artsy")
+		do GameplayRound3Tracker.set_player_dodge_target("artsy")
 	- Kelly
-		do GameplayRound2Tracker.set_player_dodge_target("mean")
+		do GameplayRound3Tracker.set_player_dodge_target("mean")
 	- Melanie
-		do GameplayRound2Tracker.set_player_dodge_target("nice")
+		do GameplayRound3Tracker.set_player_dodge_target("nice")
 if {OpponentStatusTracker.nerd_is_alive} and {OpponentStatusTracker.nice_is_alive} == true:
 	- Alastair
-		do GameplayRound2Tracker.set_player_dodge_target(("artsy")
+		do GameplayRound3Tracker.set_player_dodge_target("artsy")
 	- Damien
-		do GameplayRound2Tracker.set_player_dodge_target("nerd")
+		do GameplayRound3Tracker.set_player_dodge_target("nerd")
 	- Melanie
-		do GameplayRound2Tracker.set_player_dodge_target("nice")
+		do GameplayRound3Tracker.set_player_dodge_target("nice")
 jump gameplay_round_3/

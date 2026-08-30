@@ -71,42 +71,46 @@ func run_round_votes():
 		
 		num_player_votes += 1
 		
-	if mean_vote_target == "player":
-		if player_dodge_target != "mean":
-			player_lives -= 1
+	if OpponentStatusTracker.mean_is_alive:	
+		if mean_vote_target == "player":
+			if player_dodge_target != "mean":
+				player_lives -= 1
+				
+			num_player_votes += 1
+		elif mean_vote_target == "jock":
+			jock_lives -= 1
+			num_jock_votes += 1
+		elif mean_vote_target == "nice":
+			nice_lives -= 1
+			num_nice_votes += 1
 			
-		num_player_votes += 1
-	elif mean_vote_target == "jock":
-		jock_lives -= 1
-		num_jock_votes += 1
-	elif mean_vote_target == "nice":
-		nice_lives -= 1
-		num_nice_votes += 1
-	
-	if jock_vote_target == "player":
-		if player_dodge_target != "jock":
-			player_lives -= 1
-		num_player_votes += 1
-	elif jock_vote_target == "mean":
-		mean_lives -= 1 
-		num_mean_votes += 1
-	elif jock_vote_target == "nerd":
-		mean_lives -= 1 
-		num_mean_votes += 1
-		
-	if nice_vote_target == "nerd":
-		nerd_lives -= 1
-		num_nerd_votes += 1
-	elif nice_vote_target == "mean":
-		mean_lives -= 1
-		num_mean_votes += 1
-	
-	if nerd_vote_target == "jock":
-		jock_lives -= 1
-		num_jock_votes += 1
-	elif nerd_vote_target == "nice":
-		nice_lives -= 1
-		num_nice_votes += 1
+	if OpponentStatusTracker.jock_is_alive:	
+		if jock_vote_target == "player":
+			if player_dodge_target != "jock":
+				player_lives -= 1
+			num_player_votes += 1
+		elif jock_vote_target == "mean":
+			mean_lives -= 1 
+			num_mean_votes += 1
+		elif jock_vote_target == "nerd":
+			mean_lives -= 1 
+			num_mean_votes += 1
+			
+	if OpponentStatusTracker.nice_is_alive:	
+		if nice_vote_target == "nerd":
+			nerd_lives -= 1
+			num_nerd_votes += 1
+		elif nice_vote_target == "mean":
+			mean_lives -= 1
+			num_mean_votes += 1
+			
+	if OpponentStatusTracker.nerd_is_alive:	
+		if nerd_vote_target == "jock":
+			jock_lives -= 1
+			num_jock_votes += 1
+		elif nerd_vote_target == "nice":
+			nice_lives -= 1
+			num_nice_votes += 1
 		
 	if player_vote_target == "artsy":
 		num_artsy_votes += 1
@@ -138,26 +142,18 @@ func calculate_vote_targets():
 	
 	if OpponentStatusTracker.nerd_is_alive:
 		nice_vote_target = "nerd"
-	else:
+	elif OpponentStatusTracker.mean_is_alive:
 		nice_vote_target = "mean"
+	elif OpponentStatusTracker.jock_is_alive:
+		nice_vote_target = "jock"
 		
 	if OpponentStatusTracker.nice_is_alive:
 		nerd_vote_target = "nice"
-	else:
+	elif OpponentStatusTracker.jock_is_alive:
 		nerd_vote_target = "jock"
+	elif OpponentStatusTracker.mean_is_alive:
+		nerd_vote_target = "mean"
 		
-	if convinced_jock_to_not_vote_you:
-		if OpponentStatusTracker.mean_is_alive:
-			jock_vote_target = "mean"
-		else:
-			jock_vote_target = "nerd"
-	else:
-		jock_vote_target = "player"
+	jock_vote_target = "player"
 	
-	if convinced_mean_to_not_vote_you:
-		if OpponentStatusTracker.jock_is_alive:
-			jock_vote_target = "jock"
-		else:
-			jock_vote_target = "nice"
-	else:
-		jock_vote_target = "player"
+	mean_vote_target = "player"
