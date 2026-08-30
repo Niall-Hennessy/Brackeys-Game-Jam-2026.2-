@@ -8,11 +8,12 @@
 [ext_resource type="Script" uid="uid://b72d6pbjof4n2" path="res://Scripts/interactable.gd" id="4_1q4yl"]
 [ext_resource type="Script" uid="uid://cx83puwplc3r5" path="res://Scripts/resume_button.gd" id="4_shicq"]
 [ext_resource type="Script" uid="uid://bngiph7v5qtnt" path="res://Scripts/player_phase_timer.gd" id="4_tt5lj"]
+[ext_resource type="Theme" uid="uid://cr7jcsretk4su" path="res://Themes/Sci-Fi.tres" id="4_yo30x"]
 [ext_resource type="Script" uid="uid://c0oakjt0r6824" path="res://Scripts/quit_to_menu_button.gd" id="5_q0a1l"]
-[ext_resource type="Texture2D" uid="uid://cxy6jv1fgw6ex" path="res://Assets/2D Assets/Temp Turn Timer One Unit.png" id="5_q2qrx"]
-[ext_resource type="Texture2D" uid="uid://cgsl17vrhgdrq" path="res://Assets/2D Assets/Temp Turn Timer Two Units.png" id="6_873g7"]
-[ext_resource type="Texture2D" uid="uid://f743qks5hmay" path="res://Assets/2D Assets/Temp Turn Timer Three Units.png" id="7_shicq"]
+[ext_resource type="Texture2D" uid="uid://dles1n3w2wk4g" path="res://Assets/2D Assets/Turn Timer One Unit.png" id="10_kqrhw"]
 [ext_resource type="Script" uid="uid://bo7xr180ubcia" path="res://Scripts/opponent_nodes.gd" id="11_0pelt"]
+[ext_resource type="Texture2D" uid="uid://c10i8npxki2hy" path="res://Assets/2D Assets/Turn Timer Two Units.png" id="11_e2gxo"]
+[ext_resource type="Texture2D" uid="uid://tta4oxtrkyu5" path="res://Assets/2D Assets/Turn Timer Three Units.png" id="12_a8t3n"]
 [ext_resource type="Script" uid="uid://dktl5eg4gsye2" path="res://Scripts/gameplay_camera.gd" id="12_kk0m7"]
 [ext_resource type="PackedScene" uid="uid://deoavnlg5emh6" path="res://Assets/3D Assets/Opponents Fixed/jock_opponent.tscn" id="14_1wdh8"]
 [ext_resource type="Script" uid="uid://dbh2pgoheyxdh" path="res://Scripts/bridges.gd" id="14_527rn"]
@@ -22,15 +23,19 @@
 [ext_resource type="PackedScene" uid="uid://vkvh74g4117q" path="res://Assets/3D Assets/brackeys-voting-terminal.glb" id="19_8pui6"]
 [ext_resource type="PackedScene" uid="uid://41u47bq3exmo" path="res://Assets/3D Assets/Opponents Fixed/nice_opponent.tscn" id="19_cnejx"]
 [ext_resource type="AudioStream" uid="uid://cvqpx2j0f332a" path="res://Assets/Audio/Ambient Vol10 Frozen Orbit Main.wav" id="19_hlh3y"]
-[ext_resource type="PackedScene" uid="uid://ddj5snqy2cdvq" path="res://Assets/3D Assets/brackeys-level.glb" id="22_1f8q2"]
 [ext_resource type="Script" uid="uid://b763vi7b5r1hv" path="res://Scripts/interactable_nodes.gd" id="22_6axmk"]
 [ext_resource type="PackedScene" uid="uid://ruqj0ba8eax" path="res://Assets/3D Assets/keycard.glb" id="23_kpbhl"]
 [ext_resource type="PackedScene" uid="uid://jss3ji5o6wbt" path="res://Assets/3D Assets/health-crate.glb" id="24_4pjyj"]
+[ext_resource type="PackedScene" uid="uid://cjgmcfjmt34yd" path="res://Assets/3D Assets/child-art.glb" id="24_5moos"]
+[ext_resource type="PackedScene" uid="uid://ctoon0gsk5ql3" path="res://Scenes/level_mesh.tscn" id="26_4pjyj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vek3k"]
 size = Vector3(1, 1, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_yo30x"]
+font_size = 20
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a8j4q"]
 height = 3.1748047
@@ -110,8 +115,6 @@ data = PackedVector3Array(-3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.3209
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
 size = Vector3(1.4296207, 1.9409704, 3.0006418)
 
-[sub_resource type="BoxMesh" id="BoxMesh_mf5ox"]
-
 [node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
 
 [node name="basicroom-col" parent="." unique_id=1636015329 instance=ExtResource("1_lis1l")]
@@ -149,6 +152,7 @@ offset_right = 72.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("4_yo30x")
 text = "Press E to Interact!"
 
 [node name="PauseMenu" type="CanvasLayer" parent="CharacterBody3D/PlayerCamera" unique_id=1854293014]
@@ -169,6 +173,7 @@ offset_right = 55.5
 offset_bottom = 46.5
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("4_yo30x")
 alignment = 1
 
 [node name="PauseText" type="Label" parent="CharacterBody3D/PlayerCamera/PauseMenu/BoxContainer" unique_id=501769961]
@@ -193,9 +198,21 @@ offset_left = 947.0
 offset_top = 35.0
 offset_right = 1113.0
 offset_bottom = 192.0
-texture = ExtResource("5_q2qrx")
+theme = ExtResource("4_yo30x")
+texture = ExtResource("10_kqrhw")
+expand_mode = 2
 script = ExtResource("4_tt5lj")
-phase_texture_array = Array[Texture]([ExtResource("5_q2qrx"), ExtResource("6_873g7"), ExtResource("7_shicq")])
+phase_texture_array = Array[Texture]([ExtResource("10_kqrhw"), ExtResource("11_e2gxo"), ExtResource("12_a8t3n")])
+
+[node name="Player Phase Label" type="Label" parent="CharacterBody3D/PlayerPhaseTimer" unique_id=1494957102]
+layout_mode = 0
+offset_top = 157.0
+offset_right = 166.0
+offset_bottom = 191.0
+text = "3 Minutes Left"
+label_settings = SubResource("LabelSettings_yo30x")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="OpponentNodes" type="Node" parent="." unique_id=276051581]
 script = ExtResource("11_0pelt")
@@ -767,8 +784,8 @@ consume_time_slot = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableNodes/ItemInteractable/InteractableComponent/Area3D" unique_id=802723824]
 shape = SubResource("BoxShape3D_opp37")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="InteractableNodes/ItemInteractable" unique_id=1640325401]
-mesh = SubResource("BoxMesh_mf5ox")
+[node name="child-art" parent="InteractableNodes/ItemInteractable" unique_id=937083333 instance=ExtResource("24_5moos")]
+transform = Transform3D(-0.6495546, -0.7290451, 0.2158052, 0.084984094, 0.21244, 0.9734714, -0.75555027, 0.650663, -0.076034166, -0.780663, -0.47241557, -0.8747053)
 
 [node name="MedicalBoxInteractable" type="Node3D" parent="InteractableNodes" unique_id=763011258]
 unique_name_in_owner = true
@@ -796,7 +813,7 @@ omni_attenuation = 0.0
 stream = ExtResource("19_hlh3y")
 autoplay = true
 
-[node name="brackeys-level" parent="." unique_id=1405953680 instance=ExtResource("22_1f8q2")]
+[node name="level-mesh" parent="." unique_id=1407791102 instance=ExtResource("26_4pjyj")]
 
 [connection signal="area_entered" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_entered"]
 [connection signal="area_exited" from="CharacterBody3D/PlayerCamera/DetectionArea" to="CharacterBody3D" method="_on_detection_area_area_exited"]
