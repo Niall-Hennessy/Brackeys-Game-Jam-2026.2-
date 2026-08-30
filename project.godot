@@ -27,6 +27,8 @@ GameplayerManager="*uid://xx30n7xqxwye"
 InteractPhaseManager="*uid://bi5knxilgoirg"
 GameplayRound1Tracker="*uid://c7cxjlpn8mgpe"
 GameplayRound2Tracker="*uid://dct5nsmbvdm3e"
+GameplayRound3Tracker="*uid://de22cifkah04n"
+GameplayRound4Tracker="*uid://xwjdkelkbg6a"
 CameraManager="*uid://dfgvn8d5bapvv"
 OpponentStatusTracker="*uid://b6ha32yd3exru"
 
@@ -117,6 +119,7 @@ directories/dtl_directory={
 "gameplay_artsy_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_artsy_round_1.dtl",
 "gameplay_artsy_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_artsy_round_2.dtl",
 "gameplay_artsy_round_3": "res://Dialogic Resources/Timelines/Gameplay/Round 3/gameplay_artsy_round_3.dtl",
+"gameplay_artsy_round_4": "res://Dialogic Resources/Timelines/Gameplay/Round 4/gameplay_artsy_round_4.dtl",
 "gameplay_intro_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_intro_round_1.dtl",
 "gameplay_intro_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_intro_round_2.dtl",
 "gameplay_intro_round_3": "res://Dialogic Resources/Timelines/Gameplay/Round 3/gameplay_intro_round_3.dtl",
@@ -125,15 +128,19 @@ directories/dtl_directory={
 "gameplay_jock_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_jock_round_1.dtl",
 "gameplay_jock_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_jock_round_2.dtl",
 "gameplay_jock_round_3": "res://Dialogic Resources/Timelines/Gameplay/Round 3/gameplay_jock_round_3.dtl",
+"gameplay_jock_round_4": "res://Dialogic Resources/Timelines/Gameplay/Round 4/gameplay_jock_round_4.dtl",
 "gameplay_mean_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_mean_round_1.dtl",
 "gameplay_mean_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_mean_round_2.dtl",
 "gameplay_mean_round_3": "res://Dialogic Resources/Timelines/Gameplay/Round 3/gameplay_mean_round_3.dtl",
+"gameplay_mean_round_4": "res://Dialogic Resources/Timelines/Gameplay/Round 4/gameplay_mean_round_4.dtl",
 "gameplay_nerd_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_nerd_round_1.dtl",
 "gameplay_nerd_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_nerd_round_2.dtl",
 "gameplay_nerd_round_3": "res://Dialogic Resources/Timelines/Gameplay/Round 3/gameplay_nerd_round_3.dtl",
+"gameplay_nerd_round_4": "res://Dialogic Resources/Timelines/Gameplay/Round 4/gameplay_nerd_round_4.dtl",
 "gameplay_nice_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_nice_round_1.dtl",
 "gameplay_nice_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_nice_round_2.dtl",
 "gameplay_nice_round_3": "res://Dialogic Resources/Timelines/Gameplay/Round 3/gameplay_nice_round_3.dtl",
+"gameplay_nice_round_4": "res://Dialogic Resources/Timelines/Gameplay/Round 4/gameplay_nice_round_4.dtl",
 "gameplay_phase_1": "res://Dialogic Resources/Timelines/gameplay_phase_1.dtl",
 "gameplay_round_1": "res://Dialogic Resources/Timelines/Gameplay/Round 1/gameplay_round_1.dtl",
 "gameplay_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_round_2.dtl",
@@ -142,6 +149,7 @@ directories/dtl_directory={
 "gameplay_round_5": "res://Dialogic Resources/Timelines/Gameplay/Round 5/gameplay_round_5.dtl",
 "gameplay_vote_round_2": "res://Dialogic Resources/Timelines/Gameplay/Round 2/gameplay_vote_round_2.dtl",
 "gameplay_vote_round_3": "res://Dialogic Resources/Timelines/Gameplay/Round 3/gameplay_vote_round_3.dtl",
+"gameplay_vote_round_4": "res://Dialogic Resources/Timelines/Gameplay/Round 4/gameplay_vote_round_4.dtl",
 "prototype_intro_cutscene": "res://Dialogic Resources/Timelines/prototype_intro_cutscene.dtl",
 "round_1_cutscene": "res://Dialogic Resources/Timelines/Cutscenes/round_1_cutscene.dtl",
 "round_2_cutscene": "res://Dialogic Resources/Timelines/Cutscenes/round_2_cutscene.dtl",

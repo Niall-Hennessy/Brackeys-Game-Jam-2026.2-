@@ -9,4 +9,4 @@ if {GameplayRound1Tracker.has_medical_card} == true:
 else:
 	- Ask Frank to team up
 		Jock: Sure man! Let's do this thing
-jump gameplay_vote_round_3/
+jump gameplay_vote_round_4/

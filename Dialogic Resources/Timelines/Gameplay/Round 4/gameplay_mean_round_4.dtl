@@ -9,4 +9,4 @@ if {GameplayRound1Tracker.found_means_item} == true:
 else:
 	- Ask Kelly to team up
 		Mean: You got the hots for me or something? Fine I suppose I can let you work for me.
-jump gameplay_vote_round_3/
+jump gameplay_vote_round_4/
