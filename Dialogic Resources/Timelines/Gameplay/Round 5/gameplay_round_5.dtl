@@ -20,5 +20,93 @@ if {OpponentStatusTracker.artsy_is_alive} == true:
 		[i]That is why the last thing you see as you plunge into the abyss, is the remarkable look of confusion on his face.[/i]
 		do GameplayerManager.go_to_loss_screen()
 		[end_timeline]
+
+elif {OpponentStatusTracker.jock_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "trust":
+		if {GameplayRound5Tracker.jock_vote_target} == "trust":
+		
+		elif {GameplayRound5Tracker.jock_vote_target} == "fall":
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+	
+	elif {GameplayRound5Tracker.player_vote_target} == "fall":
+		if {GameplayRound5Tracker.jock_vote_target} == "trust":
+		
+		elif {GameplayRound5Tracker.jock_vote_target} == "fall":
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+
+elif {OpponentStatusTracker.mean_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "trust":
+		if {GameplayRound5Tracker.mean_vote_target} == "trust":
+		
+		elif {GameplayRound5Tracker.mean_vote_target} == "fall":
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+	
+	elif {GameplayRound5Tracker.player_vote_target} == "fall":
+		if {GameplayRound5Tracker.mean_vote_target} == "trust":
+		
+		elif {GameplayRound5Tracker.mean_vote_target} == "fall":
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+
+
+elif {OpponentStatusTracker.nerd_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "trust":
+		if {GameplayRound5Tracker.nerd_vote_target} == "trust":
+		
+		elif {GameplayRound5Tracker.nerd_vote_target} == "fall":
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+	
+	elif {GameplayRound5Tracker.player_vote_target} == "fall":
+		if {GameplayRound5Tracker.nerd_vote_target} == "trust":
+		
+		elif {GameplayRound5Tracker.nerd_vote_target} == "fall":
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+
+
+elif {OpponentStatusTracker.nice_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "trust":
+		if {GameplayRound5Tracker.nice_vote_target} == "trust":
+		
+		elif {GameplayRound5Tracker.nice_vote_target} == "fall":
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+	
+	elif {GameplayRound5Tracker.player_vote_target} == "fall":
+		if {GameplayRound5Tracker.nice_vote_target} == "trust":
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+		
+		elif {GameplayRound5Tracker.nice_vote_target} == "fall":
+
+
 do MouseManager.switch_mouse_mode()
 do GameplayerManager.end_gameplay()
