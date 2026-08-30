@@ -88,11 +88,12 @@ func run_round_votes():
 			player_lives -= 1
 		num_player_votes += 1
 	elif jock_vote_target == "mean":
+		print("Test 2")
 		mean_lives -= 1 
 		num_mean_votes += 1
 	elif jock_vote_target == "nerd":
-		mean_lives -= 1 
-		num_mean_votes += 1
+		nerd_lives -= 1 
+		num_nerd_votes += 1
 		
 	if nice_vote_target == "nerd":
 		nerd_lives -= 1
@@ -156,8 +157,8 @@ func calculate_vote_targets():
 	
 	if convinced_mean_to_not_vote_you:
 		if OpponentStatusTracker.jock_is_alive:
-			jock_vote_target = "jock"
+			mean_vote_target = "jock"
 		else:
-			jock_vote_target = "nice"
+			mean_vote_target = "nice"
 	else:
-		jock_vote_target = "player"
+		mean_vote_target = "player"

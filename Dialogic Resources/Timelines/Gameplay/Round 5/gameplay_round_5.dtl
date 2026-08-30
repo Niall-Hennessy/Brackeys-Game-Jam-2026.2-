@@ -1,9 +1,176 @@
 do MouseManager.switch_mouse_mode()
-This is another difficult game
-So what if you beat the fourth one
-- I win
-	Why did you pick this one
-- I win
-	Hooray
+[i]Two choice appear on the screen in front of you.[/i]
+- Trust
+	do GameplayRound5Tracker.set_player_vote_target("trust")
+- Fall
+	do GameplayRound5Tracker.set_player_vote_target("fall")
+do GameplayRound5Tracker.run_round_votes()
+if {OpponentStatusTracker.artsy_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "fall":
+		[i]You stare across the room at Alastair, you know why he made his choice and you yours.[/i]
+		[i]*KKKRRRRRRNK*[/i]
+		audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+		[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+		do GameplayerManager.go_to_loss_screen()
+		[end_timeline]
+	else:
+		[i]Alastair's face is one of acceptance. He believes you voted Fall nothing else would make sense to him[/i]
+		[i]*KKKRRRRRRNK*[/i]
+		audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+		[i]That is why the last thing you see as you plunge into the abyss, is the remarkable look of confusion on his face.[/i]
+		do GameplayerManager.go_to_loss_screen()
+		[end_timeline]
+
+elif {OpponentStatusTracker.jock_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "trust":
+		if {GameplayRound5Tracker.jock_vote_target} == "trust":
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Jock: Man I knew I could count on you
+			[i]As he says that a strange groaning can be heard[/i]
+			Jock: Huh? Maybe it's an elevator
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+		elif {GameplayRound5Tracker.jock_vote_target} == "fall":
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Jock: I'm sorry man, but I just couldn't trust you
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+	
+	elif {GameplayRound5Tracker.player_vote_target} == "fall":
+		if {GameplayRound5Tracker.jock_vote_target} == "trust":
+			Jock: Is that it? Is it over? You trusted me right bro?
+			[i]A groaning sound can be heard under Frank's foot[/i]
+			Jock: HEY! You betrayed me didn't you?
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the him, as he plunges into the abyss below[/i]
+			[i]You input your password into the screen and activate the end game program, you have the data you need.[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+		elif {GameplayRound5Tracker.jock_vote_target} == "fall":
+			Jock: I'm sorry man, but I just couldn't trust you
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+
+elif {OpponentStatusTracker.mean_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "trust":
+		if {GameplayRound5Tracker.mean_vote_target} == "trust":
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Mean: We're good right? that's the end of it?
+			[i]The ground beneath both of you begins to groan[/i]
+			Mean: Why is it groaning, we both voted trust right?
+			[i]Right[/i]
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+		elif {GameplayRound5Tracker.mean_vote_target} == "fall":
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Mean: You didn't actually think I would trust a loser like you right? This was the only smart option.
+			[i]The groan beneath you gives out a groan[/i]
+			Mean: Bye bye!
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+	
+	elif {GameplayRound5Tracker.player_vote_target} == "fall":
+		if {GameplayRound5Tracker.mean_vote_target} == "trust":
+			Mean: We're good right? that's the end of it?
+			[i]The ground beneath her starts to groan[/i]
+			Mean: NOOOO!! [i]You LOSER![/i] How could I have trusted you
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the her opens plunging her into the abyss below[/i]
+			[i]You input your password into the screen and activate the end game program, you have the data you need.[/i]
+			
+		elif {GameplayRound5Tracker.mean_vote_target} == "fall":
+			Mean: You didn't actually think I would trust a loser like you right? This was the only smart option.
+			Mean: At least if I'm going down, you're coming with me.
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+
+
+elif {OpponentStatusTracker.nerd_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "trust":
+		if {GameplayRound5Tracker.nerd_vote_target} == "trust":
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Nerd: We did it right? They'll let us go now right?
+			[i]Wrong[/i]
+			[i]The ground beneath both of you begins to creak and groan[/i]
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+			
+		elif {GameplayRound5Tracker.nerd_vote_target} == "fall":
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Nerd: I'm sorry, but I just can't trust you.
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+	
+	elif {GameplayRound5Tracker.player_vote_target} == "fall":
+		if {GameplayRound5Tracker.nerd_vote_target} == "trust":
+			Nerd: We did it right? They'll let us go now right?
+			[i]Wrong[/i]
+			[i]The ground beneath him begins to creak and groan[/i]
+			Nerd: The Hell! You betrayed me?
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath Damien, as he plunges into the abyss below[/i]
+			[i]You input your password into the screen and activate the end game program, you have the data you need.[/i]
+		
+		elif {GameplayRound5Tracker.nerd_vote_target} == "fall":
+			Nerd: I'm sorry, but I just can't trust you.
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath the two of you, as you plunge into the abyss below[/i]
+			do GameplayerManager.go_to_loss_screen()
+			[end_timeline]
+
+
+elif {OpponentStatusTracker.nice_is_alive} == true:
+	if {GameplayRound5Tracker.player_vote_target} == "trust":
+		if {GameplayRound5Tracker.nice_vote_target} == "trust":
+			[i]You don't know why you did that. But, it's too late for regret now[/i]
+			Nice: I know I can trust you. I'm sure that our families are looking for us.
+			Nice: Surely they'll find us if we just survive
+			[i]The ground beneath both of you begin to groan[/i]
+			Nice: What's going on? Why's the floor doing that?
+			Nice: They wouldn't have lied? Would they?
+			[i]They would[/i]
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath both of you, a look of confusion etched on her face is the last thign you see as you plunge into the abyss below[/i]
+	
+	elif {GameplayRound5Tracker.player_vote_target} == "fall":
+		if {GameplayRound5Tracker.nice_vote_target} == "trust":
+			Nice: I know I can trust you. I'm sure that our families are looking for us.
+			Nice: Surely they'll find us if we just survive
+			[i]The ground beneath her begins to groan[/i]
+			Nice: That's, that's normal right? You didn't betray me? Did you?
+			[i]*KKKRRRRRRNK*[/i]
+			audio "res://Assets/Audio/Impacts Abyssal Thud 001.wav"
+			[i]The ground opens up beneath her, a look of betrayal etched on her face as she plunges into the abyss below[/i]
+			[i]You input your password into the screen and activate the end game program, you have the data you need.[/i]
+
 do MouseManager.switch_mouse_mode()
 do GameplayerManager.end_gameplay()

@@ -32,7 +32,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vek3k"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_vek3k"]
-size = Vector3(1, 1, 2)
+size = Vector3(1, 1.5170898, 2)
 
 [sub_resource type="LabelSettings" id="LabelSettings_yo30x"]
 font_size = 20
@@ -113,7 +113,7 @@ shadow_mesh = SubResource("ArrayMesh_thetp")
 data = PackedVector3Array(-3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, -0.32097054, 3.2437763, -3.2437763, -0.32097054, -3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763, 3.2437763, 0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, -3.2437763, -0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, -0.32097054, -3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, -0.32097054, -3.2437763, -3.2437763, -0.32097054, -3.2437763, -3.2437763, -0.32097054, 3.2437763, 3.2437763, -0.32097054, 3.2437763, 3.2437763, 0.32097054, -3.2437763, -3.2437763, 0.32097054, 3.2437763, -3.2437763, 0.32097054, -3.2437763, 3.2437763, 0.32097054, -3.2437763, 3.2437763, 0.32097054, 3.2437763, -3.2437763, 0.32097054, 3.2437763)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_opp37"]
-size = Vector3(1.4296207, 1.9409704, 3.0006418)
+size = Vector3(0.7483964, 1.3889422, 0.8615304)
 
 [node name="TalkPhaseScene" type="Node3D" unique_id=1156558987]
 
@@ -135,7 +135,7 @@ script = ExtResource("3_xuycp")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/PlayerCamera/DetectionArea" unique_id=1585111403]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3841858e-07, -0.25854492, -1)
 shape = SubResource("BoxShape3D_vek3k")
 debug_color = Color(0, 0.70980394, 0.8235294, 1)
 
@@ -771,7 +771,7 @@ transform = Transform3D(0.93752974, 0.3478084, 0.008207356, -0.3477719, 0.937562
 
 [node name="ItemInteractable" type="Node3D" parent="InteractableNodes" unique_id=2112464084]
 unique_name_in_owner = true
-transform = Transform3D(-0.746075, 0, 0.66586196, 0, 1, 0, -0.66586196, 0, -0.746075, 7.679124, 0.59273887, -7.4950876)
+transform = Transform3D(-0.746075, 0, 0.66586196, 0, 1, 0, -0.66586196, 0, -0.746075, -19.015312, 0.037581563, 3.7640314)
 
 [node name="InteractableComponent" type="Node3D" parent="InteractableNodes/ItemInteractable" unique_id=2115024152]
 script = ExtResource("4_1q4yl")
@@ -782,6 +782,7 @@ consume_time_slot = false
 [node name="Area3D" type="Area3D" parent="InteractableNodes/ItemInteractable/InteractableComponent" unique_id=2075751102]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableNodes/ItemInteractable/InteractableComponent/Area3D" unique_id=802723824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.036444187, -0.2760141, -0.03610611)
 shape = SubResource("BoxShape3D_opp37")
 
 [node name="child-art" parent="InteractableNodes/ItemInteractable" unique_id=937083333 instance=ExtResource("24_5moos")]
