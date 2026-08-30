@@ -1,0 +1,46 @@
+do MouseManager.set_mouse_mode_visible()
+Intercom: Voting will now comence
+[i]You look down at the screen. An option has appeared asking for which of your opponents you've decided to vote for.[/i]
+if {OpponentStatusTracker.jock_is_alive} == true:
+	- Alastair
+		do GameplayRound4Tracker.set_player_vote_target("artsy")
+	- Frank
+		do GameplayRound4Tracker.set_player_vote_target("jock")
+if {OpponentStatusTracker.mean_is_alive} == true:
+	- Alastair
+		do GameplayRound4Tracker.set_player_vote_target("artsy")
+	- Kelly
+		do GameplayRound4Tracker.set_player_vote_target("mean")
+if {OpponentStatusTracker.nice_is_alive} == true:
+	- Alastair
+		do GameplayRound4Tracker.set_player_vote_target("artsy")
+	- Melanie
+		do GameplayRound4Tracker.set_player_vote_target("nice")
+if {OpponentStatusTracker.nerd_is_alive} == true:
+	- Alastair
+		do GameplayRound4Tracker.set_player_vote_target("artsy")
+	- Damien
+		do GameplayRound4Tracker.set_player_vote_target("nerd")
+Intercom: The votes have now been placed. Please choose who you wish to dodge.
+[i]The screen has changed and an option to dodge someone has appeared.[/i]
+if {OpponentStatusTracker.jock_is_alive} == true:
+	- Alastair
+		do GameplayRound4Tracker.set_player_dodge_target("artsy")
+	- Frank
+		do GameplayRound4Tracker.set_player_dodge_target("jock")
+if {OpponentStatusTracker.mean_is_alive} == true:
+	- Alastair
+		do GameplayRound4Tracker.set_player_dodge_target("artsy")
+	- Kelly
+		do GameplayRound4Tracker.set_player_dodge_target("mean")
+if {OpponentStatusTracker.nice_is_alive} == true:
+	- Alastair
+		do GameplayRound4Tracker.set_player_dodge_target("artsy")
+	- Melanie
+		do GameplayRound4Tracker.set_player_dodge_target("nice")
+if {OpponentStatusTracker.nerd_is_alive} == true:
+	- Alastair
+		do GameplayRound4Tracker.set_player_dodge_target("artsy")
+	- Damien
+		do GameplayRound4Tracker.set_player_dodge_target("nerd")
+jump gameplay_round_4/

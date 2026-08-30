@@ -1,4 +1,19 @@
 do MouseManager.set_mouse_mode_visible()
-Gameplay Round 5 Intro
-do MouseManager.set_mouse_mode_captured()
+do GameplayRound5Tracker.get_round_4_data()
+Intercom: Attention all players the game will now begin
+[i]The previously locked door automatically opens[/i]
+Intercom: Anyone who refuses to participate will be automatically disqualified. Any disqualified players are automatically eliminated
+Intercom: All players must stand on their assigned platform
+Intercom: Players will now direct their attention to their screens.
+Intercom: The rules this time are different. You will receive two choices.
+Intercom: Your first choice is Trust. If both players choose this choice, then the game ends. But, you will trapped in here [i]FOREVER![/i]
+[i] Right at that moment the rest of the floor retracts into the wall. You look down and all you can see is a dark pit.[/i]
+Intercom: The second choice is Fall.  If you choose this option and your opponent chose Trust then you will go free and they will plunge into the abyss below. However, if you both choose this option, then you both shall fall.
+Intercom: Choose wisely.
+if {OpponentStatusTracker.artsy_is_alive} == true:
+	Artsy: Don't even bother trying to convince me. I've already made up my mind. I'll choose Fall.
+	- Try to convince Alastair
+		Artsy: ...
+	- Don't both trying to convince him
+
 jump gameplay_round_5/

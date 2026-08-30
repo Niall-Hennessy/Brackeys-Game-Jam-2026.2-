@@ -1,4 +1,45 @@
 do MouseManager.set_mouse_mode_visible()
-Gameplay Round 4 Intro
+do GameplayRound4Tracker.get_round_3_data()
+Intercom: Attention all players the game will now begin
+[i]The previously locked door automatically opens[/i]
+Intercom: Anyone who refuses to participate will be automatically disqualified. Any disqualified players are automatically eliminated
+Intercom: All players must stand on their assigned platform
+[i]You look around and find a pillar with your name on it. The others do the same. You stand on the platform and look at the screen on the pillar.[/i]
+[i] Right at that moment the rest of the floor retracts into the wall. You look down and all you can see is a dark pit.[/i]
+Intercom: Players will now direct their attention to their screens.
+[i]On the screen you can see an icon representing the five other players. Beneath each icon are three hearts.[/i]
+Intercom: The rules are simple. You will all vote for one other player. Each time a player is voted for they will lose a life. The first player to lose all three lives will be eliminated.
+Intercom: After the votes are cast, but before they are revealed, you have the option to dodge. If you correctly guess which other player has voted for you, you can dodge their vote nullifying it. Guess wrong, and you will lose a heart.
+Intercom: You only get one dodge per round of voting. Voting continues until someone is eliminated. First round of voting begins in 5 minutes
+[i]Five minutes isn't a lot of time but it might be enough to convince someone else not to vote for you.[/i]
+if {OpponentStatusTracker.jock_is_alive} == true:
+	- Convince Artsy
+		jump gameplay_artsy_round_4/
+	- Convince Frank
+		jump gameplay_jock_round_4/
+	- Don't try to convince anyone
+		jump gameplay_vote_round_4/
+if {OpponentStatusTracker.mean_is_alive} == true:
+	- Convince Artsy
+		jump gameplay_artsy_round_4/
+	- Convince Mean
+		jump gameplay_mean_round_4/
+	- Convince Nerd
+		jump gameplay_nerd_round_4/
+	- Don't try to convince anyone
+		jump gameplay_vote_round_4/
+if {OpponentStatusTracker.nice_is_alive} == true:
+	- Convince Artsy
+		jump gameplay_artsy_round_4/
+	- Convince Nice
+		jump gameplay_nice_round_4/
+	- Don't try to convince anyone
+		jump gameplay_vote_round_4/
+if {OpponentStatusTracker.nerd_is_alive} == true:
+	- Convince Artsy
+		jump gameplay_artsy_round_4/
+	- Convince Nerd
+		jump gameplay_nerd_round_4/
+	- Don't try to convince anyone
+		jump gameplay_vote_round_4/
 do MouseManager.set_mouse_mode_captured()
-jump gameplay_round_4/

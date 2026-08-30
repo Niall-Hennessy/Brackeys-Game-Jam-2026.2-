@@ -1,4 +1,4 @@
 [i]You look over at Melanie. She seems to be panicking[/i]
 - Ask Melanie to team up
-	Nice: <Empty Text Event>
+	Nice: I'm sorry, but I'd only hold you back. 
 jump gameplay_round_1/

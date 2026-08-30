@@ -1,0 +1,12 @@
+[i]You look over at Frank. He seems to be trying to figure out how the screen works[/i]
+if {GameplayRound2Tracker.has_medical_card} == true:
+	- Ask Frank to team up
+		Jock: Sure man! Let's do this thing
+	- Show Frank the medical Card
+		Jock: HEY! Where did you find that man? I need that!
+		Argghhh! Find I'll get it off you after this game.
+		do GameplayRound2Tracker.set_convinced_jock_to_not_vote_you(true)
+else:
+	- Ask Frank to team up
+		Jock: Sure man! Let's do this thing
+jump gameplay_vote_round_2/
